@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.10)  5 MAR 2019 15:38
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.10)  6 MAR 2019 15:30
 entering extended mode
 **main.tex
 (E:\bnuthesis_1.53\main.tex
@@ -1059,7 +1059,7 @@ Package pdftex.def Info: figures/BNU_name.pdf used on input line 23.
 (pdftex.def)             Requested size: 234.73523pt x 63.27689pt.
 
 
-LaTeX Warning: File c7053.cmap not found on input line 23.
+LaTeX Warning: File c7078.cmap not found on input line 23.
 
 
 LaTeX Warning: File c7058.cmap not found on input line 23.
@@ -1084,6 +1084,9 @@ LaTeX Warning: File c7076.cmap not found on input line 23.
 
 
 LaTeX Warning: File c70ff.cmap not found on input line 23.
+
+
+LaTeX Warning: File c7053.cmap not found on input line 23.
 
 
 LaTeX Warning: File c704e.cmap not found on input line 23.
@@ -1160,9 +1163,6 @@ LaTeX Font Info:    Try loading font information for C70+fs on input line 23.
 (C:\CTEX\CTeX\tex\latex\CJK\UTF8\c70fs.fd
 File: c70fs.fd 2009/09/23 4.8.2
 )
-
-LaTeX Warning: File c7078.cmap not found on input line 23.
-
 
 LaTeX Warning: File c707a.cmap not found on input line 23.
 
@@ -1765,11 +1765,11 @@ TEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese
 /simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts
 /truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C
 :/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chin
-ese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Font
-s/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/W
-INDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfan
-g.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/F
-onts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/CTEX/CTeX/fonts/truetype/chi
+ese/simsun.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/
+WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfa
+ng.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/
+Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><
+C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chi
 nese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/f
 onts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.tt
 f><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/
@@ -1797,7 +1797,7 @@ yc.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/CTEX/MiKTeX/font
 s/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pf
 b><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/CTEX/MiKTeX/fonts/type1
 /urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (31 pages, 1564579 bytes).
+Output written on main.pdf (31 pages, 1564546 bytes).
 PDF statistics:
  1782 PDF objects out of 2073 (max. 8388607)
  177 named destinations out of 1000 (max. 500000)

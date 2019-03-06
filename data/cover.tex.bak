@@ -5,9 +5,9 @@
 %%% End:
 %\secretlevel{绝密} \secretyear{10}
 
-\ctitle{北京师范大学学位论文\LaTeX{}模板}
-%\makeatletter
-%\cdegree{博士}
+\ctitle{北京师范大学学位论文模板}
+\makeatletter
+\cdegree{硕士}
 
 \makeatother
 
@@ -16,7 +16,7 @@
 \cdepartment[]{信息科学与技术学院}
 \cmajor{计算机软件与理论}
 \cnum{201621210026}
-\cdate{\the\year年 \the\month 月}
+\cdate{\the\year 年 \the\month 月}
 
 \etitle{An Introduction to \LaTeX{} Thesis Template of Beijing Normal University}
 
