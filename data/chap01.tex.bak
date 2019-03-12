@@ -5,7 +5,7 @@
 %%% End:
 
 \chapter{绪论}
-\label{cha:chap01}
+\label{cha:intro}
 
 这是 \bnuthesis{} 的示例文档，基本上覆盖了模板中所有格式的设置。建议大家在使用模
 板之前，除了阅读《\bnuthesis{}用户手册》，这个示例文档也最好能看一看。
@@ -27,12 +27,4 @@
 。苏洵子。嘉佑进士。神宗时曾任祠部员外郎，因反对王安石新法而求外职，任杭州通判，
 \section{国内外研究现状}
 \label{sec:second}
-封面的例子请参看 cover.tex。主要符号表参看 denation.tex，附录和个人简历分别参看 appendix01.tex\cite{IEEE-1363}
-
-\section{本文的组织结构}
-\label{sec:third}
-封面的例子请参看 cover.tex。主要符号表参看 denation.tex，附录和
-
-\section{本文主要创新点}
-\label{sec:forth}
-封面的例子请参看 cover.tex。主要符号表参看 denation.tex，附录和
+封面的例子请参看 cover.tex。主要符号表参看 denation.tex，附录和个人简历分别参看 appendix01.tex 
