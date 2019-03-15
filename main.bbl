@@ -1,8 +1,49 @@
 \begin{thebibliography}{1}
 
-\bibitem{IEEE-1363}
-{IEEE Std 1363-2000}.
-\newblock {IEEE} Standard Specifications for Public-Key Cryptography[M].
-\newblock New York: IEEE, 2000.
+\bibitem{lishihua2005}
+李石华, 王金亮, 毕艳, et~al.
+\newblock 遥感图像分类方法研究综述[J].
+\newblock 国土资源遥感, 2005, 2(5):1--6.
+
+\bibitem{zhangjun2010}
+张俊, 于庆国, 侯家槐.
+\newblock 面向对象的高分辨率影像分类与信息提取[J].
+\newblock 遥感技术与应用, 2010, 25(1):112--117.
+
+\bibitem{lideren2012}
+李德仁, 童庆禧, 李荣兴, et~al.
+\newblock 高分辨率对地观测的若干前沿科学问题[J].
+\newblock 中国科学: 地球科学, 2012, 42(6):805--813.
+
+\bibitem{wulun2006}
+邬伦, 承继成, 史文中, et~al.
+\newblock 地理信息系统数据的不确定性问题[D].
+\newblock 2006.
+
+\bibitem{he2005comparison}
+Hui He, Xianchuan Yu.
+\newblock A comparison of PCA/ICA for data preprocessing in remote sensing
+  imagery classification[C].
+\newblock Proceedings of MIPPR 2005: Image Analysis Techniques, volume 6044.
+  International Society for Optics and Photonics, 2005.
+\newblock  604408.
+
+\bibitem{hinton2006fast}
+Geoffrey~E Hinton, Simon Osindero, Yee-Whye Teh.
+\newblock A fast learning algorithm for deep belief nets[J].
+\newblock Neural computation, 2006, 18(7):1527--1554.
+
+\bibitem{bengio2009learning}
+Yoshua Bengio, et~al.
+\newblock Learning deep architectures for AI[J].
+\newblock Foundations and trends{\textregistered} in Machine Learning, 2009,
+  2(1):1--127.
+
+\bibitem{NIPS2012_4824}
+Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
+\newblock ImageNet Classification with Deep Convolutional Neural Networks[C].
+\newblock In: F.~Pereira, C.~J.~C. Burges, L.~Bottou, et~al., (eds.).
+  Proceedings of Advances in Neural Information Processing Systems 25. Curran
+  Associates, Inc., 2012: 1097--1105.
 
 \end{thebibliography}
