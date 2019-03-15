@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.1.2}插图}{3}{subsection.2.1.2}
 \contentsline {subsubsection}{\numberline {2.1.2.1}一个图形}{3}{subsubsection.2.1.2.1}
 \contentsline {chapter}{第\nobreakspace {}3\nobreakspace {}章\hspace {1em} 基于改进的区间二型模糊集的遥感影像聚类分割}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}封面相关}{5}{section.3.1}
+\contentsline {section}{\numberline {3.1}三角形模糊集值的建模}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}字体命令}{5}{section.3.2}
 \contentsline {chapter}{第\nobreakspace {}4\nobreakspace {}章\hspace {1em} 方法二}{6}{chapter.4}
 \contentsline {section}{\numberline {4.1}封面相关}{6}{section.4.1}
