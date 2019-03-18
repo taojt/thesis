@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{lishihua2005}
 李石华, 王金亮, 毕艳, et~al.
@@ -45,5 +45,64 @@ Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
 \newblock In: F.~Pereira, C.~J.~C. Burges, L.~Bottou, et~al., (eds.).
   Proceedings of Advances in Neural Information Processing Systems 25. Curran
   Associates, Inc., 2012: 1097--1105.
+
+\bibitem{jensen1987introductory}
+John~R Jensen, Kalmesh Lulla.
+\newblock Introductory digital image processing: a remote sensing
+  perspective[J].
+\newblock 1987.
+
+\bibitem{djukanovic1993unsupervised}
+MBDY Djukanovic, Borivoje Babic, Dijan~J Sobajic, et~al.
+\newblock Unsupervised/supervised learning concept for 24-hour load
+  forecasting[C].
+\newblock Proceedings of IEE Proceedings C (Generation, Transmission and
+  Distribution), volume 140. IET, 1993.
+\newblock  311--318.
+
+\bibitem{wacker1972minimum}
+AG~Wacker, DA~Landgrebe.
+\newblock Minimum distance classification in remote sensing[J].
+\newblock 1972.
+
+\bibitem{strahler1980use}
+Alan~H Strahler.
+\newblock The use of prior probabilities in maximum likelihood classification
+  of remotely sensed data[J].
+\newblock Remote sensing of Environment, 1980, 10(2):135--163.
+
+\bibitem{atkinson2000geostatistical}
+Peter~M Atkinson, P~Lewis.
+\newblock Geostatistical classification for remote sensing: an introduction[J].
+\newblock Computers \& Geosciences, 2000, 26(4):361--371.
+
+\bibitem{paul2002new}
+Frank Paul, Andreas K{\"a}{\"a}b, Max Maisch, et~al.
+\newblock The new remote-sensing-derived Swiss glacier inventory: I.
+  Methods[J].
+\newblock Annals of Glaciology, 2002, 34:355--361.
+
+\bibitem{zhangyongsheng2004}
+张永生, 巩丹超, 刘军, et~al.
+\newblock 高分辨率遥感卫星应用[J].
+\newblock 科学出版社, 北京, 2004.
+
+\bibitem{blaschke2010object}
+Thomas Blaschke.
+\newblock Object based image analysis for remote sensing[J].
+\newblock ISPRS journal of photogrammetry and remote sensing, 2010,
+  65(1):2--16.
+
+\bibitem{kettig1976classification}
+Robert~Lawrence Kettig, DA~Landgrebe.
+\newblock Classification of multispectral image data by extraction and
+  classification of homogeneous objects[J].
+\newblock IEEE Transactions on geoscience Electronics, 1976, 14(1):19--26.
+
+\bibitem{lobo1996classification}
+A~Lobo, O~Chic, A~Casterad.
+\newblock Classification of Mediterranean crops with multisensor data:
+  per-pixel versus per-object statistics and image segmentation[J].
+\newblock International Journal of Remote Sensing, 1996, 17(12):2385--2400.
 
 \end{thebibliography}

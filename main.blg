@@ -10,4 +10,7 @@ A level-1 auxiliary file: data/paper.aux
 A level-1 auxiliary file: data/ack.aux
 Database file #1: ref/refs.bib
 Warning--there's a publisher but no address in NIPS2012_4824
-(There was 1 warning)
+Warning--empty journal in jensen1987introductory
+Warning--can't use both volume and number fields in djukanovic1993unsupervised
+Warning--empty journal in wacker1972minimum
+(There were 4 warnings)
