@@ -105,4 +105,143 @@ A~Lobo, O~Chic, A~Casterad.
   per-pixel versus per-object statistics and image segmentation[J].
 \newblock International Journal of Remote Sensing, 1996, 17(12):2385--2400.
 
+\bibitem{baatz1999object}
+Martin Baatz.
+\newblock Object-oriented and multi-scale image analysis in semantic
+  networks[C].
+\newblock Proceedings of Proc. the 2nd International Symposium on
+  Operationalization of Remote Sensing, Enschede, ITC, Aug. 1999, 1999.
+
+\bibitem{geneletti2003method}
+D~Geneletti, BGH Gorte.
+\newblock A method for object-oriented land cover classification combining
+  Landsat TM data and aerial photographs[J].
+\newblock International Journal of Remote Sensing, 2003, 24(6):1273--1286.
+
+\bibitem{guo2007object}
+Qinghua Guo, Maggi Kelly, Peng Gong, et~al.
+\newblock An object-based classification approach in mapping tree mortality
+  using high spatial resolution imagery[J].
+\newblock GIScience \& Remote Sensing, 2007, 44(1):24--47.
+
+\bibitem{canny1987computational}
+John Canny.
+\newblock A computational approach to edge detection[C].
+\newblock Proceedings of Readings in computer vision. Elsevier, 1987: 184--203.
+
+\bibitem{otsu1979threshold}
+Nobuyuki Otsu.
+\newblock A threshold selection method from gray-level histograms[J].
+\newblock IEEE transactions on systems, man, and cybernetics, 1979,
+  9(1):62--66.
+
+\bibitem{vincent1991watersheds}
+Luc Vincent, Pierre Soille.
+\newblock Watersheds in digital spaces: an efficient algorithm based on
+  immersion simulations[J].
+\newblock IEEE Transactions on Pattern Analysis \& Machine Intelligence, 1991,
+  (6):583--598.
+
+\bibitem{achanta2012slic}
+Radhakrishna Achanta, Appu Shaji, Kevin Smith, et~al.
+\newblock SLIC superpixels compared to state-of-the-art superpixel methods[J].
+\newblock IEEE transactions on pattern analysis and machine intelligence, 2012,
+  34(11):2274--2282.
+
+\bibitem{weizman2009urban}
+Lior Weizman, Jacob Goldberger.
+\newblock Urban-area segmentation using visual words[J].
+\newblock IEEE Geoscience and Remote Sensing Letters, 2009, 6(3):388--392.
+
+\bibitem{lienou2010semantic}
+Marie Lienou, Henri Maitre, Mihai Datcu.
+\newblock Semantic annotation of satellite images using latent Dirichlet
+  allocation[J].
+\newblock IEEE Geoscience and Remote Sensing Letters, 2010, 7(1):28--32.
+
+\bibitem{he2016remote}
+Hui He, Tianheng Liang, Dan Hu, et~al.
+\newblock Remote sensing clustering analysis based on object-based interval
+  modeling[J].
+\newblock Computers \& Geosciences, 2016, 94:131--139.
+
+\bibitem{pal2005random}
+Mahesh Pal.
+\newblock Random forest classifier for remote sensing classification[J].
+\newblock International Journal of Remote Sensing, 2005, 26(1):217--222.
+
+\bibitem{suykens1999least}
+Johan~AK Suykens, Joos Vandewalle.
+\newblock Least squares support vector machine classifiers[J].
+\newblock Neural processing letters, 1999, 9(3):293--300.
+
+\bibitem{friedl1997decision}
+Mark~A Friedl, Carla~E Brodley.
+\newblock Decision tree classification of land cover from remotely sensed
+  data[J].
+\newblock Remote sensing of environment, 1997, 61(3):399--409.
+
+\bibitem{haykin1994neural}
+Simon Haykin.
+\newblock Neural networks[M], volume~2.
+\newblock Prentice hall New York, 1994.
+
+\bibitem{freund1996experiments}
+Yoav Freund, Robert~E Schapire, et~al.
+\newblock Experiments with a new boosting algorithm[C].
+\newblock Proceedings of icml, volume~96. Citeseer, 1996.
+\newblock  148--156.
+
+\bibitem{lecun2015deep}
+Yann LeCun, Yoshua Bengio, Geoffrey Hinton.
+\newblock Deep learning[J].
+\newblock nature, 2015, 521(7553):436.
+
+\bibitem{szegedy2015going}
+Christian Szegedy, Wei Liu, Yangqing Jia, et~al.
+\newblock Going deeper with convolutions[C].
+\newblock Proceedings of Proceedings of the IEEE conference on computer vision
+  and pattern recognition, 2015.
+\newblock  1--9.
+
+\bibitem{simonyan2014very}
+Karen Simonyan, Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image
+  recognition[J].
+\newblock arXiv preprint arXiv:1409.1556, 2014.
+
+\bibitem{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, et~al.
+\newblock Deep residual learning for image recognition[C].
+\newblock Proceedings of Proceedings of the IEEE conference on computer vision
+  and pattern recognition, 2016.
+\newblock  770--778.
+
+\bibitem{bengio2007greedy}
+Yoshua Bengio, Pascal Lamblin, Dan Popovici, et~al.
+\newblock Greedy layer-wise training of deep networks[C].
+\newblock Proceedings of Advances in neural information processing systems,
+  2007.
+\newblock  153--160.
+
+\bibitem{vincent2008extracting}
+Pascal Vincent, Hugo Larochelle, Yoshua Bengio, et~al.
+\newblock Extracting and composing robust features with denoising
+  autoencoders[C].
+\newblock Proceedings of Proceedings of the 25th international conference on
+  Machine learning. ACM, 2008.
+\newblock  1096--1103.
+
+\bibitem{ng2011sparse}
+Andrew Ng, et~al.
+\newblock Sparse autoencoder[J].
+\newblock CS294A Lecture notes, 2011, 72(2011):1--19.
+
+\bibitem{goodfellow2014generative}
+Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, et~al.
+\newblock Generative adversarial nets[C].
+\newblock Proceedings of Advances in neural information processing systems,
+  2014.
+\newblock  2672--2680.
+
 \end{thebibliography}
