@@ -17,17 +17,17 @@
 \contentsline {subsubsection}{\numberline {2.1.2.1}一个图形}{7}{subsubsection.2.1.2.1}
 \contentsline {chapter}{第\nobreakspace {}3\nobreakspace {}章\hspace {1em} 面向对象的遥感影像的区间二型模糊聚类分割算法}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}引言}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}三角形模糊集值的建模}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}字体命令}{10}{section.3.3}
-\contentsline {chapter}{第\nobreakspace {}4\nobreakspace {}章\hspace {1em} 方法二}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}封面相关}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}字体命令}{11}{section.4.2}
-\contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 第五章}{12}{chapter.5}
-\contentsline {section}{\numberline {5.1}封面相关}{12}{section.5.1}
-\contentsline {section}{\numberline {5.2}字体命令}{12}{section.5.2}
-\contentsline {chapter}{第\nobreakspace {}6\nobreakspace {}章\hspace {1em} 总结与展望}{13}{chapter.6}
-\contentsline {section}{\numberline {6.1}本文的主要内容}{13}{section.6.1}
-\contentsline {section}{\numberline {6.2}未来的期望}{13}{section.6.2}
-\contentsline {chapter}{致谢}{14}{section*.31}
-\contentsline {chapter}{参考文献}{15}{section*.34}
-\contentsline {chapter}{学术成果}{19}{section*.37}
+\contentsline {section}{\numberline {3.2}三角形模糊集值建模与相似性度量}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}字体命令}{11}{section.3.3}
+\contentsline {chapter}{第\nobreakspace {}4\nobreakspace {}章\hspace {1em} 方法二}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}封面相关}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}字体命令}{12}{section.4.2}
+\contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 第五章}{13}{chapter.5}
+\contentsline {section}{\numberline {5.1}封面相关}{13}{section.5.1}
+\contentsline {section}{\numberline {5.2}字体命令}{13}{section.5.2}
+\contentsline {chapter}{第\nobreakspace {}6\nobreakspace {}章\hspace {1em} 总结与展望}{14}{chapter.6}
+\contentsline {section}{\numberline {6.1}本文的主要内容}{14}{section.6.1}
+\contentsline {section}{\numberline {6.2}未来的期望}{14}{section.6.2}
+\contentsline {chapter}{致谢}{15}{section*.32}
+\contentsline {chapter}{参考文献}{16}{section*.35}
+\contentsline {chapter}{学术成果}{20}{section*.38}

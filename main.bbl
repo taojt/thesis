@@ -327,10 +327,21 @@ James~C Bezdek, Robert Ehrlich, William Full.
 \newblock FCM: The fuzzy c-means clustering algorithm[J].
 \newblock Computers \& Geosciences, 1984, 10(2-3):191--203.
 
+\bibitem{jiang2018enhanced}
+Tao Jiang, Dan Hu, Xianchuan Yu.
+\newblock Enhanced IT2FCM algorithm using object-based triangular fuzzy set
+  modeling for remote-sensing clustering[J].
+\newblock Computers \& geosciences, 2018, 118:14--26.
+
 \bibitem{yu2012method}
 XC~Yu, WJ~An, Hui He.
 \newblock A method of auto classification based on object oriented unsupervised
   classification[J].
 \newblock Progress in Geophysics, 2012, 27(2):744--749.
+
+\bibitem{zadeh1965fuzzy}
+Lotfi~A Zadeh.
+\newblock Fuzzy sets[J].
+\newblock Information and control, 1965, 8(3):338--353.
 
 \end{thebibliography}
