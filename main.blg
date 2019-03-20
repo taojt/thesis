@@ -9,6 +9,10 @@ A level-1 auxiliary file: data/ack.aux
 The style file: bnubib.bst
 A level-1 auxiliary file: data/paper.aux
 Database file #1: ref/refs.bib
+Repeated entry---line 555 of file ref/refs.bib
+ : @article{he2016remote
+ :                      ,
+I'm skipping whatever remains of this entry
 Warning--there's a publisher but no address in NIPS2012_4824
 Warning--empty journal in jensen1987introductory
 Warning--can't use both volume and number fields in djukanovic1993unsupervised
@@ -17,4 +21,4 @@ Warning--there's a publisher but no address in canny1987computational
 Warning--there's a number but no volume in vincent1991watersheds
 Warning--there's a publisher but no address in haykin1994neural
 Warning--there's a number but no volume in li2018deepunet
-(There were 8 warnings)
+(There was 1 error message)

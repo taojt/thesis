@@ -322,4 +322,15 @@ Zhengxin Zhang, Qingjie Liu, Yunhong Wang.
 \newblock Road extraction by deep residual u-net[J].
 \newblock IEEE Geoscience and Remote Sensing Letters, 2018, 15(5):749--753.
 
+\bibitem{bezdek1984fcm}
+James~C Bezdek, Robert Ehrlich, William Full.
+\newblock FCM: The fuzzy c-means clustering algorithm[J].
+\newblock Computers \& Geosciences, 1984, 10(2-3):191--203.
+
+\bibitem{yu2012method}
+XC~Yu, WJ~An, Hui He.
+\newblock A method of auto classification based on object oriented unsupervised
+  classification[J].
+\newblock Progress in Geophysics, 2012, 27(2):744--749.
+
 \end{thebibliography}
