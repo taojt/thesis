@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.10)  20 MAR 2019 22:37
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.10)  25 MAR 2019 10:16
 entering extended mode
 **e:/thesis_for_jiangtao/main
 (e:/thesis_for_jiangtao/main.tex
@@ -820,7 +820,15 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks41
 \verbatim@line=\toks42
 \verbatim@in@stream=\read1
-)) (C:\CTEX\MiKTeX\tex\latex\mh\mathtools.sty
+)) (C:\CTEX\MiKTeX\tex\latex\tools\bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup10
+\symboldletters=\mathgroup11
+\symboldsymbols=\mathgroup12
+\symboldlargesymbols=\mathgroup13
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+) (C:\CTEX\MiKTeX\tex\latex\mh\mathtools.sty
 Package: mathtools 2011/04/06 v1.11 mathematical typesetting tools
  (C:\CTEX\MiKTeX\tex\latex\mh\mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
@@ -830,11 +838,7 @@ Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 \origjot=\skip76
 \l_MT_shortvdotswithinadjustabove_dim=\dimen153
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen154
-) (e:\thesis_for_jiangtao\main.aux (e:\thesis_for_jiangtao\data/chap01.aux) (e:\thesis_for_jiangtao\data/chap02.aux) (e:\thesis_for_jiangtao\data/chap03.aux
-
-LaTeX Warning: Label `sec:first' multiply defined.
-
-) (e:\thesis_for_jiangtao\data/chap04.aux
+) (e:\thesis_for_jiangtao\main.aux (e:\thesis_for_jiangtao\data/chap01.aux) (e:\thesis_for_jiangtao\data/chap02.aux) (e:\thesis_for_jiangtao\data/chap03.aux) (e:\thesis_for_jiangtao\data/chap04.aux
 
 LaTeX Warning: Label `sec:first' multiply defined.
 
@@ -847,103 +851,103 @@ LaTeX Warning: Label `sec:first' multiply defined.
 LaTeX Warning: Label `sec:first' multiply defined.
 
 ) (e:\thesis_for_jiangtao\data/ack.aux) (e:\thesis_for_jiangtao\data/paper.aux))
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 18.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 18.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 19.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 19.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 19.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 19.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 19.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 19.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )<<ot1.cmap>> (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
@@ -970,7 +974,7 @@ Package: ltcaption 2011/09/12 v1.3 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 19.
  (C:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
  (C:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
@@ -978,9 +982,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count186
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
  (e:\thesis_for_jiangtao\main.out) (e:\thesis_for_jiangtao\main.out)
 \@outlinefile=\write3
  (C:\CTEX\MiKTeX\tex\latex\cjk\UTF8\UTF8.bdg
@@ -990,129 +994,129 @@ File: UTF8.enc 2008/12/29 4.8.2
 ) (C:\CTEX\MiKTeX\tex\latex\cjk\UTF8\UTF8.chr
 File: UTF8.chr 2008/12/29 4.8.2
 )
-LaTeX Font Info:    Try loading font information for C70+song on input line 18.
+LaTeX Font Info:    Try loading font information for C70+song on input line 19.
  (C:\CTEX\CTeX\tex\latex\CJK\UTF8\c70song.fd
 File: c70song.fd 2009/09/23 4.8.2
 )
 
-LaTeX Warning: File c7030.cmap not found on input line 18.
+LaTeX Warning: File c7030.cmap not found on input line 19.
 
-(e:\thesis_for_jiangtao\data/cover.tex) <figures/BNU_name.pdf, id=145, 461.725pt x 124.465pt>
+(e:\thesis_for_jiangtao\data/cover.tex) <figures/BNU_name.pdf, id=181, 461.725pt x 124.465pt>
 File: figures/BNU_name.pdf Graphic file (type pdf)
  <use figures/BNU_name.pdf>
-Package pdftex.def Info: figures/BNU_name.pdf used on input line 25.
+Package pdftex.def Info: figures/BNU_name.pdf used on input line 26.
 (pdftex.def)             Requested size: 234.73523pt x 63.27689pt.
 
 
-LaTeX Warning: File c7078.cmap not found on input line 25.
+LaTeX Warning: File c7078.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7058.cmap not found on input line 25.
+LaTeX Warning: File c7058.cmap not found on input line 26.
 
 
-LaTeX Warning: File c705b.cmap not found on input line 25.
+LaTeX Warning: File c705b.cmap not found on input line 26.
 
 
-LaTeX Warning: File c704f.cmap not found on input line 25.
+LaTeX Warning: File c704f.cmap not found on input line 26.
 
 
-LaTeX Warning: File c708b.cmap not found on input line 25.
+LaTeX Warning: File c708b.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7065.cmap not found on input line 25.
+LaTeX Warning: File c7065.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7098.cmap not found on input line 25.
+LaTeX Warning: File c7098.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7076.cmap not found on input line 25.
+LaTeX Warning: File c7076.cmap not found on input line 26.
 
 
-LaTeX Warning: File c70ff.cmap not found on input line 25.
+LaTeX Warning: File c70ff.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7053.cmap not found on input line 25.
+LaTeX Warning: File c7053.cmap not found on input line 26.
 
 
-LaTeX Warning: File c704e.cmap not found on input line 25.
+LaTeX Warning: File c704e.cmap not found on input line 26.
 
 
-LaTeX Warning: File c705e.cmap not found on input line 25.
+LaTeX Warning: File c705e.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7083.cmap not found on input line 25.
+LaTeX Warning: File c7083.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7059.cmap not found on input line 25.
+LaTeX Warning: File c7059.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7068.cmap not found on input line 25.
+LaTeX Warning: File c7068.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7080.cmap not found on input line 25.
+LaTeX Warning: File c7080.cmap not found on input line 26.
 
 
-LaTeX Warning: File c706c.cmap not found on input line 25.
+LaTeX Warning: File c706c.cmap not found on input line 26.
 
 
-LaTeX Warning: File c706d.cmap not found on input line 25.
+LaTeX Warning: File c706d.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7051.cmap not found on input line 25.
+LaTeX Warning: File c7051.cmap not found on input line 26.
 
 
-LaTeX Warning: File c705d.cmap not found on input line 25.
+LaTeX Warning: File c705d.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7063.cmap not found on input line 25.
+LaTeX Warning: File c7063.cmap not found on input line 26.
 
 
-LaTeX Warning: File c707c.cmap not found on input line 25.
+LaTeX Warning: File c707c.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7052.cmap not found on input line 25.
+LaTeX Warning: File c7052.cmap not found on input line 26.
 
 
-LaTeX Warning: File c707e.cmap not found on input line 25.
+LaTeX Warning: File c707e.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7060.cmap not found on input line 25.
+LaTeX Warning: File c7060.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7079.cmap not found on input line 25.
+LaTeX Warning: File c7079.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7062.cmap not found on input line 25.
+LaTeX Warning: File c7062.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7067.cmap not found on input line 25.
+LaTeX Warning: File c7067.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7096.cmap not found on input line 25.
+LaTeX Warning: File c7096.cmap not found on input line 26.
 
 
-LaTeX Warning: File c707b.cmap not found on input line 25.
+LaTeX Warning: File c707b.cmap not found on input line 26.
 
 
-LaTeX Warning: File c708f.cmap not found on input line 25.
+LaTeX Warning: File c708f.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7074.cmap not found on input line 25.
+LaTeX Warning: File c7074.cmap not found on input line 26.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
 
  []
 
-LaTeX Font Info:    Try loading font information for C70+fs on input line 25.
+LaTeX Font Info:    Try loading font information for C70+fs on input line 26.
 (C:\CTEX\CTeX\tex\latex\CJK\UTF8\c70fs.fd
 File: c70fs.fd 2009/09/23 4.8.2
 )
 
-LaTeX Warning: File c707a.cmap not found on input line 25.
+LaTeX Warning: File c707a.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7075.cmap not found on input line 25.
+LaTeX Warning: File c7075.cmap not found on input line 26.
 
 [1
 Non-PDF special ignored!
@@ -1123,131 +1127,131 @@ Non-PDF special ignored!
 
 {C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}} <e:/thesis_for_jiangtao/figures/BNU_name.pdf>]
 
-LaTeX Warning: File c7066.cmap not found on input line 25.
+LaTeX Warning: File c7066.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7090.cmap not found on input line 25.
+LaTeX Warning: File c7090.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7091.cmap not found on input line 25.
+LaTeX Warning: File c7091.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7054.cmap not found on input line 25.
+LaTeX Warning: File c7054.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7057.cmap not found on input line 25.
+LaTeX Warning: File c7057.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7072.cmap not found on input line 25.
+LaTeX Warning: File c7072.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7088.cmap not found on input line 25.
+LaTeX Warning: File c7088.cmap not found on input line 26.
 
 
-LaTeX Warning: File c705f.cmap not found on input line 25.
+LaTeX Warning: File c705f.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7064.cmap not found on input line 25.
+LaTeX Warning: File c7064.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7050.cmap not found on input line 25.
+LaTeX Warning: File c7050.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7089.cmap not found on input line 25.
+LaTeX Warning: File c7089.cmap not found on input line 26.
 
 
-LaTeX Warning: File c708d.cmap not found on input line 25.
+LaTeX Warning: File c708d.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7073.cmap not found on input line 25.
+LaTeX Warning: File c7073.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7061.cmap not found on input line 25.
+LaTeX Warning: File c7061.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7095.cmap not found on input line 25.
+LaTeX Warning: File c7095.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7077.cmap not found on input line 25.
+LaTeX Warning: File c7077.cmap not found on input line 26.
 
 
-LaTeX Warning: File c705c.cmap not found on input line 25.
+LaTeX Warning: File c705c.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7056.cmap not found on input line 25.
+LaTeX Warning: File c7056.cmap not found on input line 26.
 
 
-LaTeX Warning: File c707f.cmap not found on input line 25.
+LaTeX Warning: File c707f.cmap not found on input line 26.
 
 
-LaTeX Warning: File c706b.cmap not found on input line 25.
+LaTeX Warning: File c706b.cmap not found on input line 26.
 
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 25.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 26.
 <<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+txsya on input line 25.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 26.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 
-LaTeX Warning: File u.cmap not found on input line 25.
+LaTeX Warning: File u.cmap not found on input line 26.
 
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 25.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 26.
 (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 25.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 26.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 25.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 26.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 ) [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+txss on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+txss on input line 26.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 11.4427pt on input line 25.
+(Font)              scaled to size 11.4427pt on input line 26.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 15.25694pt on input line 25.
-LaTeX Font Info:    Try loading font information for C70+hei on input line 25.
+(Font)              scaled to size 15.25694pt on input line 26.
+LaTeX Font Info:    Try loading font information for C70+hei on input line 26.
  (C:\CTEX\CTeX\tex\latex\CJK\UTF8\c70hei.fd
 File: c70hei.fd 2009/09/23 4.8.2
 )
 
-LaTeX Warning: File c709a.cmap not found on input line 25.
+LaTeX Warning: File c709a.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7069.cmap not found on input line 25.
+LaTeX Warning: File c7069.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7081.cmap not found on input line 25.
+LaTeX Warning: File c7081.cmap not found on input line 26.
 
 
-LaTeX Warning: File c706a.cmap not found on input line 25.
+LaTeX Warning: File c706a.cmap not found on input line 26.
 
 
-LaTeX Warning: File c706e.cmap not found on input line 25.
+LaTeX Warning: File c706e.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7070.cmap not found on input line 25.
+LaTeX Warning: File c7070.cmap not found on input line 26.
 
 
-LaTeX Warning: File c707d.cmap not found on input line 25.
+LaTeX Warning: File c707d.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7086.cmap not found on input line 25.
+LaTeX Warning: File c7086.cmap not found on input line 26.
 
 
-LaTeX Warning: File c7082.cmap not found on input line 25.
+LaTeX Warning: File c7082.cmap not found on input line 26.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 \makecover
+l.26 \makecover
                 [1
 
 
@@ -1255,11 +1259,11 @@ l.25 \makecover
 
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <16.06> on input line 25.
+LaTeX Font Info:    Calculating math sizes for size <16.06> on input line 26.
 pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 \tableofcontents
+l.29 \tableofcontents
                       [2
 
 
@@ -1387,7 +1391,7 @@ LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 83.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8] (e:\thesis_for_jiangtao\data/chap03.tex <figures/compare_distribution.pdf, id=616, 635.26837pt x 153.86383pt>
+ [8] (e:\thesis_for_jiangtao\data/chap03.tex <figures/compare_distribution.pdf, id=667, 635.26837pt x 153.86383pt>
 File: figures/compare_distribution.pdf Graphic file (type pdf)
  <use figures/compare_distribution.pdf>
 Package pdftex.def Info: figures/compare_distribution.pdf used on input line 17.
@@ -1399,7 +1403,7 @@ Package pdftex.def Info: figures/compare_distribution.pdf used on input line 17.
 
  <e:/thesis_for_jiangtao/figures/compare_distribution.pdf>]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 29.
- <figures/tfs.pdf, id=638, 1731.46875pt x 1017.8025pt>
+ <figures/tfs.pdf, id=689, 1731.46875pt x 1017.8025pt>
 File: figures/tfs.pdf Graphic file (type pdf)
  <use figures/tfs.pdf>
 Package pdftex.def Info: figures/tfs.pdf used on input line 35.
@@ -1407,44 +1411,114 @@ Package pdftex.def Info: figures/tfs.pdf used on input line 35.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <e:/thesis_for_jiangtao/figures/tfs.pdf>])
+ [10 <e:/thesis_for_jiangtao/figures/tfs.pdf>] <figures/set_location.pdf, id=707, 3103.595pt x 639.38875pt>
+File: figures/set_location.pdf Graphic file (type pdf)
+ <use figures/set_location.pdf>
+Package pdftex.def Info: figures/set_location.pdf used on input line 97.
+(pdftex.def)             Requested size: 422.52055pt x 87.04547pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.5}) has been already used, duplicate ignored
+ [11pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.41 \include{data/chap03}
-                          pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.6}) has been already used, duplicate ignored
+l.103 
+      pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.41 \include{data/chap03}
-                          pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.7}) has been already used, duplicate ignored
+l.103 
+      pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.41 \include{data/chap03}
+l.103 
+       <e:/thesis_for_jiangtao/figures/set_location.pdf>] <figures/distance_compare.pdf, id=723, 1845.89626pt x 2082.78125pt>
+File: figures/distance_compare.pdf Graphic file (type pdf)
+ <use figures/distance_compare.pdf>
+Package pdftex.def Info: figures/distance_compare.pdf used on input line 106.
+(pdftex.def)             Requested size: 422.52055pt x 476.74141pt.
+
+
+LaTeX Warning: File ot199.cmap not found on input line 113.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <e:/thesis_for_jiangtao/figures/distance_compare.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.147 
+      pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.147 
+      ] <figures/framework.pdf, id=769, 608.57661pt x 147.55125pt>
+File: figures/framework.pdf Graphic file (type pdf)
+ <use figures/framework.pdf>
+Package pdftex.def Info: figures/framework.pdf used on input line 162.
+(pdftex.def)             Requested size: 469.47047pt x 113.82643pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <e:/thesis_for_jiangtao/figures/framework.pdf>]
+
+LaTeX Warning: File c709c.cmap not found on input line 201.
+
+
+LaTeX Warning: Reference `subsec:2' on page 15 undefined on input line 221.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.222 
+      ]
+
+LaTeX Warning: Reference `eq:10' on page 16 undefined on input line 223.
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.42 \include{data/chap03}
+                          pdfTeX warning (ext4): destination with the same identifier (name{equation.3.3.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.42 \include{data/chap03}
                           ] (e:\thesis_for_jiangtao\data/chap04.tex
 
 LaTeX Warning: File c709e.cmap not found on input line 16.
 
-) [12
+) [17
 
 
 
 
-] (e:\thesis_for_jiangtao\data/chap05.tex) [13
+] (e:\thesis_for_jiangtao\data/chap05.tex) [18
 
 
 
 
-] (e:\thesis_for_jiangtao\data/chap06.tex) [14
+] (e:\thesis_for_jiangtao\data/chap06.tex) [19
 
 
 
 
-] (e:\thesis_for_jiangtao\data/ack.tex) [15
+] (e:\thesis_for_jiangtao\data/ack.tex) [20
 
 
 
@@ -1453,7 +1527,7 @@ LaTeX Warning: File c709e.cmap not found on input line 16.
 ] (e:\thesis_for_jiangtao\main.bbl
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12.045> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 39.
- [16
+ [21
 
 
 
@@ -1461,7 +1535,7 @@ LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12.045> not available
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
+ [22]
 Underfull \hbox (badness 1496) in paragraph at lines 196--199
 []\OT1/txr/m/n/12.045 Yann Le-Cun, Yoshua Ben-gio, Ge-of-frey Hin-ton.  Deep learn-ing[J].  na-ture, 2015,
  []
@@ -1469,10 +1543,13 @@ Underfull \hbox (badness 1496) in paragraph at lines 196--199
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18])
+ [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19] (e:\thesis_for_jiangtao\data/paper.tex
+ [24])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25] (e:\thesis_for_jiangtao\data/paper.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
@@ -1482,20 +1559,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-) [20
+) [26
 
 
 
 
 ]
 \tf@thm=\write7
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
  (e:\thesis_for_jiangtao\main.aux (e:\thesis_for_jiangtao\data/chap01.aux) (e:\thesis_for_jiangtao\data/chap02.aux) (e:\thesis_for_jiangtao\data/chap03.aux) (e:\thesis_for_jiangtao\data/chap04.aux) (e:\thesis_for_jiangtao\data/chap05.aux) (e:\thesis_for_jiangtao\data/chap06.aux) (e:\thesis_for_jiangtao\data/ack.aux) (e:\thesis_for_jiangtao\data/paper.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 28713C7C9B1C269348B4267FEBD5A93D;4567.
+(rerunfilecheck)             Checksum: 34C35EA5708F1AF49749F114800E9A20;6195.
 
 
 LaTeX Warning: There were undefined references.
@@ -1505,17 +1582,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16244 strings out of 495354
- 227328 string characters out of 3183859
- 320180 words of memory out of 3000000
- 18163 multiletter control sequences out of 15000+200000
- 198308 words of font info for 578 fonts, out of 3000000 for 9000
+ 16715 strings out of 495354
+ 234994 string characters out of 3183859
+ 324806 words of memory out of 3000000
+ 18478 multiletter control sequences out of 15000+200000
+ 232345 words of font info for 678 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
- 51i,19n,44p,3614b,2200s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf>{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (28 pages, 1067110 bytes).
+ 51i,19n,44p,3614b,2290s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxbmi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txbsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (34 pages, 2796006 bytes).
 PDF statistics:
- 1225 PDF objects out of 1440 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
- 628 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1448 PDF objects out of 1728 (max. 8388607)
+ 221 named destinations out of 1000 (max. 500000)
+ 719 words of extra memory for PDF output out of 10000 (max. 10000000)
 
