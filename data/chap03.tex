@@ -26,7 +26,7 @@
 模糊集（Fuzzy sets， FS） 是 Zadeh 教授 1965年提出的概念，通过建立适当的隶属度函数（Membership function， MF）来描述对象的不确定性 \cite{zadeh1965fuzzy}。 常见的隶属度函数有：三角形MF，梯形MF，截断高斯MF和钟形MF等。 FS 最常用和最基本的 MF 是三角形MF。 因此，文中利用三角形模糊集来定义三角形模糊集值数据模型。
 
 \begin{definition}
-\label{define1}
+    \label{define1}
     三角形模糊集值（Triangular Fuzzy Set Valued, TFSV）模型的定义
 \end{definition}
 三角形模糊集值数据由以下三个关键参数组成：$(a^-,0)$，$(a^m,1)$ 和 $(a^+,0)$。如图~\ref{fig:tfs} 所示，  几何上，$(a^-,0)$ 和 $(a^+,0)$ 组成三角形MF的下边缘；代数上，$(a^-,0)$ 和 $(a^+,0)$ 形成一个区间值，确保一定的变化范围。$(a^m,1)$是TFSV 数据的顶点，表征 FS 的最高置信度。
@@ -189,62 +189,162 @@
 
 
 \subsubsection{影像单元的TFSV 数据建模}
-尽管文献\cite{he2016remote} 中已经证明：对于影像分割单元，区间值的特征比均值特征更有效，但是影像分割单元的不确定性不能被充分的表达。因此，文中使用定义 \ref{define1} 的TFSV 数据模型$\bm{\tilde{A_i}}$  来提取影像单元$\bm{B_i}$ 的特征： 
+尽管文献\cite{he2016remote} 中已经证明：对于影像分割单元，区间值的特征比均值特征更有效，但是影像分割单元的不确定性不能被充分的表达。因此，文中使用定义 \ref{define1} 的TFSV 数据模型$\bm{\tilde{A_i}}$  来提取影像单元$\bm{B_i}$ 的特征：
 \begin{enumerate}[ 1)]
     \item 基于影像分割单元$\bm{B_i}$内像素的均值和方差特性，可以获得一个$p$ 维的区间值向量，记为$\bm{X_i}$，如下：
-        \begin{equation}\label{eq:eq-1}
-          \bm{X_i} = [\bm{X_{i}^{down}},\bm{X_i^{up} }] = [\max{\lbrace 0,\bm{\mu_i} - \alpha \times \bm{\sigma_i} \rbrace}, \bm{\mu_i} + \alpha \times \bm{\sigma_i}]
-        \end{equation}
-  
-        其中$\bm{\mu_i} = [\mu_{1}, \mu_2,\cdots,\mu_p]^T$，$\bm{\sigma_i} = [\sigma_{1},\sigma_2,\cdots,\sigma_p] ^T$ 是第$i$个分割单元$\bm{B_i}$ 的均值和方差，$\alpha$ 是控制区间值大小的超参数，$p$ 是遥感影像的波段数。
+          \begin{equation}\label{eq:eq-1}
+              \bm{X_i} = [\bm{X_{i}^{down}},\bm{X_i^{up} }] = [\max{\lbrace 0,\bm{\mu_i} - \alpha \times \bm{\sigma_i} \rbrace}, \bm{\mu_i} + \alpha \times \bm{\sigma_i}]
+          \end{equation}
+
+          其中$\bm{\mu_i} = [\mu_{1}, \mu_2,\cdots,\mu_p]^T$，$\bm{\sigma_i} = [\sigma_{1},\sigma_2,\cdots,\sigma_p] ^T$ 是第$i$个分割单元$\bm{B_i}$ 的均值和方差，$\alpha$ 是控制区间值大小的超参数，$p$ 是遥感影像的波段数。
     \item 分割单元是邻近同质像素点的集合，基于统计学特性，等式\ref{eq:eq-1} 中的向量$\bm{X_i} = [\bm{X_{i}^{down}},\bm{X_i^{up} }]$ 除了少数异常点外包含分割单元$\bm{B_i}$中的绝大部分点。因此，从$\bm{X_i}$ 中导出参数 $(\bm{X_{i}^{down}},0)$ 和$(\bm{X_i^{up}},0)$来构造$\bm{\tilde{A_i}}$ 的底边。
     \item $\bm{\tilde{A_i}}$ 的顶点由$(\bm{med_i},1)$ 组成。因中值不受极值的影响，并且对噪声点和异常值具有很高的鲁棒性，这里$\bm{med_i}$ 取$\bm{B_i}$ 的中值。
-  \end{enumerate}
+\end{enumerate}
 
 
-  类似地，影像的每个分割单元都可以被表征为一个 TFSV 数据模型，分割单元的集合$\bm{SS} = \lbrace \bm{B_1}, \bm{B_2},\bm{\cdots}, \bm{B_n} \rbrace$ 可以被表示为：
+类似地，影像的每个分割单元都可以被表征为一个 TFSV 数据模型，分割单元的集合$\bm{SS} = \lbrace \bm{B_1}, \bm{B_2},\bm{\cdots}, \bm{B_n} \rbrace$ 可以被表示为：
 
-\begin{equation}\label{eq:6}
-  \bm{SS} \to \lbrace \bm{\tilde{A_1}}, \bm{\tilde{A_2}},\bm{\cdots}, \bm{\tilde{A_n}} \rbrace
+\begin{equation}\label{eq:eq-2}
+    \bm{SS} \to \lbrace \bm{\tilde{A_1}}, \bm{\tilde{A_2}},\bm{\cdots}, \bm{\tilde{A_n}} \rbrace
 \end{equation}
 
 其中$\bm{SS}$ 是一个$n \times p$ 矩阵，$\bm{\tilde{A_i}}$ 是$\bm{B_i}$ 对应的$p$ 维TFSV 数据，$n$ 表示分割单元的数目。
 
 
-\subsection{面向对象的模糊聚类}
+\subsection{基于TFSV 数据模型的面向对象模糊聚类方法}
 \label{subsec::chap03-3-2}
 
 
 \subsubsection{区间二型模糊隶属度}
 \label{subsec::chap03-3-3-2-1}
+区间二型模糊聚类算法(Interval type 2 fuzzy clustering method, IT2FCM) 使用一个区间值来表示隶属度值。文献\cite{hwang2007uncertain} 中使用两个模糊化指数$m_1$ 和$m_2$ 得到区间二型隶属度函数(Interval type 2 membership function，IT2MF) 的上界和下界，从而将一型模糊集(Type 1 fuzzy sets, T1FS) 扩展为二型模糊集(Type 2 fuzzy sets, T2FS)。然而，IT2FCM 算法对模糊指数$m_1$ 和$m_2$ 的取值敏感。与传统FCM 算法相比，不恰当的$m_1$ 和$m_2$ 取值会导致更差的实验结果。因此，基于公式~\ref{eq:interval} 中新定义的区间值距离度量，类似FCM 算法，本文仅使用一个模糊指数$m$ 来表达IT2MF。
 
-The IT2FCM algorithm, whose membership degree is an interval value, can handle the uncertainty of membership values. \cite{hwang2007uncertain} used two fuzzifiers $m_1$ and $m_2$ {to handle uncertainties and found a proper maximum fuzzy boundary so that the membership degrees were expanded to IT2FSs}. However, the IT2FCM algorithm is sensitive to $m_1$ and $m_2$, and inappropriate $m_1$ and $m_2$ will yield poor performance compared with the traditional FCM algorithm. Thus, a new interval distance metric is introduced in Section \ref{subsec:2}. Then, similarly to the FCM algorithm, {a single fuzzifier $m$ is adopted to measure the interval type-2 MF.}
 
-The metric for multidimensional triangular FS valued vectors is introduced by using the definition in Equation \ref{eq:10}.
+假定样本$\bm{\tilde{X}} = (\tilde{X_1}, \tilde{X_2},\cdots, \tilde{X_p})^T$ 和聚类中心$\bm{\tilde{V}} = (\tilde{V_1}, \tilde{V_2},\cdots, \tilde{V_p})^T$ 是两个形如公式~\ref{eq:eq-2} 的$p$ 维TFSV 数据，其中$\tilde{X_i}$ $(1 \leq i \leq p)$ 是一个一维TFSV，由$(X_{i}^{down}, 0)$，$(X_{i}^{up}, 0)$和$(X_i^{med}, 1)$ 这三个参数构成；类似地，$\tilde{V_i}$ 由$(V_{i}^{down}, 0)$，$(V_{i}^{up}, 0)$ 和$(V_i^{med}, 1)$三个参数组成。$\tilde{X_i}$ 和$\tilde{V_i}$ 的$0-cut$ 和$1-cut$ 豪斯多夫距离分别为：
 
-Assume that sample data $\bm{\tilde{X}} = (\tilde{X_1}, \tilde{X_2},\cdots, \tilde{X_p})^T$ and  cluster center $\bm{\tilde{V}} = (\tilde{V_1}, \tilde{V_2},\cdots, \tilde{V_p})^T$ are two $p$-dimensional triangular FS valued data as defined in Equation \ref{eq:6}, where $\tilde{X_i}$ $(1 \leq i \leq p)$ is a triangular FS constructed using three parameters, $(X_{i}^{down}, 0)$, $(X_{i}^{up}, 0)$, and $(X_i^{med}, 1)$; and $\tilde{V_i}$ is a triangular FS constructed using three parameters, $(V_{i}^{down}, 0)$, $(V_{i}^{up}, 0)$, and $(V_i^{med}, 1)$. The $0$-cut and $1$-cut Hausdorff distance between $\tilde{X_i}$ and $\tilde{V_i}$ are expressed as
+\begin{equation}\label{eq:eq-3}
+    \begin{split}
+        d_0 (\tilde{X_i}, \tilde{Y_{i}}) = \max \Big \lbrace \abs{X_i^{down} - Y_i^{down}}, \abs{X_i^{up} - Y_i^{up}} \Big \rbrace
+    \end{split}
+\end{equation}
+和
+\begin{equation}\label{eq:eq-4}
+    \begin{split}
+        d_1 (\tilde{X_i}, \tilde{V_{i}}) = \Big\lbrace |X_i^{med} - V_i^{med}| \Big\rbrace
+    \end{split}
+\end{equation}
+$\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V_i})$ 即为：
+\begin{equation}\label{eq:eq-5}
+    \begin{split}
+        d_{I} (\tilde{X_i}, \tilde{V_i}) = [\min \lbrace d_0 (\tilde{X_i}, \tilde{V_{i}}) , d_1 (\tilde{X_i}, \tilde{V_{i}}  \rbrace,\max  \lbrace d_0 (\tilde{X_i}, \tilde{V_{i}}) , d_1 (\tilde{X_i}, \tilde{V_{i}}  \rbrace]
+    \end{split}
+\end{equation}
+从而，$\bm{\tilde{X}}$ 和$\bm{\tilde{V}}$ 间的区间值距离$d_{I} (\bm{\tilde{X}}, \bm{\tilde{V}})$ 可以被表示为：
 
-\begin{equation}\label{eq:7}
-\begin{split}
-  d_0 (\tilde{X_i}, \tilde{Y_{i}}) = \max \Big \lbrace \abs{X_i^{down} - Y_i^{down}}, \abs{X_i^{up} - Y_i^{up}} \Big \rbrace
-   \end{split}
+\begin{equation}\label{eq:eq-6}
+    \begin{split}
+        d_{I} (\bm{\tilde{X}}, \bm{\tilde{V}}) = \max \lbrace d_{I} (\tilde{X_i}, \tilde{V_i}) \rbrace, i =1.2.\cdots,p
+    \end{split}
 \end{equation}
 
-and
+与FCM 算法类似，新提出的面向对象的TFSV-IT2FCM 算法求解需要最小化以下目标函数:
 
-\begin{equation}\label{eq:8}
-\begin{split}
-  d_1 (\tilde{X_i}, \tilde{V_{i}}) = \Big\lbrace |X_i^{med} - V_i^{med}| \Big\rbrace
-   \end{split}
+\begin{equation}\label{eq:eq-7}
+    J(\bm{U};\bm{V}) = \sum _{j=1} ^{n} \sum_{i=1} ^K (U_{ij})^m d^2(X_i,V_j)
+\end{equation}
+其中$m (m>1)$ 是模糊指数，$d^2(X_i,V_j) = d_{I} (\tilde{X_i}, \tilde{V_j})$ 是依据公式~\ref{eq:interval} 定义的样本$X_i$ 和$V_j$ 间的区间值距离。为了最小化目标函数$J$，有：
+
+\begin{equation}\label{eq:12}
+    \begin{split}
+        U_{ij} = \frac{1}{\sum_{k=1}^K {(\frac{d_{ji}}{d_{ki}})}^{\frac{2}{m-1}}}
+    \end{split}
 \end{equation}
 
-\subsection{基于TFSV 数据的IT2FCM 算法}
+在TFSV-IT2FCM 算法中，模糊指数$m$ 的上界和下界以及区间值$d^2(X_i,V_j)$ 用来描述不确定性。区间隶属度的上界$\overline{u}_{ij}$ 和下界$\underline{u}_{ij}$ 分别为：
+
+\begin{equation}\label{eq:13}
+    \begin{split}
+        \overline{u}_{ij} = \max \Bigg \lbrace \frac{1}{\sum_{k=1}^K {(\frac{d_{ji}^0}{d_{ki}^0})}^{\frac{2}{m-1}}}, \frac{1}{\sum_{k=1}^K {(\frac{d_{ji}^1}{d_{ki}^1})}^{\frac{2}{m-1}}} \Bigg \rbrace
+    \end{split}
+\end{equation}
+和
+\begin{equation}\label{eq:14}
+    \begin{split}
+        \underline{u}_{ij} = \min \Bigg \lbrace \frac{1}{\sum_{k=1}^K {(\frac{d_{ji}^0}{d_{ki}^0})}^{\frac{2}{m-1}}}, \frac{1}{\sum_{k=1}^K {(\frac{d_{ji}^1}{d_{ki}^1})}^{\frac{2}{m-1}}} \Bigg \rbrace
+    \end{split}
+\end{equation}
+其中$d_{ji}^0$ 和$d_{ji}^1$ 分别是$\tilde{X_i}$ 和$\tilde{V_j}$ 的$0-cut$ 距离和$1-cut$ 距离度量，由区间值距离$d_{I} (\tilde{X_i}, \tilde{V_j})$ 计算得出。
+
+
+\subsubsection{TFSV-IT2FCM 算法}
+\label{subsubsec::chap03-3-3-2-2}
+与FCM 算法不同，文中提出的TFSV-IT2FCM 算法核心是一个IT2FS，无法直接通过降型去模糊化，需要先计算IT2FS 的质心将IT2FS 转换为T1FS，再去模糊化得到明确集\cite{karnik2001centroid}。 文中使用EKM 降型算法\cite{wu2009enhanced} 降型和去模糊化，从而获取精确的聚类中心。降型后的聚类中心点可表示为
+
+\begin{equation}\label{eq:17}
+    \begin{split}
+        \bm{V_j} = [\bm{V_j^L}, \bm{V_j^R}]
+    \end{split}
+\end{equation}
+通过去模糊化后得到的明确集聚类中心为：
+
+\begin{equation}\label{eq:18}
+    \begin{split}
+        \bm{V_j} = \frac{\bm{V_j^L}+\bm{V_j^R}}{2}
+    \end{split}
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{tfsvit2}
+    \caption{TFSV-IT2FCM 算法流程图}
+    \label{fig:tfsvit2}
+\end{figure}
+
+整个TFSV-IT2FCM 算法框架如图~\ref{fig:tfsvit2} 所示, 算法的详细描述如下：
+\begin{enumerate}[(1)]
+    \item 初始化
+
+          初始化实验聚类参数个数$K (2 \leq K \leq N)$，在实验$1$、$2$、$3$ 中分别设置$K=5$、$5$ 和$6$。 初始化模糊指数$m = 2.0 \; (1 < m < \infty)$ , 迭代阈值$\varepsilon = 0.0001 \;(\varepsilon > 0)$，最大迭代次数$T = 500$，初始 $t = 1$，初始化区间膨胀参数$\alpha = 0.8$。其中超参数$m$ 和$\alpha$ 依赖具体的问题和实验数据。在本实验中， 当$m = 2.0$ 和$\alpha = 0.8$能取得最优实验效果。
+
+    \item TFSV 数据建模
+
+          使用SLIC 算法获取影像的分割单元$\bm{SS} = \lbrace \bm{B_1}, \bm{B_2},\bm{\cdots}, \bm{B_n} \rbrace$ ，然后转化为TFSV 类型数据$\lbrace \bm{\tilde{X_1}},\bm{\tilde{X_2}},\cdots, \bm{\tilde{X_n}}  \rbrace$ 作为训练样本。初始化TFSV 的聚类中心$\bm{\tilde{V}} = \lbrace \bm{\tilde{V_1}}, \bm{\tilde{V_2}}, \cdots, \bm{\tilde{V_K}} \rbrace$为 $\bm{\tilde{V^0}}$，其中$\bm{\tilde{V_k^0}},(1 \leq k \leq K)$ 由参数$(v_k^l, 0)$、$(v_k^r, 0)$ 和$(v_k^{mid}, 1)$构成。
+
+    \item 聚类迭代更新
+
+          在TFSV-IT2FCM 算法迭代中得到模糊划分矩阵$\bm{U} = [U_{ij}]_{n \times K}$，其中 $U_{ij} = [ \underline{u}_{ij}, \overline{u}_{ij}]$ 如公式\ref{eq:13} 和\ref{eq:14} 所示。聚类中心$[\tilde{v_l},\tilde{v_r}]$ 由EKM 算法降型获取。然后，将降型后的聚类中心去模糊化，得到明确集的聚类中心为
+          \begin{equation}\label{eq:19}
+              \tilde{v} = \frac{\tilde{v_l}+ \tilde{v_r}}{2}
+          \end{equation}
+
+    \item 迭代中止
+
+          如果迭代过程满足 $||\bm{\tilde{V}^t} - \bm{\tilde{V}^{t+1}}|| \leq \varepsilon$ 或$t \geq T$ 即停止迭代； 否则，令$t = t+1$ 并跳到步骤 (3) 。距离$||\bm{\tilde{V}^t} - \bm{\tilde{V}^{t+1}}||$ 可由$d_I(\bm{\tilde{V}^t},\bm{\tilde{V}^{t+1}})$ 取均值得到，即
+          \begin{equation}\label{eq:20}
+              ||\bm{\tilde{V}^t} - \bm{\tilde{V}^{t+1}}|| = \frac{d_0(\bm{\tilde{V}^t}, \bm{\tilde{V}^{t+1}})+ d_1(\bm{\tilde{V}^t}, \bm{\tilde{V}^{t+1}})}{2}
+          \end{equation}
+
+    \item 硬划分
+
+          区间二型的模糊划分矩阵$\bm{U} = [U_{ij}]_{n \times K}$ 可以降型为
+          \begin{equation}\label{eq:21}
+              U_{ij} = \frac{\underline{u}_{ij} + \overline{u}_{ij}}{2}
+          \end{equation}
+          其中 $U_{ij} = [\underline{u}_{ij}, \overline{u}_{ij}]$。然后，求出$\bm{\tilde{X}_i}$ 到聚类中心$\bm{\tilde{V}_k}$ 的最大隶属度$U_{ik}$ ，其中$k = 1, 2,\cdots, K$。根据最大隶属度原则，将$\bm{\tilde{X}_i}$ 划分到类别$\bm{\tilde{V}_k}$ 。
+
+
+
+\end{enumerate}
+
+
+\subsection{后处理}
 \label{subsec::chap03-3-3}
 
+经过像元分割与非监督模糊聚类，可以得到遥感影像的初始分类结果。使用CORINE 地物覆被处理系统\footnote{CORINE (Coordination of Information on the Environment) 是欧洲委员会于1985年提出的环境信息协调系统，其包含44个类别的地物覆被，常用于地物覆被的后处理。官方网址：\url{https://land.copernicus.eu/pan-european/corine-land-cover}.} 对初始聚类结果进行人工类别合并，实现基于高分影像识别的高级地物覆被分类\cite{zhang2011progress}。
 
 \section{实验结果}
 \label{sec::chap03-4}
-结果 数据 图表 balabala。。。。
+本章新提出的面向
 
 \section{本章小结}
 \label{sec::chap03-5}
