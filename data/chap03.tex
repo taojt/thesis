@@ -543,8 +543,6 @@ IV-FCM 算法和TFSV-IT2FCM 算法的可视化结果分别如图~\ref{fig:hengqi
 \end{figure}
 
 
-Similarly, the accuracy assessment obtained by TFSV-IT2FCM in Sanmenxia area showed { an overall classification accuracy of $90.42\%$  with the Kappa coefficient $0.8827$,} an increased nearly $7\%$ over the IV-FCM results.
-
 \begin{table*}[htbp]
     \centering
     \caption{三门峡地区分类结果表}
@@ -569,8 +567,12 @@ Similarly, the accuracy assessment obtained by TFSV-IT2FCM in Sanmenxia area sho
     \end{adjustbox}
 \end{table*}
 
+高分二号卫星拍摄的三门峡城市中心区域如图~\ref{fig:sanmenxia} 所示，由原始合成图~\ref{fig:sanmenxia}(a) 中可知，建筑、道路与农田交错复杂。与TFSV-IT2FCM 算法相比， IV-FCM 算法无法精确的区分图中右下角区域的建筑、道路与农田类别。图~\ref{fig:sanmenxia}(d) 中可视化结果表明TFSV-IT2FCM 算法对这三类可以产生明确的边界，分割效果更好。
+
+同样地，随机采样$1553556$ 个像素点生成参考ground truth 图，在三门峡地区对六个地物类别上统计生产者精度和用户精度，结果如表~\ref{tab:sanmenxia_result} 所示, TFSV-IT2FCM 算法对“草地” 的用户精度有近$8\%$ 的绝对值提升。其他类别精度数据也有不同幅度的提升。表~\ref{tab:sanmenxia_oa} 中所示TFSV-IT2FCM 算法在三门峡研究区获得的 OA 精度为$90.42\%$ ，捅死Kappa 系数达到$0.8827$ ，整体比IV-FCM 算法提升近$7\%$ 。
+
 \begin{table}[htbp]
-    \caption{三门峡地区分类精度表}\label{tab:4}
+    \caption{三门峡地区分类精度表}\label{tab:sanmenxia_oa}
     \centering
     \footnotesize
     \begin{tabular}{llll}
@@ -583,6 +585,8 @@ Similarly, the accuracy assessment obtained by TFSV-IT2FCM in Sanmenxia area sho
     \end{tabular}
 \end{table}
 
+为验证文中提出的TFSV-IT2FCM 算法的有效性，文中分别在神湾、横琴和三门峡三个研究区进行高分影像模糊聚类的地物分割sh识别实验。与IV-FCM 算法和其他模糊聚类方法比较得到的可视化结果和量化结果均表明文中提出的TFSV-IT2FCM 算法的有效性，其更能区分遥感影像相似光谱不同类别地物的边界。 同时，TFSV-IT2FCM 算法在SPOT 5 影像（神湾和横琴地区）和高分二号影像（三门峡地区）上的聚类分割均能取得一定的识别优势，可见其不受影像数据源的影像。
+
 \section{本章小结}
 \label{sec::chap03-5}
-总结 balabala..
+本章考虑遥感影像“同物异谱”和“同谱异物”的固有的不确定性，创新性的定义TFSV 的数据模型来提取影像分割单元的内在特征，同时针对该数据模型提出一种新的模糊集间的区间距离来刻画两个三角形模糊集之间的相似性。并提出TFSV-IT2FCM 算法改进现有面向对象的遥感影像模糊聚类分割方法。分别在SPOT 5影像和高分二号影像上进行地物聚类分割实验，实验可视化结果和数值量化结果均证明了文中提出的TFSV-IT2FCM 算法的有效性，其确实能更好刻画遥感影像数据的不确定性，实现更好的分割识别结果。
