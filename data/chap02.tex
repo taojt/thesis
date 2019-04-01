@@ -4,7 +4,7 @@
 %%% TeX-master: t
 %%% End:
 
-\chapter{遥感影像识别分类基础方法介绍}
+\chapter{遥感影像识别分类基础原理}
 \label{cha:chap02}
 %目标地物的识别分类一直是遥感影像解译中的重大任务。遥感影像分类任务依据是否使用地物类别先验知识分为监督分类和非监督分类。由于遥感影像多以非结构化、不精确的形式存在，缺乏完善的标记类别的规整数据。传统影像分割识别方法多以无监督的聚类分割辅以人工后处理的方法来完成遥感影像的解译工作。遥感影像数据固有的不确定性（“混合像元”、“同物异谱”和“同谱异物”等）使得模糊C-均值聚类方法成为遥感影像无监督聚类分割的优选方法，被广泛应用到遥感影像聚类分割识别任务中\cite{he2016remote}。另一方面，深度神经网络因其在特征提取方面效果显著，能够较好提取遥感影像复杂数据结构的隐含特征信息。并且，基于生成对抗网络模型的神经网络模型能够解决遥感影像分割中样本数不足的问题，因此具有重要的研究意义。
 
@@ -12,7 +12,7 @@
 
 \section{遥感影像的模糊聚类分割基础}
 \label{sec:chap02-1}
-本课题中处理的遥感影像数据均为高分辨率遥感影像数据，文中主要研究面向对象的遥感影像模糊聚类方法。面向对象的模糊聚类方法主要包含影像分割，模糊聚类和后处理三个部分。
+本课题中处理的遥感影像数据均为高分辨率遥感影像数据，文中主要研究面向对象的遥感影像模糊聚类方法。面向对象的模糊聚类方法主要包含影像分割，模糊聚类和后处理三个部分。后处理部分包含借助辅助软件人工处理相关的内容，不是本文研究重点。下面依次介绍影像分割和模糊聚类方法相关知识与算法原理。
 
 \subsection{影像分割方法}
 \label{subsec:chap02-1-1}
@@ -70,9 +70,9 @@ SLIC 算法将彩色图像转化为CIELAB颜色空间和XY坐标下的5维特征
 \begin{equation}
   \label{eq:2-5}
   \begin{split}
-  d_c &= \sqrt{(l_j-l_i)^2 + (a_j-a_i)^2 + (b_j - b_i)^2} \\
-  d_s &= \sqrt{(x_j-x_i)^2 + (y_j-y_i)^2} \\
-  D &= \sqrt{(\frac{d_c}{N_c})^2 + (\frac{d_s}{N_s})^2} 
+    d_c &= \sqrt{(l_j-l_i)^2 + (a_j-a_i)^2 + (b_j - b_i)^2} \\
+    d_s &= \sqrt{(x_j-x_i)^2 + (y_j-y_i)^2} \\
+    D &= \sqrt{(\frac{d_c}{N_c})^2 + (\frac{d_s}{N_s})^2}
   \end{split}
 \end{equation}
 式中，$d_c$ 表示颜色距离，$d_s$ 表示空间距离， $N_s$ 表示类内最大空间距离，定义为
@@ -83,38 +83,67 @@ SLIC 算法将彩色图像转化为CIELAB颜色空间和XY坐标下的5维特征
 $N_c$ 为最大的颜色距离，取值随具体的图片而定，实验中一般取一个固定常数$m$ （取值范围为$(1\leq m \leq 40)$，一般取$10$。$D$ 表示总距离，即最终的距离度量为：
 \begin{equation}
   \label{eq:2-7}
-  D = \sqrt{(\frac{d_c}{m})^2 + (\frac{d_s}{S})^2} 
+  D = \sqrt{(\frac{d_c}{m})^2 + (\frac{d_s}{S})^2}
 \end{equation}
 通过迭代优化直至误差收敛即可完成图像的超像素分割。图~\ref{fig:slic} 所示为基于SLIC 算法分别将图像大约分成$64$，$256$ 和$1024$ 三个尺寸的结果。
 
 
 
-\subsection{模糊聚类方法概述}
+\subsection{模糊聚类方法}
 \label{subsec:chap02-1-2}
-向对象的模
 
+模糊C 均值(fuzzy c-means, FCM)聚类方法是结合模糊数学不确定性理论对K-means 聚类方法的改进。与K-means 算法中依据欧式距离作为类别划分依据的硬分类不同，FCM 算法是以隶属度为类别划分依据的软分类方法。FCM 方法是一种柔性的模糊划分，因此FCM 比K-means 算法更能突出遥感影像不确定性的特点。在复杂、高维遥感影像实际应用中，FCM 算法效果显著优于K-means 算法。
 
-本模板不再预先装载任何绘图包（如 \textsf{pstricks，pgf} 等），完全由你自己来决定。
-个人觉得 \textsf{pgf} 不错，不依赖于 Postscript。 此外还有很多针对 \LaTeX{} 的
-GUI 作图工具，如 XFig(jFig), WinFig, Tpx, Ipe, Dia, Inkscape, LaTeXPiX,
-jPicEdt, jaxdraw 等等。
+介绍FCM 方法前，先引入模糊集合中隶属度函数的概念。隶属度函数表示一个对象$x$ 属于集合$A$ 的程度的函数，记作$\mu_{A}(x)$ 。其自变量是可能属于集合$A$ 的所有元素，因变量是$[0,1]$ 区间内的值，即满足$0 \leq \mu_{A}(x) \leq 1$ 。$\mu_{A}(x) = 0$ 表示元素$x$ 不属于集合$A$，等价于普通集合中$x \notin A$；$\mu_{A}(x) = 1$ 则表示$x$ 完全隶属于$A$，等价于$x \in A$。一个定义在论域$X$ 上的隶属度函数就定义了一个模糊集，即模糊集$A$ 可由其成员$x$ 的隶属函数$\mu (x)$ 来刻画，如式~\ref{eq:2-8}：
+\begin{equation}
+  \label{eq:2-8}
+  A = \{(x,\mu (x)) | \forall x \in X,\mu (x) \in [0,1] \}
+\end{equation}
 
-强烈推荐《\LaTeXe 插图指南》！关于子图形的使用细节请参看 \textsf{subfig} 的说明文档。
+有了模糊集合与隶属度的概念，一个元素属于模糊集合就不是硬性的了。对应到聚类问题中，可以把聚类生成的簇看作模糊集合，因此，每个样本点隶属于簇的隶属度就是$[0,1]$ 区间内的值。
 
-一般图形都是处在浮动环境中。之所以称为浮动是指最终排版效果图形的位置不一定与源文
-件中的位置对应\footnote{This is not a bug, but a feature of \LaTeX!}，这也是刚使
-用 \LaTeX{} 同学可能遇宏包，
-%它提供了 \texttt{[H]} 参数。比如图~\ref{fig:xfig1}。
-%\begin{figure}[H] % use float package if you want it here
-%  \centering
-%  \includegraphics{hello}
-%  \caption{利用 Xfig 制图}
-%  \label{fig:xfig1}
-%\end{figure}
+假定数据集$X=\{x_1,x_2,\cdots,x_n \}$，把数据划分为$m$ 个类别，聚类中心为$C = \{c_1,c_2,\cdots,c_m \}$，样本$x_i$ 属于类别$c_j$ 的隶属度为$\mu_{ji}$，则FCM 方法优化的目标函数为式~\ref{eq:2-9}:
+\begin{equation}
+  \label{eq:2-9}
+  J= \sum_{j=1}^m \sum_{i=1}^n \mu_{ji}^k||x_i-c_j||^2
+\end{equation}
+其中$1 \leq k \leq \infty$ 为模糊指数，目标函数$J$ 的约束条件为式~\ref{eq:2-10}：
+\begin{equation}
+  \label{eq:2-10}
+  \sum_{j=1}^m \mu_{ij} = 1, i=1,2,\cdots,n
+\end{equation}
+通过拉格朗日乘子法将约束条件写入目标函数式中，则：
+\begin{equation}
+  \label{eq:2-11}
+  J = \sum_{j=1}^m \sum_{i=1}^n \mu_{ji}^k||x_i-c_j||^2 + \lambda_1(\sum_{j=1}^m \mu_{j1} -1 )  + \cdots + \lambda_i(\sum_{j=1}^m \mu_{ji} -1 ) + \cdots + \lambda_n(\sum_{j=1}^m \mu_{jn} -1 )
+\end{equation}
 
-\section{基于神经网络的遥感影像分割方法}
+令式~\ref{eq:2-11} 分别对$\mu_{ji}$ 和$c_j$ 求偏导并让求导结果等于$0$，化简求解，有：
+\begin{equation}
+  \label{eq:2-12}
+  \mu_{ji} = \frac{1}{\sum_{s=1}^m(\frac{||x_i-c_j||}{||x_i-c_s||})^{(\frac{2}{k-1})}}
+\end{equation}
+和
+\begin{equation}
+  \label{eq:2-13}
+  c_j = \frac{\sum_{i=1}^n(x_i\mu_{ji}^k)}{\sum_{i=1}^n\mu_{ji}^k} = \sum_{i=1}^n \frac{\mu_{ji}^k}{\sum_{i=1}^n\mu_{ji}^k}x_i
+\end{equation}
+
+依据式~\ref{eq:2-12} 和~\ref{eq:2-13} 中的求导结果对FCM 方法聚类中心迭代优化，直到误差小于阈值或到达最大迭代次数，迭代停止。
+
+迭代停止时，样本$x_i$ 对每个聚类中心$c_j$ 的隶属度矩阵向量为$U_{\cdot i} = [\mu_{1i},\mu_{2i},\cdots,\mu_{mi}]$，样本$x_i$ 最终归属的类别依据隶属度最大化原则划分为类别$c_K$，则有：
+\begin{equation}
+  \label{eq:2-14}
+  K = \mathop{\arg\max}_{j} U_{\cdot i} = \mathop{\arg\max}_{j} (\mu_{1i},\mu_{2i},\cdots,\mu_{mi})
+\end{equation}
+依据式~\ref{eq:2-14} 对每个样本找到其隶属度最大的类别，即可完成整个数据集的模糊聚类划分。
+
+\section{基于神经网络的影像分割相关理论}
 \label{sec:chap02-2}
 
 一般图形都是处在浮动环境中。之所以称为浮动是指最终
 
 
+\section{本章小结}
+\label{sec:chap02-3}
+balabala
