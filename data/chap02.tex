@@ -4,7 +4,7 @@
 %%% TeX-master: t
 %%% End:
 
-\chapter{遥感影像识别分类基础原理}
+\chapter{影像分类相关理论基础}
 \label{cha:chap02}
 %目标地物的识别分类一直是遥感影像解译中的重大任务。遥感影像分类任务依据是否使用地物类别先验知识分为监督分类和非监督分类。由于遥感影像多以非结构化、不精确的形式存在，缺乏完善的标记类别的规整数据。传统影像分割识别方法多以无监督的聚类分割辅以人工后处理的方法来完成遥感影像的解译工作。遥感影像数据固有的不确定性（“混合像元”、“同物异谱”和“同谱异物”等）使得模糊C-均值聚类方法成为遥感影像无监督聚类分割的优选方法，被广泛应用到遥感影像聚类分割识别任务中\cite{he2016remote}。另一方面，深度神经网络因其在特征提取方面效果显著，能够较好提取遥感影像复杂数据结构的隐含特征信息。并且，基于生成对抗网络模型的神经网络模型能够解决遥感影像分割中样本数不足的问题，因此具有重要的研究意义。
 
@@ -18,7 +18,7 @@
 \label{subsec:chap02-1-1}
 面向对象的影像分割是指对遥感影像分割划分，将邻域内同质性的像元当作一个整体，形成的影像分割单元区域内部的颜色、灰度、纹理等特性相似性较大，区域间的颜色、灰度、纹理等特性相异性较大。常见的影像分割根据分割类型可以划分为：边缘检测分割方法、阈值分割方法和基于区域的分割方法。边缘检测分割方法是通过Sobel、Canny、LOG 等滤波算子提取影像边缘，再将边缘连接起来形成边界，一般适用于灰度影像的分割。阈值分割方法通过比较像素与设定阈值大小关系，划分影像的前景和背景，该方法简单但不适用于较复杂的影像。基于区域的分割方法包含生长法和区域分裂合并法，其原理依据是影像中距离近的像素点相似性大，距离远的相似性小。基于区域的分割方法应用广泛，且分割效果较好。文中详细介绍两种常见的分割方法：Watershed 分水岭算法\cite{vincent1991watersheds} 和SLIC 超像素分割算法\cite{achanta2012slic}。
 
-\subsubsection{Watershed 分水岭算法}
+\subsubsection*{1. Watershed 分水岭算法}
 \label{subsubsec:chap02-1-1-1}
 Watershed 分水岭分割算法是一个非常经典的区域生长分割方法。算法的思想是把待分割图像想象成一个地理上的地形图，图像灰度值大小可看作地形高程值，图像每个局部极小值及其影响区域对应地形上的低洼处，即集水盆。两个集水盆汇合边界则为分水岭。分水岭算法如图~\ref{fig:watershed} 所示。
 
@@ -56,7 +56,7 @@ Watershed 分水岭分割算法是一个非常经典的区域生长分割方法�
 \end{equation}
 式中，$g_{\theta}$ 表示阈值。
 
-\subsubsection{SLIC 超像素分割算法}
+\subsubsection*{2. SLIC 超像素分割算法}
 \label{subsubsec:chap02-1-1-1}
 SLIC(Simple linear iterativeclustering)，即简单的线性迭代聚类超像素分割方法。它采用$K$ 均值聚类方法高效地生成超像素，较以前的算法可以更好地获取分割边界，且有着更快的运行速度。
 
@@ -131,16 +131,104 @@ $N_c$ 为最大的颜色距离，取值随具体的图片而定，实验中一�
 
 依据式~\ref{eq:2-12} 和~\ref{eq:2-13} 中的求导结果对FCM 方法聚类中心迭代优化，直到误差小于阈值或到达最大迭代次数，迭代停止。
 
-迭代停止时，样本$x_i$ 对每个聚类中心$c_j$ 的隶属度矩阵向量为$U_{\cdot i} = [\mu_{1i},\mu_{2i},\cdots,\mu_{mi}]$，样本$x_i$ 最终归属的类别依据隶属度最大化原则划分为类别$c_K$，则有：
+迭代停止时，样本$x_i$ 对所有聚类中心$[c_1,c_2,\cdots,c_j,\cdots,c_m]$ 的隶属度矩阵向量为$U_{\cdot i} = [\mu_{1i},\mu_{2i},\cdots,\mu_{ji},\cdots,\mu_{mi}]$，样本$x_i$ 最终归属的类别依据隶属度最大化原则划分为类别$c_K$，则有：
 \begin{equation}
   \label{eq:2-14}
-  K = \mathop{\arg\max}_{j} U_{\cdot i} = \mathop{\arg\max}_{j} (\mu_{1i},\mu_{2i},\cdots,\mu_{mi})
+  K = \mathop{\arg\max}_{j} U_{\cdot i} = \mathop{\arg\max}_{j} (\mu_{1i},\mu_{2i},\cdots,\mu_{ji},\cdots,\mu_{mi})
 \end{equation}
 依据式~\ref{eq:2-14} 对每个样本找到其隶属度最大的类别，即可完成整个数据集的模糊聚类划分。
 
 \section{基于神经网络的影像分割相关理论}
 \label{sec:chap02-2}
+深度学习是以人工神经网络为架构，通过多隐层网络结构提取高层抽象特征，对数据进行表征学习的算法。常见的深度学习框架包含深度神经网络（Deep neural network, DNN）、深度置信网络（Deep belief network, DBN）、递归神经网络（Recurrent neural network， RNN）和卷积神经网络（Convolutional neural network, CNN）等\cite{krizhevsky2012imagenet} 。 与其他网络结构相比，CNN 利用输入数据的二维结构信息，在图像分类与识别、图像语义分割等视觉任务中能够给出更好的结果。
 
+
+\subsection{卷积神经网络基础}
+\label{subsec:chap02-2-1}
+CNN 是一种具有卷积结构的深度前馈神经网络，使用反向传播（Backpropagation，BP）算法进行训练，主要用来处理图像信息。CNN 网络结构一般由卷积层（Convolutional layer）、池化层（Pooling layer）和全连接层（Full connected layer）交叉堆叠而成。卷积层和池化层用于提取图像高阶特征，具有局部连接、权值共享、下采样等特性。全连接层起到图像“分类器”的作用，将学到的“分布式特征表示”映射到样本标记空间。
+
+\subsubsection*{1. 卷积层}
+\label{subsec:chap02-2-1-1}
+卷积（Convolution）是分析数学中的一种运算，被广泛应用到信号处理与图像处理中。因为图像是两维结构数据，图像处理中常用二维卷积运算。给定一个图像$X \in \mathbb{R}^{M \times N}$，和滤波器$W \in \mathbb{R}^{m \times n}$, 一般满足$m \ll M, n \ll N$，其卷积输出:
+\begin{equation}
+  \label{eq:2-15}
+  Y = X \otimes W
+\end{equation}
+式中，$\otimes$ 是卷积运算。 输出特征图上某点$(i,j)$ 的值可由式\ref{eq:2-16}计算得到：
+\begin{equation}
+  \label{eq:2-16}
+  y_{ij} = \sum_{u=1}^m\sum_{v=1}^n w_{uv}\cdot x_{i-u+1,j-v+1} 
+\end{equation}
+
+CNN 最核心结构是卷积层，每个卷积层均包含一个或多个二维平面，该二维平面称作CNN 网络的特征图(Feature map)。同一特征图内神经元共享权重和偏置项，且每一个神经元与上一层的区域局部连接。CNN 中共享的权重称为卷积核(Convolutional kernel)，利用卷积核对上一层的特征图进行卷积运算可以提取影像特征产生下一层网络的输出层。如图~\ref{fig:conv_op} 所示，图中使用大小为$3\times3$的卷积核，输入图像大小为$5\times5$，卷积核从左上方以$1$ 个像素点的步长（Stripe）开始滑动，图像中像素点与卷积核之间卷积运算后的输出到特征图上的对应位置。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/conv_op}
+  \caption{图像卷积示意图}\label{fig:conv_op}
+\end{figure}
+
+图像卷积运算时，与全连接模式中每个像素点对应一个独立的计算权值不同，所有位置的输出神经元均使用一个卷积核计算权值，这样做的好处是既减少参数的数量，又利用了图像特征的局部性特点。图像卷积中，每个卷积核都可以提取图像的一种特征，所以一般设置多个卷积核，利用不同的卷积核来提取图像不同的特征。
+
+卷积计算中第$l$ 层的输入是第$l-1$ 层的卷积输出特征图，假定第$l-1$ 层输入大小为$X_{l-1} \times X_{l-1}$，卷积核大小为$K \times K$，滑动步长为$S$，边界填充（Padding）大小为$P$，$l-1$ 层的输出特征图（即第$l$ 层的输入）的大小为$X_l \times X_l$，可由式\ref{eq:2-17} 计算得到：
+\begin{equation}
+  \label{eq:2-17}
+  X_l = \lfloor \frac{X_{l-1} - K + 2 \times P}{S} \rfloor + 1
+\end{equation}
+
+卷积操作是线性的，线性模型的特点为任意线性模型的组合仍然是线性模型。线性神经网络无法解决实际复杂的非线性问题。为每个卷积输出添加一个非线性函数，神经网络模型就不再是线性的，这个非线性函数就是激活函数。常用的激活函数有Sigmoid、TanHyperbolic(tanh) 和线性整流函数（Rectified linear unit, ReLU） 函数等。当前卷积网络常用的是ReLU 激活函数，ReLU 函数的表达式如下：
+\begin{equation}
+  \label{eq:2-17-1}
+  f(x) = \max(x,0)
+\end{equation}
+相比Sigmoid 和tanh 函数，ReLU 对于梯度训练的收敛有巨大加速作用，反向传播训练时不易饱和，另外ReLU 函数简单，运算量很小，因此广泛使用到卷积网络非线性激活中。
+
+\subsubsection*{2. 池化层}
+\label{subsec:chap02-2-1-2}
+池化层又叫下采样层（Subsampling layer），能够缩小特征图尺寸，其作用是进行特征选择，降低特征数量，使特征更加抽象。卷积层虽然可以显著减少网络中连接参数的数量，但特征映射组中的神经元个数并没有显著减少。在卷积层后面加上一个池化层，可以降低下一层待处理的数据量，实现特征降维，一定程度上防止过拟合。
+
+假定池化层的输入特征图为$X \in \mathbb{R}^{M \times N}$ ，将其划分为很多区域$R_{m,n},1 \leq m \leq M, 1 \leq n \leq N$，这些区域可以重叠，也可以不重叠。池化层通过池化函数对特征图的每个区域$R_{m,n}$ 进行下采样，得到一个值作为这个区域的概括。根据采样的方式不同，常用的池化函数有以下两种：
+\begin{enumerate}[1. ]
+\label{list:1}
+\item 最大池化（Maximum pooling）
+最大池化是选取区域内所有神经元的最大值作为池化输出。
+\begin{equation}
+  \label{eq:2-18}
+  Y_{m,n} = \mathop{\max}_{i \in R_{m,n}} x_i
+\end{equation}
+其中，$x_i$ 为区域$R_k$ 内每个神经元的激活值。
+
+\item 平均池化（Average pooling）
+平均池化是选取区域内所有神经元激活值的和的平均值。
+\begin{equation}
+  \label{eq:2-19}
+  Y_{m,n} =  \frac{1}{|R_{m,n}|}\mathbb{\sum}_{i \in R_{m,n}} x_i
+\end{equation}
+\end{enumerate}
+对输入特征图的所有区域进行下采样，就可以得到池化层的输出特征图$Y = \{ Y_{m,n}\},1 \leq m \leq M, 1 \leq n \leq N$ 。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figures/pooling}
+  \caption{最大池化与平均池化}\label{fig:pooling}
+\end{figure}
+
+图如~\ref{fig:pooling} 所示，输入特征图大小为$4 \times 4$，池化函数核为$2 \times 2$，滑动步长为$2$ ，分别进行最大池化和平均池化操作，得到不同的池化输出特征图。
+
+在卷积网络的最后，往往会接入一两层的全连接层。全连接层将卷积输出的二维特征“拍平”，转化成一个一维向量。全连接层对卷积输出特征高度提取，方便交给最后的分类器（如SVM 分类器、Softmax 分类器等）实现图像分类。
+
+\subsubsection*{3. 典型的卷积网络结构}
+\label{subsec:chap02-2-1-3}
+一个典型的卷积网络由卷积层、池化层和全连接层交叉堆叠而成。如图~\ref{fig:cnn_structure} 所示，通用的卷积网络结构由$N$ 个堆叠的卷积块接$K$ 个全连接层组成。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1.0\textwidth]{figures/cnn_structure}
+  \caption{典型的卷积网络结构}\label{fig:cnn_structure}
+\end{figure}
+
+\subsection{基于全卷积神经网络的图像分割}
+\label{subsec:chap02-2-1}
 一般图形都是处在浮动环境中。之所以称为浮动是指最终
 
 

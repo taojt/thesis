@@ -322,6 +322,13 @@ Zhengxin Zhang, Qingjie Liu, Yunhong Wang.
 \newblock Road extraction by deep residual u-net[J].
 \newblock IEEE Geoscience and Remote Sensing Letters, 2018, 15(5):749--753.
 
+\bibitem{krizhevsky2012imagenet}
+Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
+\newblock Imagenet classification with deep convolutional neural networks[C].
+\newblock Proceedings of Advances in neural information processing systems,
+  2012.
+\newblock  1097--1105.
+
 \bibitem{bezdek1984fcm}
 James~C Bezdek, Robert Ehrlich, William Full.
 \newblock FCM: The fuzzy c-means clustering algorithm[J].

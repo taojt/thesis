@@ -10,40 +10,40 @@
 \contentsline {subsection}{\numberline {1.2.3}存在的主要问题}{5}{subsection.1.2.3}
 \contentsline {section}{\numberline {1.3}本文的组织结构}{5}{section.1.3}
 \contentsline {section}{\numberline {1.4}本文主要创新点}{6}{section.1.4}
-\contentsline {chapter}{第\nobreakspace {}2\nobreakspace {}章\hspace {1em} 遥感影像识别分类基础原理}{7}{chapter.2}
+\contentsline {chapter}{第\nobreakspace {}2\nobreakspace {}章\hspace {1em} 影像分类相关理论基础}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}遥感影像的模糊聚类分割基础}{7}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}影像分割方法}{7}{subsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Watershed 分水岭算法}{8}{subsubsection.2.1.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.2}SLIC 超像素分割算法}{9}{subsubsection.2.1.1.2}
 \contentsline {subsection}{\numberline {2.1.2}模糊聚类方法}{10}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}基于神经网络的影像分割相关理论}{11}{section.2.2}
-\contentsline {section}{\numberline {2.3}本章小结}{11}{section.2.3}
-\contentsline {chapter}{第\nobreakspace {}3\nobreakspace {}章\hspace {1em} 基于区间二型模糊聚类的遥感影像无监督分割方法}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}引言}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}三角形模糊集值建模与相似性度量}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}面向对象的改进型区间二型模糊遥感影像聚类方法}{17}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}算法整体框架}{17}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}面向对象的TFSV 模型}{17}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}影像分割}{17}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}影像单元的TFSV 数据建模}{18}{subsubsection.3.3.2.2}
-\contentsline {subsection}{\numberline {3.3.3}基于TFSV 数据模型的面向对象模糊聚类方法}{19}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}区间二型模糊隶属度}{19}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}TFSV-IT2FCM 算法}{20}{subsubsection.3.3.3.2}
-\contentsline {subsection}{\numberline {3.3.4}后处理}{22}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}实验结果与分析}{23}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}神湾地区实验}{24}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}横琴地区实验}{27}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}三门峡地区实验}{29}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}本章小结}{30}{section.3.5}
-\contentsline {chapter}{第\nobreakspace {}4\nobreakspace {}章\hspace {1em} 基于生成对抗网络的遥感影像分割方法}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}引言}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}实验数据集介绍}{31}{section.4.2}
-\contentsline {section}{\numberline {4.3}基于生成对抗网络框架的影像分割方法}{31}{section.4.3}
-\contentsline {section}{\numberline {4.4}实验结果与分析}{31}{section.4.4}
-\contentsline {section}{\numberline {4.5}本章小结}{31}{section.4.5}
-\contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{32}{chapter.5}
-\contentsline {section}{\numberline {5.1}本文的主要内容}{32}{section.5.1}
-\contentsline {section}{\numberline {5.2}未来的期望}{32}{section.5.2}
-\contentsline {chapter}{致谢}{33}{section*.46}
-\contentsline {chapter}{参考文献}{34}{section*.49}
-\contentsline {chapter}{学术成果}{39}{section*.52}
+\contentsline {subsection}{\numberline {2.2.1}卷积神经网络基础}{11}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}基于全卷积神经网络的图像分割}{15}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}本章小结}{15}{section.2.3}
+\contentsline {chapter}{第\nobreakspace {}3\nobreakspace {}章\hspace {1em} 基于区间二型模糊聚类的遥感影像无监督分割方法}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}引言}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}三角形模糊集值建模与相似性度量}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}面向对象的改进型区间二型模糊遥感影像聚类方法}{21}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}算法整体框架}{21}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}面向对象的TFSV 模型}{21}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}影像分割}{21}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}影像单元的TFSV 数据建模}{22}{subsubsection.3.3.2.2}
+\contentsline {subsection}{\numberline {3.3.3}基于TFSV 数据模型的面向对象模糊聚类方法}{23}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}区间二型模糊隶属度}{23}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}TFSV-IT2FCM 算法}{24}{subsubsection.3.3.3.2}
+\contentsline {subsection}{\numberline {3.3.4}后处理}{26}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}实验结果与分析}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}神湾地区实验}{28}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}横琴地区实验}{31}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}三门峡地区实验}{33}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}本章小结}{34}{section.3.5}
+\contentsline {chapter}{第\nobreakspace {}4\nobreakspace {}章\hspace {1em} 基于生成对抗网络的遥感影像分割方法}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}引言}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}实验数据集介绍}{35}{section.4.2}
+\contentsline {section}{\numberline {4.3}基于生成对抗网络框架的影像分割方法}{35}{section.4.3}
+\contentsline {section}{\numberline {4.4}实验结果与分析}{35}{section.4.4}
+\contentsline {section}{\numberline {4.5}本章小结}{35}{section.4.5}
+\contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{36}{chapter.5}
+\contentsline {section}{\numberline {5.1}本文的主要内容}{36}{section.5.1}
+\contentsline {section}{\numberline {5.2}未来的期望}{36}{section.5.2}
+\contentsline {chapter}{致谢}{37}{section*.54}
+\contentsline {chapter}{参考文献}{38}{section*.57}
+\contentsline {chapter}{学术成果}{43}{section*.60}
