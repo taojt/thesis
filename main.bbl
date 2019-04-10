@@ -329,6 +329,13 @@ Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
   2012.
 \newblock  1097--1105.
 
+\bibitem{long2015fully}
+Jonathan Long, Evan Shelhamer, Trevor Darrell.
+\newblock Fully convolutional networks for semantic segmentation[C].
+\newblock Proceedings of Proceedings of the IEEE conference on computer vision
+  and pattern recognition, 2015.
+\newblock  3431--3440.
+
 \bibitem{bezdek1984fcm}
 James~C Bezdek, Robert Ehrlich, William Full.
 \newblock FCM: The fuzzy c-means clustering algorithm[J].
