@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.10)  10 APR 2019 20:07
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.10)  11 APR 2019 20:10
 entering extended mode
 **e:/thesis_for_jiangtao/main
 (e:/thesis_for_jiangtao/main.tex
@@ -1473,7 +1473,7 @@ Package pdftex.def Info: figures/cnn_structure.pdf used on input line 227.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <e:/thesis_for_jiangtao/figures/pooling.pdf>] <figures/FCN.pdf, id=841, 1263.72125pt x 516.93124pt>
+ [14 <e:/thesis_for_jiangtao/figures/pooling.pdf>] <figures/FCN.pdf, id=842, 1263.72125pt x 516.93124pt>
 File: figures/FCN.pdf Graphic file (type pdf)
  <use figures/FCN.pdf>
 Package pdftex.def Info: figures/FCN.pdf used on input line 237.
@@ -1483,7 +1483,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <e:/thesis_for_jiangtao/figures/cnn_structure.pdf> <e:/thesis_for_jiangtao/figures/FCN.pdf>] (e:\thesis_for_jiangtao\data/chap03.tex
 LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 13.
- <figures/compare_distribution.pdf, id=863, 635.26837pt x 153.86383pt>
+ <figures/compare_distribution.pdf, id=872, 635.26837pt x 153.86383pt>
 File: figures/compare_distribution.pdf Graphic file (type pdf)
  <use figures/compare_distribution.pdf>
 Package pdftex.def Info: figures/compare_distribution.pdf used on input line 18.
@@ -1495,7 +1495,7 @@ Package pdftex.def Info: figures/compare_distribution.pdf used on input line 18.
 
  <e:/thesis_for_jiangtao/figures/compare_distribution.pdf>]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 30.
- <figures/tfs.pdf, id=887, 1731.46875pt x 1017.8025pt>
+ <figures/tfs.pdf, id=896, 1731.46875pt x 1017.8025pt>
 File: figures/tfs.pdf Graphic file (type pdf)
  <use figures/tfs.pdf>
 Package pdftex.def Info: figures/tfs.pdf used on input line 36.
@@ -1503,7 +1503,7 @@ Package pdftex.def Info: figures/tfs.pdf used on input line 36.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <e:/thesis_for_jiangtao/figures/tfs.pdf>] <figures/set_location.pdf, id=906, 3103.595pt x 639.38875pt>
+ [17 <e:/thesis_for_jiangtao/figures/tfs.pdf>] <figures/set_location.pdf, id=915, 3103.595pt x 639.38875pt>
 File: figures/set_location.pdf Graphic file (type pdf)
  <use figures/set_location.pdf>
 Package pdftex.def Info: figures/set_location.pdf used on input line 98.
@@ -1526,7 +1526,7 @@ l.104
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.104 
-       <e:/thesis_for_jiangtao/figures/set_location.pdf>] <figures/distance_compare.pdf, id=922, 1845.89626pt x 2082.78125pt>
+       <e:/thesis_for_jiangtao/figures/set_location.pdf>] <figures/distance_compare.pdf, id=931, 1845.89626pt x 2082.78125pt>
 File: figures/distance_compare.pdf Graphic file (type pdf)
  <use figures/distance_compare.pdf>
 Package pdftex.def Info: figures/distance_compare.pdf used on input line 107.
@@ -1551,7 +1551,7 @@ l.148
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.148 
-      ] <figures/framework.pdf, id=969, 608.57661pt x 147.55125pt>
+      ] <figures/framework.pdf, id=978, 608.57661pt x 147.55125pt>
 File: figures/framework.pdf Graphic file (type pdf)
  <use figures/framework.pdf>
 Package pdftex.def Info: figures/framework.pdf used on input line 163.
@@ -1594,7 +1594,7 @@ l.262 \end{equation}
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.262 \end{equation}
-                    ] <figures/tfsvit2.pdf, id=1046, 2476.25125pt x 4049.1275pt>
+                    ] <figures/tfsvit2.pdf, id=1055, 2476.25125pt x 4049.1275pt>
 File: figures/tfsvit2.pdf Graphic file (type pdf)
  <use figures/tfsvit2.pdf>
 Package pdftex.def Info: figures/tfsvit2.pdf used on input line 299.
@@ -1644,7 +1644,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27] <figures/shenwan.pdf, id=1107, 1046.91125pt x 1026.83624pt>
+ [27] <figures/shenwan.pdf, id=1116, 1046.91125pt x 1026.83624pt>
 File: figures/shenwan.pdf Graphic file (type pdf)
  <use figures/shenwan.pdf>
 Package pdftex.def Info: figures/shenwan.pdf used on input line 389.
@@ -1670,7 +1670,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.477 
-      ] <figures/hengqin.pdf, id=1190, 656.4525pt x 346.29375pt>
+      ] <figures/hengqin.pdf, id=1199, 656.4525pt x 346.29375pt>
 File: figures/hengqin.pdf Graphic file (type pdf)
  <use figures/hengqin.pdf>
 Package pdftex.def Info: figures/hengqin.pdf used on input line 486.
@@ -1686,7 +1686,7 @@ Overfull \hbox (23.48299pt too wide) in paragraph at lines 498--515
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32] <figures/sanmenxia.pdf, id=1246, 910.7355pt x 375.73676pt>
+ [32] <figures/sanmenxia.pdf, id=1255, 910.7355pt x 375.73676pt>
 File: figures/sanmenxia.pdf Graphic file (type pdf)
  <use figures/sanmenxia.pdf>
 Package pdftex.def Info: figures/sanmenxia.pdf used on input line 542.
@@ -1773,24 +1773,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0C0AE1EC0C140822E0219F12D41076BB;7823.
+(rerunfilecheck)             Checksum: 5B94345B14F10F35EF200F0B24D942F7;7807.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17863 strings out of 495354
- 253350 string characters out of 3183859
- 342241 words of memory out of 3000000
- 19408 multiletter control sequences out of 15000+200000
+ 17871 strings out of 495354
+ 253456 string characters out of 3183859
+ 342265 words of memory out of 3000000
+ 19416 multiletter control sequences out of 15000+200000
  251990 words of font info for 737 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
- 51i,19n,76p,3614b,2278s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,19n,76p,3614b,2282s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxb.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxbmi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txbsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsyb.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (51 pages, 12318973 bytes).
+Output written on main.pdf (51 pages, 12724843 bytes).
 PDF statistics:
- 1946 PDF objects out of 2073 (max. 8388607)
+ 1955 PDF objects out of 2073 (max. 8388607)
  312 named destinations out of 1000 (max. 500000)
  821 words of extra memory for PDF output out of 10000 (max. 10000000)
 

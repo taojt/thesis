@@ -228,16 +228,17 @@ CNN 最核心结构是卷积层，每个卷积层均包含一个或多个二维�
   \caption{典型的卷积网络结构}\label{fig:cnn_structure}
 \end{figure}
 
-\subsection{基于全卷积神经网络的图像分割}
+\subsection{基于全卷积网络的图像分割}
 \label{subsec:chap02-2-1}
-传统的卷积神经网络最右端结构通常是全连接层，其无法保留图像的位置信息，且网络的输出通常为输入图像属于某一类别的概率。与图像分类的整体分类不同，图像的语义分割是对目标图像的每个像素点进行语义分类，即语义分割是从像素级对图像进行类别预测。全卷积神经网络（Fully convolutional network，FCN）\cite{long2015fully} 由J Long 等人于2016年提出，应用于图像语义分割领域，
+传统的卷积神经网络最右端结构通常连接全连接层，它会将原来二维矩阵压缩成一维的，从而丢失图像的空间位置信息，且网络输出常为输入图像属于某一类别的概率。与分类对整张图片类别预测不同，图像的语义分割是对目标图像的每个像素点进行语义分类，即语义分割是从像素级对图像进行类别预测。全卷积神经网络（Fully convolutional network，FCN）\cite{long2015fully} 由J Long 等人于2016年提出，其创造性地利用卷积层替代分类网络中的全连接层，进而保证网络输出为二维分割图，使用反卷积（Deconvolution）的上采样策略，得到一个与原图尺寸大小相同的分割图，实现图像语义分割像素级的预测。图像语义分割应用到遥感领域即为遥感影像的分类，图~\ref{fig:fcn_structure} 为影像分割的全卷积结构示意图。
 
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.9\textwidth]{figures/FCN}
-  \caption{FCN}\label{fig:fcn_structure}
+  \caption{影像分割网络结构示意图}\label{fig:fcn_structure}
 \end{figure}
 
+FCN 网络主要的贡献分别是
 
 \section{本章小结}
 \label{sec:chap02-3}
