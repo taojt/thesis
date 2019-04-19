@@ -24,11 +24,7 @@
 \contentsline {section}{\numberline {3.3}面向对象的改进型区间二型模糊遥感影像聚类方法}{23}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}算法整体框架}{23}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}面向对象的TFSV 模型}{23}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}影像分割}{23}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}影像单元的TFSV 数据建模}{24}{subsubsection.3.3.2.2}
 \contentsline {subsection}{\numberline {3.3.3}基于TFSV 数据模型的面向对象模糊聚类方法}{25}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}区间二型模糊隶属度}{25}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}TFSV-IT2FCM 算法}{26}{subsubsection.3.3.3.2}
 \contentsline {subsection}{\numberline {3.3.4}后处理}{28}{subsection.3.3.4}
 \contentsline {section}{\numberline {3.4}实验结果与分析}{29}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}神湾地区实验}{30}{subsection.3.4.1}
@@ -44,6 +40,6 @@
 \contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{38}{chapter.5}
 \contentsline {section}{\numberline {5.1}本文的主要内容}{38}{section.5.1}
 \contentsline {section}{\numberline {5.2}未来的期望}{38}{section.5.2}
-\contentsline {chapter}{致谢}{39}{section*.59}
-\contentsline {chapter}{参考文献}{40}{section*.62}
-\contentsline {chapter}{学术成果}{45}{section*.65}
+\contentsline {chapter}{致谢}{39}{section*.63}
+\contentsline {chapter}{参考文献}{40}{section*.66}
+\contentsline {chapter}{学术成果}{45}{section*.69}
