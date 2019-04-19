@@ -4,13 +4,14 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces 最大池化与平均池化\relax }}{14}{figure.caption.28}
 \contentsline {figure}{\numberline {5}{\ignorespaces 典型的卷积网络结构\relax }}{15}{figure.caption.30}
 \contentsline {figure}{\numberline {6}{\ignorespaces 影像分割网络结构示意图\relax }}{15}{figure.caption.31}
-\contentsline {figure}{\numberline {7}{\ignorespaces 基于VGG16的FCN 网络结构\relax }}{16}{figure.caption.32}
-\contentsline {figure}{\numberline {8}{\ignorespaces 区间值相同但分布不同的数据比较\relax }}{17}{figure.caption.35}
-\contentsline {figure}{\numberline {9}{\ignorespaces 三角形模糊集 $\mathaccentV {tilde}07E{A}$ 示意图\relax }}{18}{figure.caption.36}
-\contentsline {figure}{\numberline {10}{\ignorespaces $\mathaccentV {tilde}07E{A}$ 和 $\mathaccentV {tilde}07E{B}$ 位置关系示意图。 (a)相交; (b)$\mathaccentV {tilde}07E{A}$ 包含集合$\mathaccentV {tilde}07E{B}$; (c)不相交.\relax }}{19}{figure.caption.37}
-\contentsline {figure}{\numberline {11}{\ignorespaces 不同位置下，$\mathaccentV {tilde}07E{A}$ 和 $\mathaccentV {tilde}07E{B}$ 两者间各种距离比较图。\relax }}{20}{figure.caption.38}
-\contentsline {figure}{\numberline {12}{\ignorespaces 面向对象的改进型区间二型模糊遥感影像聚类算法框架图\relax }}{22}{figure.caption.39}
-\contentsline {figure}{\numberline {13}{\ignorespaces TFSV-IT2FCM 算法流程图\relax }}{26}{figure.caption.40}
-\contentsline {figure}{\numberline {14}{\ignorespaces 神湾研究区不同方法分类结果示意图 \relax }}{29}{figure.caption.42}
-\contentsline {figure}{\numberline {15}{\ignorespaces 神湾研究区TFSV-IT2FCM 与IV-FCM 算法聚类分割图 \relax }}{32}{figure.caption.46}
-\contentsline {figure}{\numberline {16}{\ignorespaces 三门峡研究区不同方法分类结果示意图 \relax }}{34}{figure.caption.49}
+\contentsline {figure}{\numberline {7}{\ignorespaces 反卷积上采样过程\relax }}{16}{figure.caption.33}
+\contentsline {figure}{\numberline {8}{\ignorespaces 基于FCN网络的遥感影像分割示意图\relax }}{17}{figure.caption.35}
+\contentsline {figure}{\numberline {9}{\ignorespaces 区间值相同但分布不同的数据比较\relax }}{18}{figure.caption.38}
+\contentsline {figure}{\numberline {10}{\ignorespaces 三角形模糊集 $\mathaccentV {tilde}07E{A}$ 示意图\relax }}{19}{figure.caption.39}
+\contentsline {figure}{\numberline {11}{\ignorespaces $\mathaccentV {tilde}07E{A}$ 和 $\mathaccentV {tilde}07E{B}$ 位置关系示意图。 (a)相交; (b)$\mathaccentV {tilde}07E{A}$ 包含集合$\mathaccentV {tilde}07E{B}$; (c)不相交.\relax }}{20}{figure.caption.40}
+\contentsline {figure}{\numberline {12}{\ignorespaces 不同位置下，$\mathaccentV {tilde}07E{A}$ 和 $\mathaccentV {tilde}07E{B}$ 两者间各种距离比较图。\relax }}{21}{figure.caption.41}
+\contentsline {figure}{\numberline {13}{\ignorespaces 面向对象的改进型区间二型模糊遥感影像聚类算法框架图\relax }}{23}{figure.caption.42}
+\contentsline {figure}{\numberline {14}{\ignorespaces TFSV-IT2FCM 算法流程图\relax }}{27}{figure.caption.43}
+\contentsline {figure}{\numberline {15}{\ignorespaces 神湾研究区不同方法分类结果示意图 \relax }}{30}{figure.caption.45}
+\contentsline {figure}{\numberline {16}{\ignorespaces 神湾研究区TFSV-IT2FCM 与IV-FCM 算法聚类分割图 \relax }}{33}{figure.caption.49}
+\contentsline {figure}{\numberline {17}{\ignorespaces 三门峡研究区不同方法分类结果示意图 \relax }}{35}{figure.caption.52}

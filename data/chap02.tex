@@ -230,8 +230,7 @@ CNN 最核心结构是卷积层，每个卷积层均包含一个或多个二维�
 
 \subsection{基于全卷积网络的图像分割}
 \label{subsec:chap02-2-1}
-传统的卷积神经网络最右端结构通常连接全连接层，它会将原来二维矩阵压缩成一维的，从而丢失图像的空间位置信息，且网络输出常为输入图像属于某一类别的概率。与分类对整张图片类别预测不同，图像的语义分割是对目标图像的每个像素点进行语义分类，即语义分割是从像素级对图像进行类别预测。全卷积神经网络（Fully convolutional network，FCN）\cite{long2015fully} 由J Long 等人于2016年提出，其创造性地利用卷积层替代分类网络中的全连接层，进而保证网络输出为二维分割图，使用反卷积（Deconvolution）的上采样策略，得到一个与原图尺寸大小相同的分割图，实现图像语义分割像素级的预测。图像语义分割应用到遥感领域即为遥感影像的分类。
-图~\ref{fig:fcn_structure} 为影像分割的全卷积结构示意图。
+传统的卷积神经网络最右端结构通常连接全连接层，它会将原来二维矩阵压缩成一维的，从而丢失图像的空间位置信息，且网络输出常为输入图像属于某一类别的概率。与分类对整张图片类别预测不同，图像的语义分割是对目标图像的每个像素点进行语义分类，即语义分割是从像素级对图像进行类别预测。全卷积神经网络（Fully convolutional network，FCN）\cite{long2015fully} 由Jonathan Long 等人于2016年提出，其创造性地利用卷积层替代分类网络中的全连接层，进而保证网络输出为二维分割图，使用反卷积（Deconvolution）的上采样策略，得到一个与原图尺寸大小相同的分割图，实现图像语义分割像素级的预测。图像语义分割应用到遥感领域即为遥感影像的分类。图~\ref{fig:fcn_structure} 为遥感影像分割的全卷积网络结构示意图，全卷积网络将学习到的遥感影像判别特征解码映射到高分辨率空间，完成影像的像素级分类。
 
 \begin{figure}[htb]
   \centering
@@ -239,12 +238,29 @@ CNN 最核心结构是卷积层，每个卷积层均包含一个或多个二维�
   \caption{影像分割网络结构示意图}\label{fig:fcn_structure}
 \end{figure}
 
-FCN 语义分割网络可以
+\subsubsection*{1. 反卷积}
+\label{subsec:chap02-2-2-1}
+反卷积，又叫转置卷积，是一种上采样操作，可以理解为下采样的逆过程。卷积运算是一个下采样过程，一般通过卷积操作实现高维特征到低维特征的转换。如对输入$4\times 4$ 的二维特征，用大小$3\times 3$ 的核，做步长为$1$ 的卷积运算得到$2\times 2$ 的特征输出。反卷积则实现低维特征到高维特征的转换。与之对应，反卷积对输入为$2\times 2$ 的二维特征，使用$3\times 3$ 的核操作得到$4\times 4$ 的输出。如图~\ref{fig:deconv} 所示，输入特征大小$2\times 2$，核大小$3\times 3$，步长$s=1$，填充补0为$p=2$，经过反卷积处理输出尺寸上采样到$4\times 4$， 图中显示了反卷积上采样的计算过程。
 
 \begin{figure}[htb]
   \centering
+  \includegraphics[width=0.8\textwidth]{figures/deconv}
+  \caption{反卷积上采样过程}\label{fig:deconv}
+\end{figure}
+
+反卷积是卷积运算形式上转置的映射关系。对一个大小为$X\times X$的图像$\textit{I}$，和大小为$K\times K$ 的卷积核，进行步长为$S \geq 1$ 的反卷积运算，先对图像$\textit{I}$ 进行两端补零$P=K-1$，并且在每两个像素间填充$S-1$ 个$0$，最后进行步长为$1$ 的卷积操作，得到反卷积的输出结果，设输出特征维度为$O \times O$ ，满足：
+\begin{equation}
+  \label{eq:2-19}
+  O = S \times (X - 1) + K
+\end{equation}
+
+\subsubsection*{2. FCN 网络图像分割}
+\label{subsec:chap02-2-2-2}
+FCN 网络由卷积特征提取和反卷积上采样两部分组成。FCN 特征提取阶段，为了加快网络训练速度，常使用在ImagaNet 等数据集上训练好的网络权值初始化FCN 网络参数，如对训练好的AlexNet\cite{krizhevsky2012imagenet} 或VGG\cite{simonyan2014very} 网络权值，选取除全连接层的权值参数初始化FCN 网络。输入图片经卷积池化层处理后特征图尺寸变小，所以特征图需要被上采样为输入图片相同尺寸。FCN 使用反卷积层做上采样将特征图尺寸调整为原输入图像大小。 同时，为了得到更精细的分割结果，FCN 中使用跳层连接（Skip connections）将下采样阶段和上采样阶段相同尺寸的特征图融合。图~\ref{fig:vgg-fcn} 为基于FCN 网络结构影像分割示意图。图中虚线上半部分为卷积池化结构，模型使用训练好的VGG 16 网络权值（去除全连接层权值）初始化，堆叠的卷积层与池化层能够提取影像数据高阶特征。图中虚线下半部分，分别从卷积网络的不同阶段
+\begin{figure}[htb]
+  \centering
   \includegraphics[width=1.0\textwidth]{figures/vgg-fcn}
-  \caption{基于VGG16的FCN 网络结构}\label{fig:vgg-fcn}
+  \caption{基于FCN网络的遥感影像分割示意图}\label{fig:vgg-fcn}
 \end{figure}
 
 \section{本章小结}
