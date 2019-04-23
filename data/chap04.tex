@@ -63,12 +63,34 @@ CGAN 模型中，生成器G 中随机噪声$z$与条件先验知识$y$ 被联合
 图\ref{fig:cgan} 为CGAN 的结构示意图，通过将额外条件信息$y$ 分别输送给判别模型和生成模型组成联合隐层表征,作为输入层的一部分,从而指导数据的生成过程。
 
 
-\subsection{基于CGAN 的语义分割方法}
+\subsection{基于CGAN 的影像分割方法}
 \label{sec:first-2}
+基于图像条件的CGAN 影像分割方法主要包含两个阶段：生成网络的影像分割模型和对抗训练阶段的判别模型。整个方法处理流程如图\ref{fig:gan-fcn} 所示，左边生成网络是一个全卷积影像分割模型，右边对抗网络是一个二元分类判别模型。
 
+\begin{figure}[htb]
+  \centering
+  \begin{center}
+    \makebox[\textwidth]{\includegraphics[width=\paperwidth]{figures/gan-fcn}}
+    \caption{基于对抗训练框架的全卷积语义分割模型示意图}\label{fig:gan-fcn}
+  \end{center}
+\end{figure}
+
+对抗网络的输入存在两种情况：一种是原始图像和ground truth 图拼接输入，另一种是原始图像与左边模型输出分割结果拼接输入。本文中对抗网络模型为一个六层卷积神经网络模型，一个卷积块由三个卷积层后接一个最大池化层组成，整个卷积网络由两个卷积块和两个全连接层堆叠形成。对抗网络的输出为一个二元分类值（输出为1代表它判断输入是第一种情况，输出为0代表它判断输入是第二种情况）。使用二元分类损失（Binary classification loss, BCE）来度量判别网络。二元分类损失为二元交叉熵（cross entropy）函数，统计学中使用KL 散度衡量两个事件或分布中的不同，常用于计算代价，而在特定任务下最小化KL散度等价于最小化交叉熵，而交叉熵的运算更简单\cite{de2005tutorial}，所以这里用交叉熵来计算二元分类损失。交叉熵函数为分类预测概率值的负对数。二元交叉熵代价表达式如下：
+\begin{equation}
+  \label{eq:4-4}
+  l_{bce} (\hat{z}, z) = -[z\log\hat{z} + (1-z)\log(1-\hat{z})]
+\end{equation}
+生成网络是全卷积网络模型，其是一个多分类网络模型。经典的多分类分割模型代价函数为多类别的交叉熵损失（multi-class entropy loss， MCE），则分割模型输入为大小为$H\times W\times C$ 的图像，对图像做像素级预测分类，其多元交叉熵损失为：
+\begin{equation}
+  \label{eq:4-5}
+  l_{mce} (\hat{y}, y) = -\sum_{i=1}^{H\times W}\sum_{c=1}^{C}[y_{ic}\log\hat{y}_{ic} + (1-y_{ic})\log(1-\hat{y}_{ic})]
+\end{equation}
+其中，$H$、$W$ 和$C$ 分别为图像的高度、宽度以及通道数。对于使用独热编码（One-hot encode）将图像像素标签编码,其有$C$ 个标签类别，
+
+对于有$N$ 张训练图片的数据集$X = \{x_1,x_2,\cdots, x_n \}$，其对应的ground truth 图标签集为$Y = \{y_1,y_2,\cdots, y_n \}$。
 
 \section{实验数据介绍}
-blabala
+数据集
 
 \section{实验结果与分析}
 balabala

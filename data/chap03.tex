@@ -495,7 +495,8 @@ IV-FCM 算法和TFSV-IT2FCM 算法的可视化结果分别如图~\ref{fig:hengqi
     \centering
     \caption{ 横琴地区分类结果表}
     \label{tab:hengqin_result}
-    \begin{adjustbox}{max width=1.05\textwidth}
+    \makebox[\textwidth]{
+    \begin{adjustbox}{max width=1.15\textwidth}
         \begin{tabular} {llllllllllllll}
             \toprule
             \multicolumn{1}{l}{\multirow{3}*{{分类结果}}} & \multicolumn{6}{c}{\textbf{TFSV-IT2FCM}} & \multicolumn{6}{c}{\textbf{IV-FCM}}                                                                                                                                                                  \\ \cline{2-13}
@@ -511,7 +512,7 @@ IV-FCM 算法和TFSV-IT2FCM 算法的可视化结果分别如图~\ref{fig:hengqi
             生产者精度(\%)                                & 91.60                                    & 76.52                                             & 88.25                      & 89.38                                             & 97.99 &       & 95.16  & 55.33  & 78.95 & 81.97 & 99.85 &       \\
             \bottomrule
         \end{tabular}
-    \end{adjustbox}
+    \end{adjustbox}}
 \end{table*}
 
 同样，为了获取横琴地区精确的分类结果，文中使用CORINE 土地分类系统随机采样$499,669$ 个像素点作为ground truth 图，如表~\ref{tab:hengqin_result} 所示，TFSV-IT2FCM 方法中$10,022$ 个像素由“农业区” 被错分为“水域”，而在IV-FCM 方法中被错分的像素点为$54,380$ 个。TFSV-IT2FCM 方法相比IV-FCM 方法，“水域”类别的用户精度从$78.12\%$ 提升到$95.99\%$。 表~\ref{tab:hengqin_result} 中的用户精度和生产者精度也表明TFSV-IT2FCM 聚类方法的性能要比IV-FCM 方法更好。
@@ -548,7 +549,8 @@ IV-FCM 算法和TFSV-IT2FCM 算法的可视化结果分别如图~\ref{fig:hengqi
     \centering
     \caption{三门峡地区分类结果表}
     \label{tab:sanmenxia_result}
-    \begin{adjustbox}{max width=1.05\textwidth}
+    \makebox[\textwidth]{
+    \begin{adjustbox}{max width=1.15\textwidth}
         \begin{tabular} {llllllllllllllll}
             \toprule
             \multicolumn{1}{l}{\multirow{3}*{{分类结果}}} & \multicolumn{7}{c}{\textbf{TFSV-IT2FCM}} & \multicolumn{7}{c}{\textbf{IV-FCM}}                                                                                                                                                                                       \\ \cline{2-15}
@@ -565,7 +567,7 @@ IV-FCM 算法和TFSV-IT2FCM 算法的可视化结果分别如图~\ref{fig:hengqi
             生产者精度(\%)                                & 85.20                                    & 81.35                                             & 97.09                      & 79.64                                             & 97.11  & 0.97   &       & 86.16 & 58.61  & 91.53  & 81.37  & 95.92  & 88.95  &       \\
             \bottomrule
         \end{tabular}
-    \end{adjustbox}
+    \end{adjustbox}}
 \end{table*}
 
 高分二号卫星拍摄的三门峡城市中心区域如图~\ref{fig:sanmenxia} 所示，由原始合成图~\ref{fig:sanmenxia}(a) 中可知，建筑、道路与农田交错复杂。与TFSV-IT2FCM 算法相比， IV-FCM 算法无法精确的区分图中右下角区域的建筑、道路与农田类别。图~\ref{fig:sanmenxia}(d) 中可视化结果表明TFSV-IT2FCM 算法对这三类可以产生明确的边界，分割效果更好。

@@ -33,13 +33,13 @@
 \contentsline {section}{\numberline {4.1}引言}{37}{section.4.1}
 \contentsline {section}{\numberline {4.2}基于生成对抗网络框架的影像分割方法}{37}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}生成对抗网络框架}{37}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}基于CGAN 的语义分割方法}{39}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}实验数据介绍}{39}{section.4.3}
-\contentsline {section}{\numberline {4.4}实验结果与分析}{39}{section.4.4}
-\contentsline {section}{\numberline {4.5}本章小结}{39}{section.4.5}
-\contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{40}{chapter.5}
-\contentsline {section}{\numberline {5.1}本文的主要内容}{40}{section.5.1}
-\contentsline {section}{\numberline {5.2}未来的期望}{40}{section.5.2}
-\contentsline {chapter}{参考文献}{41}{section*.58}
-\contentsline {chapter}{致谢}{46}{section*.61}
-\contentsline {chapter}{学术成果}{48}{section*.64}
+\contentsline {subsection}{\numberline {4.2.2}基于CGAN 的影像分割方法}{39}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}实验数据介绍}{40}{section.4.3}
+\contentsline {section}{\numberline {4.4}实验结果与分析}{40}{section.4.4}
+\contentsline {section}{\numberline {4.5}本章小结}{40}{section.4.5}
+\contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}本文的主要内容}{41}{section.5.1}
+\contentsline {section}{\numberline {5.2}未来的期望}{41}{section.5.2}
+\contentsline {chapter}{参考文献}{42}{section*.59}
+\contentsline {chapter}{致谢}{47}{section*.62}
+\contentsline {chapter}{学术成果}{49}{section*.65}

@@ -401,4 +401,9 @@ Pauline Luc, Camille Couprie, Soumith Chintala, et~al.
 \newblock Semantic segmentation using adversarial networks[J].
 \newblock arXiv preprint arXiv:1611.08408, 2016.
 
+\bibitem{de2005tutorial}
+Pieter-Tjerk De~Boer, Dirk~P Kroese, Shie Mannor, et~al.
+\newblock A tutorial on the cross-entropy method[J].
+\newblock Annals of operations research, 2005, 134(1):19--67.
+
 \end{thebibliography}
