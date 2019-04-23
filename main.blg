@@ -4,8 +4,8 @@ A level-1 auxiliary file: data/chap02.aux
 A level-1 auxiliary file: data/chap03.aux
 A level-1 auxiliary file: data/chap04.aux
 A level-1 auxiliary file: data/chap06.aux
-A level-1 auxiliary file: data/ack.aux
 The style file: bnubib.bst
+A level-1 auxiliary file: data/ack.aux
 A level-1 auxiliary file: data/paper.aux
 Database file #1: ref/refs.bib
 Repeated entry---line 556 of file ref/refs.bib
@@ -16,6 +16,10 @@ Repeated entry---line 679 of file ref/refs.bib
  : @article{simonyan2014very
  :                          ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 693 of file ref/refs.bib
+ : @article{mirza2014conditional
+ :                              ,
+I'm skipping whatever remains of this entry
 Warning--there's a publisher but no address in NIPS2012_4824
 Warning--empty journal in jensen1987introductory
 Warning--can't use both volume and number fields in djukanovic1993unsupervised
@@ -24,4 +28,4 @@ Warning--there's a publisher but no address in canny1987computational
 Warning--there's a number but no volume in vincent1991watersheds
 Warning--there's a publisher but no address in haykin1994neural
 Warning--there's a number but no volume in li2018deepunet
-(There were 2 error messages)
+(There were 3 error messages)

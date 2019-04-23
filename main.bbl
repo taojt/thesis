@@ -396,4 +396,9 @@ Jing-hua Zhang, Zhiming Feng, Lu-guang Jiang.
 \newblock Progress on studies of land use/land cover classification systems[J].
 \newblock Resources Science, 2011, 33(6):1195--1203.
 
+\bibitem{luc2016semantic}
+Pauline Luc, Camille Couprie, Soumith Chintala, et~al.
+\newblock Semantic segmentation using adversarial networks[J].
+\newblock arXiv preprint arXiv:1611.08408, 2016.
+
 \end{thebibliography}
