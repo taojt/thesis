@@ -87,7 +87,7 @@ CGAN 模型中，生成器G 中随机噪声$z$与条件先验知识$y$ 被联合
   \label{eq:4-5}
   l_{mce} (\hat{y}, y) = -\sum_{i=1}^{H\times W}\sum_{c=1}^{C}y_{ic}\log\hat{y}_{ic}
 \end{equation}
-其中，$H$、$W$ 和$C$ 分别为图像的高度、宽度以及通道数。假定多分类问题中类标有$K$ 个取值，需要使用独热编码（One-hot encode）将图像类别标签编码为一个$K$ 维向量，借助Softmax 函数作为分类任务的输出层。Softmax 函数把神经网络分类输出转化为一组概率，且这组概率和为1。归属于类别$j$ 的概率为：%softmax(z_j) = 
+其中，$H$、$W$ 和$C$ 分别为图像的高度、宽度以及通道数。假定多分类问题中类标有$K$ 个取值，需要使用独热编码（One-hot encode）将图像类别标签编码为一个$K$ 维向量，借助Softmax 函数作为分类任务的输出层。Softmax 函数把神经网络分类输出转化为一组概率，且这组概率和为1。归属于类别$j$ 的概率为：%softmax(z_j) =
 \begin{equation}
   \label{eq:4-6}
   p_j = \frac{e^{z_j}}{\sum_{k=1}^Ke^{z_k}}  \quad \forall j \in 1,2,\cdots, K
@@ -183,19 +183,86 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
 
 本文实验中训练样本采用随机裁剪选取方式获得，测试样本采用规则网格选取方式获得。获取裁剪样本时也对同一区域的DSM、Ground truth 图数据进行裁切，保证输入数据与类别标签的一致性。
 
-另外，为了获取更多的有效数据，增强网络模型的泛化能力，这里对训练样本做数据增强（Data augmentation）处理。
+另外，为了获取更多的有效数据，增强网络模型的泛化能力，这里对训练样本做数据增强（Data augmentation）处理。数据增强是通过一些几何变换（如平移、旋转和翻转）从已有训练样本图像生成一些新的样本，来扩大训练数据集。文中对上一步裁剪获得的训练样本做镜像对称，水平翻转处理，来扩大已有训练样本集，增强模型泛化能力。
 
+本小节对Vaihingen 有标签的16块影像数据处理，其中12张影像得到训练集样本图像$5760$ 幅，用于测试集的4 张影像经规则网格选取法得到大小为$256 \times 256$ 的测试图像合计$320$ 张。
 
-\subsection{实验数据准备}
-\label{sec:second-1}
-
-本章实验数据源为ISPRS
+% \subsection{实验数据准备}
+% \label{sec:second-1}
 
 
 \section{实验结果与分析}
 \label{sec:third}
-（国际摄影测量及遥感探测学会）提供的
+\subsection{实验环境与参数设置}
+\label{sec:third-1}
+本章实验电脑为思腾合力IR4200 服务器，其主要参数如下：CPU 为两块 Intel Xeon E5-2690 2.9GHz 8核 16线程正式版处理器，内存为128G 容量8通道DDR4 服务器内存，GPU 为技嘉 1080Ti，显存 12G。实验中使用 Ubuntu 16.04 LTS 操作系统，编程语言为Python 3.5，神经网络模型采用谷歌开源框架Tensorflow 编程实现，Tensoflow 版本为1.5.0。
 
+本节实验超参数设置如下：
+
+\begin{table*}[htbp]
+  \caption{基于CGAN 分割方法的生成器分割模型详细参数}\label{tab:model_g_param}
+  \centering
+  \makebox[\textwidth]{
+    \begin{adjustbox}{max width=1.1\textwidth}
+      \begin{tabular}{c|c|cccccc}
+        \toprule
+                                 & 模块                       & Levels                    & 网络层     & 该层输出尺寸                & 卷积核（尺寸/通道）  & 步长 & 激活函数 \\
+        \midrule
+        \multirow{30}*{生成器G}  & G-输入                     & {level 0                  &            & $256\times 256\times 64   $ &                      &      &          \\
+        \cline{2-8}
+                                 & \multirow{17}*{卷积压缩}   & \multirow{2}*{level 1}    & conv1\_1   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
+                                 &                            &                           & conv1\_2   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
+        \cline{3-8}
+                                 &                            & \multirow{3}*{{level 2}}  & pool2\_1   & $128\times 128\times 64  $  & $   2\times 2/-    $ & 2    & --       \\
+                                 &                            &                           & conv2\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+                                 &                            &                           & conv2\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+        \cline{3-8}
+                                 &                            & \multirow{4}*{level 3}    & pool3\_1   & $64\times 64\times 128   $  & $ 2\times 2/-      $ & 2    & --       \\
+                                 &                            &                           & conv3\_1   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+                                 &                            &                           & conv3\_2   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+                                 &                            &                           & conv3\_3   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+        \cline{3-8}
+                                 &                            & \multirow{4}*{level 4}    & pool4\_1   & $32\times 32\times 256   $  & $ 2\times 2/-      $ & 2    & --       \\
+                                 &                            &                           & conv4\_1   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                                 &                            &                           & conv4\_2   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                                 &                            &                           & conv4\_3   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+        \cline{3-8}
+                                 &                            & \multirow{4}*{level 5}    & pool5\_1   & $16\times 16\times 512   $  & $ 2\times 2/-      $ & 2    & --       \\
+                                 &                            &                           & conv5\_1   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                                 &                            &                           & conv5\_2   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                                 &                            &                           & conv5\_3   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+        \cline{2-8}
+                                 & \multirow{12}*{反卷积恢复} & \multirow{3}*{level 6}    & deconv6\_1 & $32\times 32\times 512   $  & $ 4\times 4/512    $ & 2    & ReLU     \\
+                                 &                            &                           & conv6\_1   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                                 &                            &                           & conv6\_2   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+        \cline{3-8}
+                                 &                            & \multirow{3}*{level 7}    & deconv7\_1 & $64\times 64\times 256   $  & $ 4\times 4/256    $ & 2    & ReLU     \\
+                                 &                            &                           & conv7\_1   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+                                 &                            &                           & conv7\_2   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+        \cline{3-8}
+                                 &                            & \multirow{3}*{level 8}    & deconv8\_1 & $128\times 128\times 128 $  & $ 4\times 4/128    $ & 2    & ReLU     \\
+                                 &                            &                           & conv8\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+                                 &                            &                           & conv8\_2   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+        \cline{3-8}
+                                 &                            & \multirow{3}*{level 9}    & deconv9\_1 & $256\times 256\times 64  $  & $ 4\times 4/64     $ & 2    & ReLU     \\
+                                 &                            &                           & conv9\_1   & $256\times 256\times 64  $  & $     3\times 3/64 $ & 1    & ReLU     \\
+                                 &                            &                           & conv9\_2   & $256\times 256\times 64  $  & $    3\times 3/64  $ & 1    & Softmax  \\
+        \cline{2-8}
+                                 & G-输出                     & level 10                  & conv10\_1  & $256\times 256\times 1   $  & $    1\times 1/1  $  & 1    & ReLU     \\
+        \midrule
+        \multirow{10}*{判别器D } & D-输入                     &                           &            & $256\times 256\times 5   $  &                      &      &          \\
+        \cline{1-8}
+                                 & G-输出                     &                           & conv10\_1  & $1\times 1   $              &                      &      & Sigmoid  \\
+        \bottomrule
+      \end{tabular}
+    \end{adjustbox}}
+\end{table*}
+
+\subsection{实验}
+\label{sec:third-2}
+
+\subsection{结果与分析}
+\label{sec:third-3}
 
 \section{本章小结}
 \label{sec:forth}
