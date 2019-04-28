@@ -193,11 +193,41 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
 
 \section{实验结果与分析}
 \label{sec:third}
-\subsection{实验环境与参数设置}
+\subsection{实验环境}
 \label{sec:third-1}
 本章实验电脑为思腾合力IR4200 服务器，其主要参数如下：CPU 为两块 Intel Xeon E5-2690 2.9GHz 8核 16线程正式版处理器，内存为128G 容量8通道DDR4 服务器内存，GPU 为技嘉 1080Ti，显存 12G。实验中使用 Ubuntu 16.04 LTS 操作系统，编程语言为Python 3.5，神经网络模型采用谷歌开源框架Tensorflow 编程实现，Tensoflow 版本为1.5.0。
 
+\subsection{评价指标}
+\label{sec:third-2}
+本节实验通过定性和定量两种方式评价实验结果。定性即从人工主观对测试图像的分割结果图做出评判，定量分析则使用图像分割中常用到的两种指标：
+
+（1）总体精度（Overall accuracy，OA），即遥感影像最直观的评价指标，其值为影像中被正确分类的像元个数除以总像元数，其计算方式如下式：
+\begin{equation}
+  \label{eq:4-11}
+  OA = \frac{1}{A_{\mbox{总}}}  \sum_{k=1}^K a_{kk}
+\end{equation}
+式中$A_{\mbox{总}}$ 为真实地物像元总数，$K$ 为地物类别数，$a_{kk}$ 第$k$ 类地物被正确分类的像元数。
+
+（2）平均交并比(Mean Intersection over union, mIoU)，IoU 是影像中真实标签与预测分割结果两者交集与并集的比值，mIoU 是图像语义分割领域最常用的准确度度量方法，它分别对影像每个地物类别计算IoU，然后再对所有地物类别的IoU 求均值。IoU 的计算方式如式\ref{eq:4-12}:
+\begin{equation}
+  \label{eq:4-12}
+  IoU = \frac{\mbox{预测结果} \cap \mbox{真实标签}}{\mbox{预测结果} \cup \mbox{真实标签}} 
+\end{equation}
+所有地物的mIoU 的计算方式如式\ref{eq:4-13}:
+\begin{equation}
+  \label{eq:4-13}
+  mIoU = \frac{1}{K}  \sum_{i=1}^K \frac{a_{ii}}{\sum_{j=1}^Ka_{ij} + \sum_{j=1}^Ka_{ji} -a_{ii}}
+\end{equation}
+式中$a_{ij}$ 表示第$i$ 类地物被错分为第$j$ 类的像元个数，$a_{ji} $ 表示第$j$ 类地物被错分为第$i$ 类的像元个数，$a_{ii}$ 表示第$i$ 类地物正确预测的像元个数。
+
+
+\subsection{网络参数}
+\label{sec:third-3}
+
 本节实验超参数设置如下：
+
+
+
 
 \begin{table*}[htbp]
   \caption{基于CGAN 框架的全卷积分割模型参数表}\label{tab:model_g_param}
@@ -269,8 +299,6 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
     \end{adjustbox}}
 \end{table*}
 
-\subsection{实验}
-\label{sec:third-2}
 
 \subsection{结果与分析}
 \label{sec:third-3}

@@ -40,10 +40,11 @@
 \contentsline {subsection}{\numberline {4.3.1}Vaihingen 数据介绍}{41}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}数据预处理}{42}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}实验结果与分析}{44}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}实验环境与参数设置}{44}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}实验}{46}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}结果与分析}{46}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}本章小结}{46}{section.4.5}
+\contentsline {subsection}{\numberline {4.4.1}实验环境}{44}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}评价指标}{45}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}网络参数}{45}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}结果与分析}{45}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}本章小结}{45}{section.4.5}
 \contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{47}{chapter.5}
 \contentsline {section}{\numberline {5.1}本文的主要内容}{47}{section.5.1}
 \contentsline {section}{\numberline {5.2}未来的期望}{47}{section.5.2}
