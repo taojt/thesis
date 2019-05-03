@@ -15,39 +15,26 @@
 \contentsline {subsection}{\numberline {2.1.1}影像分割方法}{7}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}模糊聚类方法}{10}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}基于神经网络的影像分割相关理论}{11}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}卷积神经网络基础}{11}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}卷积神经网络基础}{12}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}基于全卷积网络的图像分割}{14}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}本章小结}{17}{section.2.3}
-\contentsline {chapter}{第\nobreakspace {}3\nobreakspace {}章\hspace {1em} 基于区间二型模糊聚类的遥感影像无监督分割方法}{18}{chapter.3}
+\contentsline {chapter}{第\nobreakspace {}3\nobreakspace {}章\hspace {1em} 基于生成对抗网络的遥感影像分割方法}{18}{chapter.3}
 \contentsline {section}{\numberline {3.1}引言}{18}{section.3.1}
-\contentsline {section}{\numberline {3.2}三角形模糊集值建模与相似性度量}{18}{section.3.2}
-\contentsline {section}{\numberline {3.3}面向对象的改进型区间二型模糊遥感影像聚类方法}{23}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}算法整体框架}{23}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}面向对象的TFSV 模型}{23}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}基于TFSV 数据模型的面向对象模糊聚类方法}{25}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}后处理}{28}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}实验结果与分析}{29}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}神湾地区实验}{30}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}横琴地区实验}{33}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}三门峡地区实验}{35}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}本章小结}{36}{section.3.5}
-\contentsline {chapter}{第\nobreakspace {}4\nobreakspace {}章\hspace {1em} 基于生成对抗网络的遥感影像分割方法}{37}{chapter.4}
-\contentsline {section}{\numberline {4.1}引言}{37}{section.4.1}
-\contentsline {section}{\numberline {4.2}基于生成对抗网络框架的影像分割方法}{37}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}生成对抗网络框架}{37}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}基于CGAN 的影像分割方法}{39}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}实验数据介绍与预处理}{41}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Vaihingen 数据介绍}{41}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}数据预处理}{42}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}实验结果与分析}{44}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}实验环境}{44}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}评价指标}{45}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}网络参数}{45}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}结果与分析}{45}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}本章小结}{45}{section.4.5}
-\contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}本文的主要内容}{47}{section.5.1}
-\contentsline {section}{\numberline {5.2}未来的期望}{47}{section.5.2}
-\contentsline {chapter}{参考文献}{48}{section*.74}
-\contentsline {chapter}{致谢}{53}{section*.77}
-\contentsline {chapter}{学术成果}{55}{section*.80}
+\contentsline {section}{\numberline {3.2}基于生成对抗网络框架的影像分割方法}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}生成对抗网络框架}{18}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}基于CGAN 的影像分割方法}{20}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}实验数据介绍与预处理}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Vaihingen 数据介绍}{22}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}数据预处理}{23}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}实验结果与分析}{25}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}实验环境}{25}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}评价指标}{25}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}网络参数}{26}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}结果与分析}{28}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}本章小结}{28}{section.3.5}
+\contentsline {chapter}{第\nobreakspace {}4\nobreakspace {}章\hspace {1em} 总结与展望}{30}{chapter.4}
+\contentsline {section}{\numberline {4.1}本文的主要内容}{30}{section.4.1}
+\contentsline {section}{\numberline {4.2}未来的期望}{30}{section.4.2}
+\contentsline {chapter}{参考文献}{31}{section*.54}
+\contentsline {chapter}{学术成果}{36}{section*.57}
+\contentsline {chapter}{致谢}{37}{section*.60}

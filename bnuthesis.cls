@@ -1,4 +1,4 @@
-%% Copyright (C) 2010-2012 by Gerry
+%% Copyright (C) 2010-2016 by Gerry
 %%
 %% This file may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3a
@@ -11,14 +11,14 @@
 
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
 \ProvidesClass{bnuthesis}
-[2015/9/20 1.53 Beijing Normal University Thesis Template]
+[2016/4/10 1.54 Beijing Normal University Thesis Template]
 \newif\ifbnu@UTF
 \newif\ifbnu@GBK
 \DeclareOption{utf}{\bnu@UTFtrue\bnu@GBKfalse}
 \DeclareOption{gbk}{\bnu@GBKtrue\bnu@UTFfalse}
 \hyphenation{bnu-Thesis}
 \def\bnuthesis{\textsc{BNUThesis}}
-\def\version{1.51}
+\def\version{1.54}
 \newif\ifbnu@bachelor\bnu@bachelorfalse
 \newif\ifbnu@master\bnu@masterfalse
 \newif\ifbnu@doctor\bnu@doctorfalse
@@ -84,40 +84,44 @@
   \RequirePackage[CJKnumber,BoldFont,normalindentfirst]{xeCJK}
   \punctstyle{quanjiao}
   % todo: minor fix of CJKnumb
-  \def\CJK@null{\kern\CJKnullspace\hskip \f@size \p@\kern\CJKnullspace}
-  \defaultfontfeatures{Mapping=tex-text} % use TeX --
-  \newcommand{\fontsong}{Adobe Song Std}
-  \newcommand{\fonthei}{Adobe Heiti Std}
-  \newcommand{\fontkai}{Adobe Kaiti Std}
-  \newcommand{\fontfs}{Adobe Fangsong Std}
-  \newcommand{\fontli}{Adobe Kaiti Std}
-  \newcommand{\fontyou}{Adobe Kaiti Std}
-
-  \setCJKmainfont[BoldFont={\fonthei}, ItalicFont={\fontkai}]{\fontsong}
-  \setCJKsansfont{\fonthei}
-  \setCJKmonofont{\fontkai}
-  \setCJKfamilyfont{song}{\fontsong}
-  \setCJKfamilyfont{hei}{\fonthei}
-  \setCJKfamilyfont{fs}{\fontfs}
-  \setCJKfamilyfont{kai}{\fontkai}
-  \setCJKfamilyfont{li}{\fontli}
-  \setCJKfamilyfont{you}{\fontyou}
   
-  % \setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun}
-% \setCJKsansfont{SimHei}
-% \setCJKmonofont{FangSong}
-% \setCJKfamilyfont{zhsong}{SimSun}
-% \setCJKfamilyfont{zhhei}{SimHei}
-% \setCJKfamilyfont{zhkai}{KaiTi}
-% \setCJKfamilyfont{zhfs}{FangSong}
-% \setCJKfamilyfont{zhli}{LiSu}
-% \setCJKfamilyfont{zhyou}{YouYuan}
-% \newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
-% \newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
-% \newcommand*{\kaishu}{\CJKfamily{zhkai}}  % 楷书
-% \newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
-% \newcommand*{\lishu}{\CJKfamily{zhli}}    % 隶书
-% \newcommand*{\youyuan}{\CJKfamily{zhyou}} % 幼圆
+% Adobe 字体
+%  \def\CJK@null{\kern\CJKnullspace\hskip \f@size \p@\kern\CJKnullspace}
+%  \defaultfontfeatures{Mapping=tex-text} % use TeX --
+%  \newcommand{\fontsong}{Adobe Song Std}
+%  \newcommand{\fonthei}{Adobe Heiti Std}
+%  \newcommand{\fontkai}{Adobe Kaiti Std}
+%  \newcommand{\fontfs}{Adobe Fangsong Std}
+%  \newcommand{\fontli}{Adobe Kaiti Std}
+%  \newcommand{\fontyou}{Adobe Kaiti Std}%
+%  \setCJKmainfont[BoldFont={\fonthei}, ItalicFont={\fontkai}]{\fontsong}
+%  \setCJKsansfont{\fonthei}
+%  \setCJKmonofont{\fontkai}
+%  \setCJKfamilyfont{song}{\fontsong}
+%  \setCJKfamilyfont{hei}{\fonthei}
+%  \setCJKfamilyfont{fs}{\fontfs}
+%  \setCJKfamilyfont{kai}{\fontkai}
+%  \setCJKfamilyfont{li}{\fontli}
+%  \setCJKfamilyfont{you}{\fontyou}
+  
+  
+ %% windows 系统字体
+ \setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun}
+ \setCJKsansfont{SimHei}
+ \setCJKmonofont{FangSong}
+ \setCJKfamilyfont{song}{SimSun}
+ \setCJKfamilyfont{hei}{SimHei}
+ \setCJKfamilyfont{kai}{KaiTi}
+ \setCJKfamilyfont{fs}{FangSong}
+ \setCJKfamilyfont{li}{LiSu}
+ \setCJKfamilyfont{you}{YouYuan}
+ 
+ \newcommand*{\fontsong}{\CJKfamily{song}} % 宋体
+ \newcommand*{\fonthei}{\CJKfamily{hei}}   % 黑体
+ \newcommand*{\fontkai}{\CJKfamily{kai}}  % 楷书
+ \newcommand*{\fontfs}{\CJKfamily{fs}} % 仿宋
+ \newcommand*{\fontli}{\CJKfamily{li}}    % 隶书
+ \newcommand*{\fontyou}{\CJKfamily{you}} % 幼圆
 
   \setmainfont{Times New Roman}
   \setsansfont{Arial}
@@ -382,8 +386,8 @@
 \renewcommand{\topfraction}{0.85}
 \renewcommand{\bottomfraction}{0.65}
 \renewcommand{\floatpagefraction}{0.60}
-\let\old@tabular\@tabular
-\def\bnu@tabular{\dawu[1.5]\old@tabular}
+%\let\old@tabular\@tabular
+%\def\bnu@tabular{\dawu[1.5]\old@tabular}
 \DeclareCaptionLabelFormat{bnu}{{\dawu[1.5]\song #1~\rmfamily #2}}
 \DeclareCaptionLabelSeparator{bnu}{\hspace{1em}}
 \DeclareCaptionFont{bnu}{\dawu[1.5]}
@@ -412,11 +416,15 @@
    \if@mainmatter
      \refstepcounter{chapter}%
      \addcontentsline{toc}{chapter}{\@chapapp \hspace{1em} #1}
+     \addcontentsline{toe}{chapter}{\bfseries \xiaosi Chapter \thechapter\hspace{0.5em} #1}
+     
    \else
      \addcontentsline{toc}{chapter}{#1}%
+     \addcontentsline{toe}{chapter}{#1}
    \fi
   \else
     \addcontentsline{toc}{chapter}{#1}%
+     \addcontentsline{toe}{chapter}{#1}
   \fi
   \chaptermark{#1}%
   \@makechapterhead{#2}}
@@ -462,6 +470,7 @@
     \pdfbookmark[0]{#2}{bnuchapter.\thebnu@bookmark}
   \else
     \addcontentsline{toc}{chapter}{#1}
+     \addcontentsline{toe}{chapter}{#1}
   \fi
   \chapter*{#2}
   \ifx\@tmpb\@empty
@@ -493,6 +502,28 @@
 \ifbnu@arialtoc
   \def\bnu@toc@font{\sffamily}
 \fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 英文目录格式
+\def\@dotsep{0.75}           % 定义英文目录的点间距
+\setlength\leftmargini {0pt}
+\setlength\leftmarginii {0pt}
+\setlength\leftmarginiii {0pt}
+\setlength\leftmarginiv {0pt}
+\setlength\leftmarginv {0pt}
+\setlength\leftmarginvi {0pt}
+
+\def\engcontentsname{\bfseries Contents}
+\newcommand\tableofengcontents{
+   \pdfbookmark[0]{Contents}{econtent}
+     \@restonecolfalse
+   \chapter*{\engcontentsname  %chapter*上移一行，避免在toc中出现。
+       \@mkboth{%
+          \engcontentsname}{\engcontentsname}}
+   \@starttoc{toe}%
+   \if@restonecol\twocolumn\fi
+   }
+   
 %\def\@pnumwidth{2em} % 这个参数没用了
 \def\@tocrmarg{2em}
 \def\@dotsep{1} % 目录点间的距离
@@ -609,7 +640,7 @@
       {\sanhao[1] \bf \bnu@thesistitle}
       \end{center}}
 
-      \parbox[t][9.0cm][t]{0.5\textwidth}{\sihao[2.0] \song
+      \parbox[t][9.0cm][t]{0.55\textwidth}{\sihao[2.0] \song
 	      \bnu@cauthortitle      \bnu@title@sep \hspace{1em} {\bf \bnu@cauthor}\\
 	      \bnu@csupervisortitle  \bnu@title@sep \hspace{1em} {\bf \bnu@csupervisor}\\
 	      \bnu@cdepartmenttitle  \bnu@title@sep \hspace{1em} {\bf \bnu@cdepartment}\\
@@ -667,7 +698,8 @@
   \end{titlepage}
   \normalsize
   \bnu@makeabstract
-  \let\@tabular\bnu@tabular}
+%  \let\@tabular\bnu@tabular
+  }
 \newcommand{\bnu@makeabstract}{%
   \cleardoublepage % always openright for Abstract
 

@@ -113,7 +113,6 @@ removeTrailingWhitespace:
     beforeProcessing: 0
     afterProcessing: 1
 
-# \begin{document} and \end{document} are treated differently
 # by latexindent within filecontents environments
 fileContentsEnvironments:
     filecontents: 1

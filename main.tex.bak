@@ -37,28 +37,27 @@
 % 表格索引
 \listoftables
 
+
+
+
+
+%%% 其它部分
+%\backmatter
 %%% 正文部分
 \mainmatter
 \include{data/chap01}
 \include{data/chap02}
 \include{data/chap03}
 \include{data/chap04}
-%\include{data/chap05}
-\include{data/chap06}
+\include{data/chap05}
 
-
-
-%%% 其它部分
-%\backmatter
 
 
 
 % % 参考文献
-\bibliographystyle{bnubib}
 \bibliography{ref/refs}
+\bibliographystyle{bnubib}
 
-% 致谢
-\include{data/ack}
 
 % 附录
 %\begin{appendix}
@@ -68,6 +67,8 @@
 % % 学术成果
 \include{data/paper}
 
+% 致谢
+\include{data/ack}
 
 
 \end{document}

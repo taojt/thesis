@@ -336,66 +336,6 @@ Jonathan Long, Evan Shelhamer, Trevor Darrell.
   and pattern recognition, 2015.
 \newblock  3431--3440.
 
-\bibitem{bezdek1984fcm}
-James~C Bezdek, Robert Ehrlich, William Full.
-\newblock FCM: The fuzzy c-means clustering algorithm[J].
-\newblock Computers \& Geosciences, 1984, 10(2-3):191--203.
-
-\bibitem{jiang2018enhanced}
-Tao Jiang, Dan Hu, Xianchuan Yu.
-\newblock Enhanced IT2FCM algorithm using object-based triangular fuzzy set
-  modeling for remote-sensing clustering[J].
-\newblock Computers \& geosciences, 2018, 118:14--26.
-
-\bibitem{yu2012method}
-XC~Yu, WJ~An, Hui He.
-\newblock A method of auto classification based on object oriented unsupervised
-  classification[J].
-\newblock Progress in Geophysics, 2012, 27(2):744--749.
-
-\bibitem{zadeh1965fuzzy}
-Lotfi~A Zadeh.
-\newblock Fuzzy sets[J].
-\newblock Information and control, 1965, 8(3):338--353.
-
-\bibitem{zadeh1978fuzzy}
-Lotfi~Asker Zadeh.
-\newblock Fuzzy sets as a basis for a theory of possibility[J].
-\newblock Fuzzy sets and systems, 1978, 1(1):3--28.
-
-\bibitem{liu2008efficient}
-Feilong Liu.
-\newblock An efficient centroid type-reduction strategy for general type-2
-  fuzzy logic system[J].
-\newblock Information Sciences, 2008, 178(9):2224--2236.
-
-\bibitem{roerdink2000watershed}
-Jos~BTM Roerdink, Arnold Meijster.
-\newblock The watershed transform: Definitions, algorithms and parallelization
-  strategies[J].
-\newblock Fundamenta informaticae, 2000, 41(1, 2):187--228.
-
-\bibitem{hwang2007uncertain}
-Cheul Hwang, Frank Chung-Hoon Rhee.
-\newblock Uncertain fuzzy clustering: Interval type-2 fuzzy approach to $ c
-  $-means[J].
-\newblock IEEE Transactions on Fuzzy Systems, 2007, 15(1):107--120.
-
-\bibitem{karnik2001centroid}
-Nilesh~N Karnik, Jerry~M Mendel.
-\newblock Centroid of a type-2 fuzzy set[J].
-\newblock Information Sciences, 2001, 132(1-4):195--220.
-
-\bibitem{wu2009enhanced}
-Dongrui Wu, Jerry~M Mendel.
-\newblock Enhanced karnik--mendel algorithms[J].
-\newblock IEEE Transactions on Fuzzy Systems, 2009, 17(4):923--934.
-
-\bibitem{zhang2011progress}
-Jing-hua Zhang, Zhiming Feng, Lu-guang Jiang.
-\newblock Progress on studies of land use/land cover classification systems[J].
-\newblock Resources Science, 2011, 33(6):1195--1203.
-
 \bibitem{luc2016semantic}
 Pauline Luc, Camille Couprie, Soumith Chintala, et~al.
 \newblock Semantic segmentation using adversarial networks[J].
@@ -405,5 +345,10 @@ Pauline Luc, Camille Couprie, Soumith Chintala, et~al.
 Pieter-Tjerk De~Boer, Dirk~P Kroese, Shie Mannor, et~al.
 \newblock A tutorial on the cross-entropy method[J].
 \newblock Annals of operations research, 2005, 134(1):19--67.
+
+\bibitem{kingma2014adam}
+Diederik~P Kingma, Jimmy Ba.
+\newblock Adam: A method for stochastic optimization[J].
+\newblock arXiv preprint arXiv:1412.6980, 2014.
 
 \end{thebibliography}
