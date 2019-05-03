@@ -1,0 +1,19 @@
+INFO: latexindent.exe version 3.5.3, 2018-10-13, a script to indent .tex files
+      latexindent.exe lives here: E:/LatexIndent/
+      Fri May  3 21:02:19 2019
+      Filename: e:/thesis_for_jiangtao/data/__latexindent_temp.tex
+INFO: Processing switches:
+      -y|--yaml: YAML settings specified via command line
+      -c|--cruft: cruft directory
+INFO: Directory for backup files and e:/thesis_for_jiangtao/data/indent.log: e:/thesis_for_jiangtao/data/
+INFO: YAML settings read: defaultSettings.yaml
+      Reading defaultSettings.yaml from E:/LatexIndent/defaultSettings.yaml
+INFO: YAML settings read: indentconfig.yaml or .indentconfig.yaml
+      Home directory is C:\Users\taojt (didn't find either indentconfig.yaml or .indentconfig.yaml)
+      To specify user settings you would put indentconfig.yaml here: C:\Users\taojt/indentconfig.yaml
+      Alternatively, you can use the hidden file .indentconfig.yaml as: C:\Users\taojt/.indentconfig.yaml
+INFO: YAML settings read: -y switch
+      Updating masterSettings with defaultIndent:   
+FATAL: I couldn't find e:/thesis_for_jiangtao/data/__latexindent_temp.tex, are you sure it exists?.
+       No indentation done.
+       Exiting.
