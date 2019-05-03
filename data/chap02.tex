@@ -57,7 +57,7 @@ Watershed 分水岭分割算法是一个非常经典的区域生长分割方法�
 式中，$g_{\theta}$ 表示阈值。
 
 \subsubsection*{2. SLIC 超像素分割算法}
-\label{subsubsec:chap02-1-1-1}
+\label{subsubsec:chap02-1-1-2}
 SLIC(Simple linear iterativeclustering)，即简单的线性迭代聚类超像素分割方法。它采用$K$ 均值聚类方法高效地生成超像素，较以前的算法可以更好地获取分割边界，且有着更快的运行速度。
 
 \begin{figure}[htb]
@@ -250,7 +250,7 @@ CNN 最核心结构是卷积层，每个卷积层均包含一个或多个二维�
 
 反卷积是卷积运算形式上转置的映射关系。对一个大小为$X\times X$的图像$\textit{I}$，和大小为$K\times K$ 的卷积核，进行步长为$S \geq 1$ 的反卷积运算，先对图像$\textit{I}$ 进行两端补零$P=K-1$，并且在每两个像素间填充$S-1$ 个$0$，最后进行步长为$1$ 的卷积操作，得到反卷积的输出结果，设输出特征维度为$O \times O$ ，满足：
 \begin{equation}
-  \label{eq:2-19}
+  \label{eq:2-20}
   O = S \times (X - 1) + K
 \end{equation}
 

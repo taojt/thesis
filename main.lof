@@ -6,10 +6,19 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces 影像分割网络结构示意图\relax }}{15}{figure.caption.31}
 \contentsline {figure}{\numberline {7}{\ignorespaces 反卷积上采样过程\relax }}{16}{figure.caption.33}
 \contentsline {figure}{\numberline {8}{\ignorespaces 基于FCN网络的遥感影像分割示意图\relax }}{17}{figure.caption.35}
-\contentsline {figure}{\numberline {9}{\ignorespaces GAN结构示意图\relax }}{18}{figure.caption.38}
-\contentsline {figure}{\numberline {10}{\ignorespaces CGAN结构示意图\relax }}{19}{figure.caption.39}
-\contentsline {figure}{\numberline {11}{\ignorespaces 基于对抗训练框架的全卷积语义分割模型示意图\relax }}{20}{figure.caption.40}
-\contentsline {figure}{\numberline {12}{\ignorespaces Vaihingen 影像数据\relax }}{22}{figure.caption.41}
-\contentsline {figure}{\numberline {13}{\ignorespaces 图像裁剪方式\relax }}{24}{figure.caption.47}
-\contentsline {figure}{\numberline {14}{\ignorespaces 影像分割的可视化结果\relax }}{28}{figure.caption.49}
-\contentsline {figure}{\numberline {15}{\ignorespaces DSM 波段对影像分类结果的影响\relax }}{29}{figure.caption.51}
+\contentsline {figure}{\numberline {9}{\ignorespaces 区间值相同但分布不同的数据比较\relax }}{18}{figure.caption.38}
+\contentsline {figure}{\numberline {10}{\ignorespaces 三角形模糊集 $\mathaccentV {tilde}E7E{A}$ 示意图\relax }}{19}{figure.caption.39}
+\contentsline {figure}{\numberline {11}{\ignorespaces $\mathaccentV {tilde}E7E{A}$ 和 $\mathaccentV {tilde}E7E{B}$ 位置关系示意图。 (a)相交; (b)$\mathaccentV {tilde}E7E{A}$ 包含集合$\mathaccentV {tilde}E7E{B}$; (c)不相交.\relax }}{20}{figure.caption.40}
+\contentsline {figure}{\numberline {12}{\ignorespaces 不同位置下，$\mathaccentV {tilde}E7E{A}$ 和 $\mathaccentV {tilde}E7E{B}$ 两者间各种距离比较图。\relax }}{21}{figure.caption.41}
+\contentsline {figure}{\numberline {13}{\ignorespaces 面向对象的改进型区间二型模糊遥感影像聚类算法框架图\relax }}{23}{figure.caption.42}
+\contentsline {figure}{\numberline {14}{\ignorespaces TFSV-IT2FCM 算法流程图\relax }}{35}{figure.caption.47}
+\contentsline {figure}{\numberline {15}{\ignorespaces 神湾研究区不同方法分类结果示意图 \relax }}{36}{figure.caption.49}
+\contentsline {figure}{\numberline {16}{\ignorespaces 神湾研究区TFSV-IT2FCM 与IV-FCM 算法聚类分割图 \relax }}{37}{figure.caption.53}
+\contentsline {figure}{\numberline {17}{\ignorespaces 三门峡研究区不同方法分类结果示意图 \relax }}{37}{figure.caption.56}
+\contentsline {figure}{\numberline {18}{\ignorespaces GAN结构示意图\relax }}{38}{figure.caption.61}
+\contentsline {figure}{\numberline {19}{\ignorespaces CGAN结构示意图\relax }}{39}{figure.caption.62}
+\contentsline {figure}{\numberline {20}{\ignorespaces 基于对抗训练框架的全卷积语义分割模型示意图\relax }}{40}{figure.caption.63}
+\contentsline {figure}{\numberline {21}{\ignorespaces Vaihingen 影像数据\relax }}{42}{figure.caption.64}
+\contentsline {figure}{\numberline {22}{\ignorespaces 图像裁剪方式\relax }}{44}{figure.caption.70}
+\contentsline {figure}{\numberline {23}{\ignorespaces 影像分割的可视化结果\relax }}{49}{figure.caption.72}
+\contentsline {figure}{\numberline {24}{\ignorespaces DSM 波段对影像分类结果的影响\relax }}{49}{figure.caption.74}

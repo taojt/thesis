@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  3 MAY 2019 17:45
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  3 MAY 2019 20:23
 entering extended mode
 **main.tex
 (E:\thesis_for_jiangtao\main.tex
@@ -1255,20 +1255,18 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 (E:\thesis_for_jiangtao\main.aux (E:\thesis_for_jiangtao\data/chap01.aux)
 (E:\thesis_for_jiangtao\data/chap02.aux
 
-LaTeX Warning: Label `subsubsec:chap02-1-1-1' multiply defined.
-
-
 LaTeX Warning: Label `subsec:chap02-2-1' multiply defined.
 
+) (E:\thesis_for_jiangtao\data/chap03.aux
 
-LaTeX Warning: Label `eq:2-19' multiply defined.
+LaTeX Warning: Label `subsec::chap03-4-1' multiply defined.
+
+
+LaTeX Warning: Label `subsec::chap03-4-1' multiply defined.
 
 ) (E:\thesis_for_jiangtao\data/chap04.aux
 
 LaTeX Warning: Label `sec:second' multiply defined.
-
-
-LaTeX Warning: Label `sec:second-1' multiply defined.
 
 
 LaTeX Warning: Label `sec:third' multiply defined.
@@ -1279,16 +1277,13 @@ LaTeX Warning: Label `sec:third-3' multiply defined.
 
 LaTeX Warning: Label `sec:forth' multiply defined.
 
-) (E:\thesis_for_jiangtao\data/chap05.aux
-
-LaTeX Warning: Label `sec:first' multiply defined.
-
-) (E:\thesis_for_jiangtao\data/paper.aux) (E:\thesis_for_jiangtao\data/ack.aux)
-)
+) (E:\thesis_for_jiangtao\data/chap05.aux)
+(E:\thesis_for_jiangtao\data/paper.aux) (E:\thesis_for_jiangtao\data/ack.aux))
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 21.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 21.
 
- (C:\CTEX\MiKTeX\tex\latex\txfonts\omltxmi.fd
+
+(C:\CTEX\MiKTeX\tex\latex\txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 21.
@@ -1973,47 +1968,12 @@ Requested font "Arial/ICU:script=latn;language=DFLT;" at 14.05249pt
 . 
 . This font family consists of the following shapes:
 .................................................
-Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 8.43146pt
- -> C:/Windows/Fonts/timesbd.ttf
-
-
-Package natbib Warning: Citation `lishihua2005' on page 1 undefined on input li
-ne 13.
-
-
-Package natbib Warning: Citation `zhangjun2010' on page 1 undefined on input li
-ne 13.
-
-
-Package natbib Warning: Citation `lideren2012' on page 1 undefined on input lin
-e 15.
-
-
-Package natbib Warning: Citation `wulun2006' on page 1 undefined on input line 
-15.
-
-
-Package natbib Warning: Citation `he2005comparison' on page 1 undefined on inpu
-t line 15.
-
-[1
+ [1
 
 
 
 
 ]
-
-Package natbib Warning: Citation `hinton2006fast' on page 2 undefined on input 
-line 27.
-
-
-Package natbib Warning: Citation `bengio2009learning' on page 2 undefined on in
-put line 27.
-
-
-Package natbib Warning: Citation `NIPS2012_4824' on page 2 undefined on input l
-ine 27.
-
 Requested font "Arial/ICU:script=latn;language=DFLT;" at 13.04874pt
  -> C:/Windows/Fonts/arial.ttf
 Requested font "SimHei" at 13.04874pt
@@ -2030,62 +1990,6 @@ Requested font "SimHei/ICU" at 13.04874pt
 .................................................
 Requested font "SimHei/ICU:script=latn;language=DFLT;" at 13.04874pt
  -> C:/Windows/Fonts/simhei.ttf
-
-Package natbib Warning: Citation `jensen1987introductory' on page 2 undefined o
-n input line 32.
-
-
-Package natbib Warning: Citation `djukanovic1993unsupervised' on page 2 undefin
-ed on input line 32.
-
-
-Package natbib Warning: Citation `wacker1972minimum' on page 2 undefined on inp
-ut line 32.
-
-
-Package natbib Warning: Citation `strahler1980use' on page 2 undefined on input
- line 32.
-
-
-Package natbib Warning: Citation `atkinson2000geostatistical' on page 2 undefin
-ed on input line 32.
-
-
-Package natbib Warning: Citation `paul2002new' on page 2 undefined on input lin
-e 32.
-
-
-Package natbib Warning: Citation `zhangyongsheng2004' on page 2 undefined on in
-put line 32.
-
-
-Package natbib Warning: Citation `blaschke2010object' on page 2 undefined on in
-put line 32.
-
-
-Package natbib Warning: Citation `zhangyongsheng2004' on page 2 undefined on in
-put line 34.
-
-
-Package natbib Warning: Citation `kettig1976classification' on page 2 undefined
- on input line 34.
-
-
-Package natbib Warning: Citation `lobo1996classification' on page 2 undefined o
-n input line 34.
-
-
-Package natbib Warning: Citation `baatz1999object' on page 2 undefined on input
- line 34.
-
-
-Package natbib Warning: Citation `geneletti2003method' on page 2 undefined on i
-nput line 34.
-
-
-Package natbib Warning: Citation `guo2007object' on page 2 undefined on input l
-ine 34.
-
 Requested font "SimSun" at 10.53937pt
  -> C:/Windows/Fonts/simsun.ttc
 Requested font "SimSun/ICU" at 10.53937pt
@@ -2104,133 +2008,13 @@ Requested font "SimSun/ICU:script=latn;language=DFLT;" at 10.53937pt
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-
-Package natbib Warning: Citation `canny1987computational' on page 3 undefined o
-n input line 36.
-
-
-Package natbib Warning: Citation `otsu1979threshold' on page 3 undefined on inp
-ut line 36.
-
-
-Package natbib Warning: Citation `vincent1991watersheds' on page 3 undefined on
- input line 36.
-
-
-Package natbib Warning: Citation `achanta2012slic' on page 3 undefined on input
- line 36.
-
-
-Package natbib Warning: Citation `weizman2009urban' on page 3 undefined on inpu
-t line 36.
-
-
-Package natbib Warning: Citation `lienou2010semantic' on page 3 undefined on in
-put line 36.
-
-
-Package natbib Warning: Citation `he2016remote' on page 3 undefined on input li
-ne 36.
-
-
-Package natbib Warning: Citation `pal2005random' on page 3 undefined on input l
-ine 36.
-
-
-Package natbib Warning: Citation `suykens1999least' on page 3 undefined on inpu
-t line 36.
-
-
-Package natbib Warning: Citation `friedl1997decision' on page 3 undefined on in
-put line 36.
-
-
-Package natbib Warning: Citation `haykin1994neural' on page 3 undefined on inpu
-t line 36.
-
-
-Package natbib Warning: Citation `freund1996experiments' on page 3 undefined on
- input line 36.
-
-
-Package natbib Warning: Citation `hinton2006fast' on page 3 undefined on input 
-line 42.
-
-
-Package natbib Warning: Citation `lecun2015deep' on page 3 undefined on input l
-ine 42.
-
-
-Package natbib Warning: Citation `bengio2009learning' on page 3 undefined on in
-put line 42.
-
-
-Package natbib Warning: Citation `NIPS2012_4824' on page 3 undefined on input l
-ine 42.
-
-
-Package natbib Warning: Citation `szegedy2015going' on page 3 undefined on inpu
-t line 42.
-
-
-Package natbib Warning: Citation `simonyan2014very' on page 3 undefined on inpu
-t line 42.
-
-
-Package natbib Warning: Citation `he2016deep' on page 3 undefined on input line
- 42.
-
-
-Package natbib Warning: Citation `hinton2006fast' on page 3 undefined on input 
-line 42.
-
-
-Package natbib Warning: Citation `bengio2007greedy' on page 3 undefined on inpu
-t line 42.
-
-
-Package natbib Warning: Citation `vincent2008extracting' on page 3 undefined on
- input line 42.
-
-
-Package natbib Warning: Citation `ng2011sparse' on page 3 undefined on input li
-ne 42.
-
-
-Package natbib Warning: Citation `goodfellow2014generative' on page 3 undefined
- on input line 42.
-
-
-Package natbib Warning: Citation `mirza2014conditional' on page 3 undefined on 
-input line 42.
-
-
-Package natbib Warning: Citation `radford2015unsupervised' on page 3 undefined 
-on input line 42.
-
-
-Package natbib Warning: Citation `chen2016infogan' on page 3 undefined on input
- line 42.
-
-
-Package natbib Warning: Citation `arjovsky2017wasserstein' on page 3 undefined 
-on input line 42.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-
-Package natbib Warning: Citation `hu2015transferring' on page 4 undefined on in
-put line 44.
-
-
-Package natbib Warning: Citation `castelluccio2015land' on page 4 undefined on 
-input line 44.
-
 LaTeX Font Info:    Try loading font information for OMS+TimesNewRoman(0) on in
 put line 44.
 LaTeX Font Info:    No file OMSTimesNewRoman(0).fd. on input line 44.
+
 
 LaTeX Font Warning: Font shape `OMS/TimesNewRoman(0)/m/n' undefined
 (Font)              using `OMS/txsy/m/n' instead on input line 44.
@@ -2256,30 +2040,6 @@ Requested font "SimSun/ICU" at 9.03374pt
 Requested font "SimSun/ICU:script=latn;language=DFLT;" at 9.03374pt
  -> C:/Windows/Fonts/simsun.ttc
 
-Package natbib Warning: Citation `romero2016unsupervised' on page 4 undefined o
-n input line 44.
-
-
-Package natbib Warning: Citation `kampffmeyer2016semantic' on page 4 undefined 
-on input line 44.
-
-
-Package natbib Warning: Citation `maggiori2016fully' on page 4 undefined on inp
-ut line 44.
-
-
-Package natbib Warning: Citation `ronneberger2015u' on page 4 undefined on inpu
-t line 44.
-
-
-Package natbib Warning: Citation `li2018deepunet' on page 4 undefined on input 
-line 44.
-
-
-Package natbib Warning: Citation `zhang2018road' on page 4 undefined on input l
-ine 44.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2293,17 +2053,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
 (E:\thesis_for_jiangtao\data/chap02.tex
-
-LaTeX Warning: Reference `cha:chap03' on page 7 undefined on input line 11.
-
-
-Package natbib Warning: Citation `vincent1991watersheds' on page 7 undefined on
- input line 19.
-
-
-Package natbib Warning: Citation `achanta2012slic' on page 7 undefined on input
- line 19.
-
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2453,11 +2202,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-
-Package natbib Warning: Citation `krizhevsky2012imagenet' on page 11 undefined 
-on input line 143.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
@@ -2475,11 +2219,6 @@ File: figures/pooling.pdf Graphic file (type QTm)
 <use  "figures/pooling.pdf" >
 File: figures/cnn_structure.pdf Graphic file (type QTm)
  <use  "figures/cnn_structure.pdf" >
-
-Package natbib Warning: Citation `long2015fully' on page 14 undefined on input 
-line 233.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
@@ -2498,67 +2237,19 @@ Requested font "Times New Roman/I/ICU:script=latn;language=DFLT;" at 8.43146pt
  -> C:/Windows/Fonts/timesi.ttf
 Requested font "Times New Roman/I/ICU:script=latn;language=DFLT;" at 6.02249pt
  -> C:/Windows/Fonts/timesi.ttf
-
-
-Package natbib Warning: Citation `krizhevsky2012imagenet' on page 16 undefined 
-on input line 259.
-
-
-Package natbib Warning: Citation `simonyan2014very' on page 16 undefined on inp
-ut line 259.
-
 File: figures/vgg-fcn.pdf Graphic file (type QTm)
-<use  "figures/vgg-fcn.pdf" >
+ <use  "figures/vgg-fcn.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
-(E:\thesis_for_jiangtao\data/chap04.tex
+(E:\thesis_for_jiangtao\data/chap03.tex
+Requested font "Times New Roman/I/ICU:script=latn;language=DFLT;" at 9.03374pt
+ -> C:/Windows/Fonts/timesi.ttf
+LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 13.
 
-Package natbib Warning: Citation `luc2016semantic' on page 18 undefined on inpu
-t line 14.
-
-File: figures/gan.pdf Graphic file (type QTm)
-<use  "figures/gan.pdf" > [18
-
-
-
-
-]
-
-Package natbib Warning: Citation `goodfellow2014generative' on page 19 undefine
-d on input line 46.
-
-
-Package natbib Warning: Citation `mirza2014conditional' on page 19 undefined on
- input line 48.
-
-File: figures/cgan.pdf Graphic file (type QTm)
-<use  "figures/cgan.pdf" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-File: figures/gan-fcn.pdf Graphic file (type QTm)
-
-<use  "figures/gan-fcn.pdf" >
-
-Package natbib Warning: Citation `de2005tutorial' on page 20 undefined on input
- line 78.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-File: figures/vaihingen2.pdf Graphic file (type QTm)
-
-<use  "figures/vaihingen2.pdf" >
-LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 131
-.
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 6.32358pt
  -> C:/Windows/Fonts/times.ttf
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 4.51686pt
@@ -2644,30 +2335,126 @@ Requested font "cmr9" at 9.0pt
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.51686> not available
-(Font)              size <5> substituted on input line 131.
+(Font)              size <5> substituted on input line 13.
+
+File: figures/compare_distribution.pdf Graphic file (type QTm)
+<use  "figures/compare_distribution.pdf" > [18
+
+
+
+
+]
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
+nput line 30.
+File: figures/tfs.pdf Graphic file (type QTm)
+ <use  "figures/tfs.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+File: figures/set_location.pdf Graphic file (type QTm)
+
+<use  "figures/set_location.pdf" >
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 8.43146pt
+ -> C:/Windows/Fonts/timesbd.ttf
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 6.02249pt
+ -> C:/Windows/Fonts/timesbd.ttf
+File: figures/distance_compare.pdf Graphic file (type QTm)
+ <use  "figures/distance_compare.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+
+LaTeX Font Warning: Font shape `EU1/TimesNewRoman(0)/m/sl' undefined
+(Font)              using `EU1/TimesNewRoman(0)/m/n' instead on input line 132.
+
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimSun(1)' created for font 'SimSun' with options
+. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+LaTeX Font Warning: Font shape `EU1/SimSun(1)/m/sl' undefined
+(Font)              using `EU1/SimSun(1)/m/n' instead on input line 132.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
+File: figures/framework.pdf Graphic file (type QTm)
+
+<use  "figures/framework.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-File: figures/sample_data.pdf Graphic file (type QTm)
+Requested font "txbsya" at 12.045pt
+ -> txbsya
+Requested font "txbsya" at 8.43146pt
+ -> txbsya
+Requested font "txbsya" at 6.02249pt
+ -> txbsya
+Requested font "txbsyb" at 12.045pt
+ -> txbsyb
+Requested font "txbsyb" at 8.43146pt
+ -> txbsyb
+Requested font "txbsyb" at 6.02249pt
+ -> txbsyb
+Requested font "txbi" at 12.045pt
+ -> txbi
+Requested font "txbi" at 8.43146pt
+ -> txbi
+Requested font "txbi" at 6.02249pt
+ -> txbi
+Requested font "txbmia" at 12.045pt
+ -> txbmia
+Requested font "txbmia" at 8.43146pt
+ -> txbmia
+Requested font "txbmia" at 6.02249pt
+ -> txbmia
+Requested font "txbsyc" at 12.045pt
+ -> txbsyc
+Requested font "txbsyc" at 8.43146pt
+ -> txbsyc
+Requested font "txbsyc" at 6.02249pt
+ -> txbsyc
+Requested font "txbexa" at 12.045pt
+ -> txbexa
+Requested font "txbexa" at 8.43146pt
+ -> txbexa
+Requested font "txbexa" at 6.02249pt
+ -> txbexa
+Requested font "cmbx12" at 12.0pt
+ -> cmbx12
 
-<use  "figures/sample_data.pdf" >
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <8.43146> not available
+(Font)              size <8> substituted on input line 187.
+
+Requested font "cmbx8" at 8.0pt
+ -> cmbx8
+Requested font "cmbx6" at 6.0pt
+ -> cmbx6
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
+File: figures/tfsvit2.pdf Graphic file (type QTm)
 
-Package natbib Warning: Citation `kingma2014adam' on page 26 undefined on input
- line 227.
+<use  "figures/tfsvit2.pdf" >
 
-
-LaTeX Warning: Float too large for page by 166.33899pt on input line 299.
+LaTeX Warning: Float too large for page by 13.4968pt on input line 301.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2676,6 +2463,121 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+File: figures/shenwan.pdf Graphic file (type QTm)
+
+<use  "figures/shenwan.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimSun(1)' created for font 'SimSun' with options
+. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "SimSun/ICU:script=latn;language=DFLT;embolden=4;" at 12.045pt
+ -> C:/Windows/Fonts/simsun.ttc
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimSun(0)' created for font 'SimSun' with options
+. [BoldFont={SimHei},ItalicFont={KaiTi}].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+File: figures/hengqin.pdf Graphic file (type QTm)
+
+<use  "figures/hengqin.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Underfull \vbox (badness 1215) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+File: figures/sanmenxia.pdf Graphic file (type QTm)
+
+<use  "figures/sanmenxia.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+(E:\thesis_for_jiangtao\data/chap04.tex
+File: figures/gan.pdf Graphic file (type QTm)
+ <use  "figures/gan.pdf" > [38
+
+
+
+
+]
+File: figures/cgan.pdf Graphic file (type QTm)
+
+<use  "figures/cgan.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+File: figures/gan-fcn.pdf Graphic file (type QTm)
+
+<use  "figures/gan-fcn.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+File: figures/vaihingen2.pdf Graphic file (type QTm)
+
+<use  "figures/vaihingen2.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+File: figures/sample_data.pdf Graphic file (type QTm)
+
+<use  "figures/sample_data.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+
+LaTeX Warning: Float too large for page by 166.33899pt on input line 298.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
 File: figures/seg_result.pdf Graphic file (type QTm)
 
 <use  "figures/seg_result.pdf" >
@@ -2683,17 +2585,17 @@ File: figures/dsm_affect.pdf Graphic file (type QTm)
  <use  "figures/dsm_affect.pdf" >)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
-(E:\thesis_for_jiangtao\data/chap05.tex) [30
+ [49]
+(E:\thesis_for_jiangtao\data/chap05.tex) [50
 
 
 
 
 ] (E:\thesis_for_jiangtao\main.bbl
-[31
+[51
 
 
 
@@ -2701,7 +2603,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32]
+ [52]
 Underfull \hbox (badness 2042) in paragraph at lines 196--199
 []\l_fontspec_font Yann LeCun, Yoshua Bengio, Geoffrey Hinton.  Deep learning[J
 ].  nature, 2015,
@@ -2710,13 +2612,13 @@ Underfull \hbox (badness 2042) in paragraph at lines 196--199
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34])
+ [54])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
+ [55]
 (E:\thesis_for_jiangtao\data/paper.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
@@ -2743,12 +2645,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-) [36
+) [56
 
 
 
 
-] (E:\thesis_for_jiangtao\data/ack.tex [37
+] (E:\thesis_for_jiangtao\data/ack.tex [57
 
 
 
@@ -2757,23 +2659,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
+ [58]
 \tf@thm=\write7
-
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
+
 (E:\thesis_for_jiangtao\main.aux (E:\thesis_for_jiangtao\data/chap01.aux)
 (E:\thesis_for_jiangtao\data/chap02.aux)
+(E:\thesis_for_jiangtao\data/chap03.aux)
 (E:\thesis_for_jiangtao\data/chap04.aux)
-(E:\thesis_for_jiangtao\data/chap05.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-(E:\thesis_for_jiangtao\data/paper.aux) (E:\thesis_for_jiangtao\data/ack.aux))
+(E:\thesis_for_jiangtao\data/chap05.aux) (E:\thesis_for_jiangtao\data/paper.aux
+) (E:\thesis_for_jiangtao\data/ack.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 76.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 76.
 
@@ -2785,19 +2681,16 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25028 strings out of 430478
- 461388 string characters out of 3191502
- 564704 words of memory out of 3000000
- 27668 multiletter control sequences out of 15000+200000
- 58236 words of font info for 272 fonts, out of 3000000 for 9000
+ 25255 strings out of 430478
+ 465310 string characters out of 3191502
+ 571183 words of memory out of 3000000
+ 27867 multiletter control sequences out of 15000+200000
+ 64402 words of font info for 296 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
- 51i,19n,76p,1838b,794s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,20n,76p,1838b,851s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (46 pages).
+Output written on main.pdf (66 pages).
