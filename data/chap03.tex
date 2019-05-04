@@ -13,7 +13,7 @@
 由于遥感影像数据具有同物异谱、同谱异物等固有的不确定性，结合模糊数学理论对不确定信息刻画的优点，模糊C-均值聚类（Fuzzy c-means clustering, FCM）分割方法被广泛应用到遥感影像分析中 \cite{bezdek1984fcm}。同时，随着遥感影像空间分辨率的提高，高分影像数据具有更多的信息多样性和复杂性，遥感影像聚类方法由传统的基于像元发展为面向对象的聚类分割。本章内容从遥感影像特征信息表达和目标地物类别关系两个角度来表征遥感影像分类中的不确定性信息。首先设计了三角形模糊集值信息表达模型来表征影像分割单元信息，其次提出一种新的区间值度量方法计算两个三角形模糊集值数据的相异性，最后，改进了已有的二型模糊集合聚类分割方法来对影像数据建模，以刻画遥感影像数据的不确定性  \footnote{本章部分内容来自作者2018年发表于 SCI 期刊 \textit{Computers \& Geosciences} 上的文章 \cite{jiang2018enhanced}。 }。
 %\footnote{注：本章部分内容来自本文作者2018年发表于《Computers \& Geosciences》 SCI期刊的文章} hh
 
-\begin{figure}[!htb]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth]{figures/compare_distribution}
     \caption{区间值相同但分布不同的数据比较}
@@ -31,7 +31,7 @@
     三角形模糊集值（Triangular Fuzzy Set Valued, TFSV）模型的定义
 \end{definition}
 三角形模糊集值数据由以下三个关键参数组成：$(a^-,0)$，$(a^m,1)$ 和 $(a^+,0)$。如图~\ref{fig:tfs} 所示，  几何上，$(a^-,0)$ 和 $(a^+,0)$ 组成三角形MF的下边缘；代数上，$(a^-,0)$ 和 $(a^+,0)$ 形成一个区间值，确保一定的变化范围。$(a^m,1)$是TFSV 数据的顶点，表征 FS 的最高置信度。
-\begin{figure}[!htb]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/tfs}
     \caption{三角形模糊集 $\tilde{A}$ 示意图}
@@ -221,6 +221,12 @@
 区间二型模糊聚类算法(Interval type 2 fuzzy clustering method, IT2FCM) 使用一个区间值来表示隶属度值。文献\cite{hwang2007uncertain} 中使用两个模糊化指数$m_1$ 和$m_2$ 得到区间二型隶属度函数(Interval type 2 membership function，IT2MF) 的上界和下界，从而将一型模糊集(Type 1 fuzzy sets, T1FS) 扩展为二型模糊集(Type 2 fuzzy sets, T2FS)。然而，IT2FCM 算法对模糊指数$m_1$ 和$m_2$ 的取值敏感。与传统FCM 算法相比，不恰当的$m_1$ 和$m_2$ 取值会导致更差的实验结果。因此，基于公式~\ref{eq:interval} 中新定义的区间值距离度量，类似FCM 算法，本文仅使用一个模糊指数$m$ 来表达IT2MF。
 
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/tfsvit2}
+    \caption{TFSV-IT2FCM 算法流程图}\label{fig:tfsvit2}
+  \end{figure}
+
 假定样本$\bm{\tilde{X}} = (\tilde{X_1}, \tilde{X_2},\cdots, \tilde{X_p})^T$ 和聚类中心$\bm{\tilde{V}} = (\tilde{V_1}, \tilde{V_2},\cdots, \tilde{V_p})^T$ 是两个形如公式~\ref{eq:eq-2} 的$p$ 维TFSV 数据，其中$\tilde{X_i}$ $(1 \leq i \leq p)$ 是一个一维TFSV，由$(X_{i}^{down}, 0)$，$(X_{i}^{up}, 0)$和$(X_i^{med}, 1)$ 这三个参数构成；类似地，$\tilde{V_i}$ 由$(V_{i}^{down}, 0)$，$(V_{i}^{up}, 0)$ 和$(V_i^{med}, 1)$三个参数组成。$\tilde{X_i}$ 和$\tilde{V_i}$ 的$0-cut$ 和$1-cut$ 豪斯多夫距离分别为：
 
 \begin{equation}\label{eq:eq-3}
@@ -294,11 +300,6 @@ $\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V
     \end{split}
 \end{equation}
 
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/tfsvit2}
-    \caption{TFSV-IT2FCM 算法流程图}\label{fig:tfsvit2}
-  \end{figure}
 
 整个TFSV-IT2FCM 算法框架如图~\ref{fig:tfsvit2} 所示, 算法的详细描述如下：
 \begin{enumerate}[(1)]
@@ -377,16 +378,15 @@ $\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V
 因此，文中选择三个具有复杂土地覆盖的研究区，设计土地覆被分类实验来验证新提出的TFSV-IT2FCM 算法相比已有方法的性能效果，重点与IV-FCM 算法比较。同时，分别通过可视化的聚类分割结果与量化数据来验证分类结果。
 三个实验研究区分别为中山市神湾地区、珠海市横琴岛和河南省三门峡地区。三个研究区详细地物覆被介绍如表格\ref{tab:1}所示。
 
-
-\subsection{神湾地区实验}
-\label{subsec::chap03-4-1}
-神湾研究区位于广东省中山市境内，是一个复杂的种植区域，该区域的高分影像由SPOT 5 遥感卫星于2008 年拍摄。SPOT 5遥感卫星影像包含四个波段，空间分辨率大约$10$ 米，光谱范围$0.4-0.9$ 微米。 神湾地区地物覆被可划分为5大类，分别是：水域、草地、建筑和养殖水域。实验中选择影像$B1$、$B2$、$B3$ 波段合成RGB 图像，如图\ref{fig:shenwan}(a) 所示，其包含$400 \times 400$ 个像素。
-
 \begin{figure}[htb]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/shenwan}
     \caption{神湾研究区不同方法分类结果示意图 }\label{fig:shenwan}
 \end{figure}
+
+\subsection{神湾地区实验}
+\label{subsec::chap03-4-1}
+神湾研究区位于广东省中山市境内，是一个复杂的种植区域，该区域的高分影像由SPOT 5 遥感卫星于2008 年拍摄。SPOT 5遥感卫星影像包含四个波段，空间分辨率大约$10$ 米，光谱范围$0.4-0.9$ 微米。 神湾地区地物覆被可划分为5大类，分别是：水域、草地、建筑和养殖水域。实验中选择影像$B1$、$B2$、$B3$ 波段合成RGB 图像，如图\ref{fig:shenwan}(a) 所示，其包含$400 \times 400$ 个像素。
 
 在该研究区，文中提出的面向对象的TFSV-IT2FCM 算法分别与其他聚类分割算法进行比较，包含基于像素的聚类方法 (FCM 算法，IT2FCM 算法)和面向对象的聚类方法 (面向对象的IT2FCM， 面向对象的IV-FCM 算法)，聚类结果分别由图\ref{fig:shenwan}(f)-(i) 展示。另外，文中提出的TFSV-IT2FCM 算法包含三个主要处理步骤：影像分割，聚类和后处理。图\ref{fig:shenwan}(c) 和\ref{fig:shenwan}(d) 分别展示是否使用后处理的分割结果；图\ref{fig:shenwan}(e) 是获取影像分割单元时使用分水岭分割算法替换SLIC 超像素分割算法得到。通过目视各方法对研究区的聚类分割结果，可以得到以下结论：
 
@@ -472,17 +472,16 @@ $\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V
 表~\ref{tab:shenwan_result} 为各方法在神湾地区影像上的地物类别识别精度。文中提出的TFSV-IT2FCM 算法获得最好的OA 精度，为$90.33\%$，相比无后处理的TFSV-IT2FCM 算法、基于Watershed 分割的TFSV-IT2FCM 算法、 IV-FCM 算法、面向对象的IT2FCM 算法、基于像素的IT2FCM 算法和FCM 算法分别提升了$0.55\%$、$0.52\%$、$2.22\%$、$4.81\%$、$5.43\%$的分类精度。
 分类精度也表明对于文中提出的聚类分割算法，聚类是最重要的一步，在方法的三个部分（分割、聚类、后处理）中最大化的决定最终分类结果精度。Kappa系数结果也表明，文中提出的TFSV-IT2FCM 算法有效题目了影像地物的特征，获得了最佳的聚类分割结果。表中数值量化的结果基本与前文可视化的结果一致。
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/hengqin}
+    \caption{神湾研究区TFSV-IT2FCM 与IV-FCM 算法聚类分割图 }\label{fig:hengqin}
+\end{figure}
 
 \subsection{横琴地区实验}
 \label{subsec::chap03-4-1}
 第二个研究区横琴岛位于广东省珠海市，岛内具有复杂的农业与养殖区，该区域高分影像
 由SPOT 5 遥感卫星于2010 年拍摄。横琴地区地物类别可分为水域、农业区、林地、农田和建筑这五大类。实验区选择影像图像如图~\ref{fig:hengqin}(a) 所示，大小为$1203 \times 1055$ 个像素。
-
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=1.0\textwidth]{figures/hengqin}
-    \caption{神湾研究区TFSV-IT2FCM 与IV-FCM 算法聚类分割图 }\label{fig:hengqin}
-\end{figure}
 
 在神湾研究区我们比较了文中提出的TFSV-IT2FCM 算法与其他算法的聚类分割结果，初步验证了TFSV-IT2FCM 算法的改进效果。文献\cite{he2016remote} 中证明了IV-FCM 算法相比其他聚类分割算法可以取得更好的实验精度，因此，在横琴地区和三门峡地区的实验中，我们着重比较提出的TFSV-IT2FCM 算法与IV-FCM 算法的实验效果。
 
@@ -512,6 +511,12 @@ IV-FCM 算法和TFSV-IT2FCM 算法的可视化结果分别如图~\ref{fig:hengqi
     \end{adjustbox}}
 \end{table*}
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/sanmenxia}
+    \caption{三门峡研究区不同方法分类结果示意图 }\label{fig:sanmenxia}
+\end{figure}
+
 同样，为了获取横琴地区精确的分类结果，文中使用CORINE 土地分类系统随机采样$499,669$ 个像素点作为ground truth 图，如表~\ref{tab:hengqin_result} 所示，TFSV-IT2FCM 方法中$10,022$ 个像素由“农业区” 被错分为“水域”，而在IV-FCM 方法中被错分的像素点为$54,380$ 个。TFSV-IT2FCM 方法相比IV-FCM 方法，“水域”类别的用户精度从$78.12\%$ 提升到$95.99\%$。 表~\ref{tab:hengqin_result} 中的用户精度和生产者精度也表明TFSV-IT2FCM 聚类方法的性能要比IV-FCM 方法更好。
 
 \begin{table}[htbp]
@@ -528,12 +533,6 @@ IV-FCM 算法和TFSV-IT2FCM 算法的可视化结果分别如图~\ref{fig:hengqi
 \end{table}
 
 表~\ref{tab:hengqin_oa} 中比较了TFSV-IT2FCM 方法和IV-FCM 方法在横琴地区的总体分类精度和Kappa 系数，TFSV-IT2FCM 方法的OA 从$80.49\%$ 提升到$88.63\%$， 同时Kappa 系数由$0.7210$ 提升到$0.8290$。
-
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=1.0\textwidth]{figures/sanmenxia}
-    \caption{三门峡研究区不同方法分类结果示意图 }\label{fig:sanmenxia}
-\end{figure}
 
 \subsection{三门峡地区实验}
 \label{subsec::chap03-4-1}

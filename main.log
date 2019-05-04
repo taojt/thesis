@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  3 MAY 2019 22:56
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  4 MAY 2019 19:21
 entering extended mode
 **main.tex
 (E:\thesis_for_jiangtao\main.tex
@@ -1252,6 +1252,11 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen258
 \@vwid@roff=\dimen259
 ))
+(C:\CTEX\MiKTeX\tex\latex\oberdiek\pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+)
 (E:\thesis_for_jiangtao\main.aux (E:\thesis_for_jiangtao\data/chap01.aux)
 (E:\thesis_for_jiangtao\data/chap02.aux
 
@@ -1279,54 +1284,54 @@ LaTeX Warning: Label `sec:forth' multiply defined.
 
 ) (E:\thesis_for_jiangtao\data/chap05.aux)
 (E:\thesis_for_jiangtao\data/paper.aux) (E:\thesis_for_jiangtao\data/ack.aux))
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 21.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 21.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 22.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 22.
 
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 22.
 
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 22.
 
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 22.
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 22.
 
 (C:\CTEX\MiKTeX\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 12.045pt
  -> C:/Windows/Fonts/times.ttf
 Package caption Info: Begin \AtBeginDocument code.
@@ -1347,73 +1352,73 @@ Package caption Info: End \AtBeginDocument code.
 .................................................
 \symlegacymaths=\mathgroup14
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 21.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 21.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 21.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 21.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 21.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 21.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 21.
-LaTeX Font Info:    Redeclaring math accent \check on input line 21.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 21.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 21.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 21.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 21.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 22.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 22.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 22.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 22.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 22.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 22.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 22.
+LaTeX Font Info:    Redeclaring math accent \check on input line 22.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 22.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 22.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 22.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 22.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 22.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 21.
+(Font)              `operators' in the math version `normal' on input line 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/txr/m/n --> EU1/TimesNewRoman(0)/m/n on input line 
-21.
+22.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 21.
+(Font)              `operators' in the math version `bold' on input line 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/txr/bx/n --> EU1/TimesNewRoman(0)/m/n on input line
- 21.
+ 22.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  EU1/TimesNewRoman(0)/m/n --> EU1/TimesNewRoman(0)/m/n o
-n input line 21.
+n input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  EU1/TimesNewRoman(0)/m/n --> EU1/TimesNewRoman(0)/m/n o
-n input line 21.
+n input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/txr/m/it --> EU1/TimesNewRoman(0)/m/it on input lin
-e 21.
+e 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/txr/bx/n --> EU1/TimesNewRoman(0)/bx/n on input lin
-e 21.
+e 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/txss/m/n --> EU1/Arial(0)/m/n on input line 21.
+(Font)                  OT1/txss/m/n --> EU1/Arial(0)/m/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/txtt/m/n --> EU1/CourierNew(0)/m/n on input line 21
+(Font)                  OT1/txtt/m/n --> EU1/CourierNew(0)/m/n on input line 22
 .
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  EU1/TimesNewRoman(0)/m/n --> EU1/TimesNewRoman(0)/bx/n 
-on input line 21.
+on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
 (Font)                  EU1/TimesNewRoman(0)/m/n --> EU1/TimesNewRoman(0)/bx/n 
-on input line 21.
+on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/txr/bx/it --> EU1/TimesNewRoman(0)/bx/it on input l
-ine 21.
+ine 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/txss/b/n --> EU1/Arial(0)/bx/n on input line 21.
+(Font)                  OT1/txss/b/n --> EU1/Arial(0)/bx/n on input line 22.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/txtt/b/n --> EU1/CourierNew(0)/bx/n on input line 2
-1.
+2.
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (C:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1423,9 +1428,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count347
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
 (E:\thesis_for_jiangtao\main.out) (E:\thesis_for_jiangtao\main.out)
 \@outlinefile=\write3
@@ -1543,7 +1548,7 @@ Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 14.05249pt
 Requested font "SimHei/ICU:script=latn;language=DFLT;" at 14.05249pt
  -> C:/Windows/Fonts/simhei.ttf
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
 
  []
 
@@ -1623,7 +1628,7 @@ Requested font "SimSun/ICU:script=latn;language=DFLT;" at 12.045pt
  -> C:/Windows/Fonts/simsun.ttc
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 10.53937pt
  -> C:/Windows/Fonts/times.ttf
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 28.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 29.
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 8.43146pt
  -> C:/Windows/Fonts/times.ttf
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 6.02249pt
@@ -1646,7 +1651,7 @@ Requested font "txex" at 8.43146pt
  -> txex
 Requested font "txex" at 6.02249pt
  -> txex
-LaTeX Font Info:    Try loading font information for U+txsya on input line 28.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 29.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
@@ -1656,7 +1661,7 @@ Requested font "txsya" at 8.43146pt
  -> txsya
 Requested font "txsya" at 6.02249pt
  -> txsya
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 28.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 29.
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
@@ -1667,7 +1672,7 @@ Requested font "txsyb" at 8.43146pt
  -> txsyb
 Requested font "txsyb" at 6.02249pt
  -> txsyb
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 28.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 29.
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -1678,7 +1683,7 @@ Requested font "txi" at 8.43146pt
  -> txi
 Requested font "txi" at 6.02249pt
  -> txi
-LaTeX Font Info:    Try loading font information for U+txmia on input line 28.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 29.
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
@@ -1689,7 +1694,7 @@ Requested font "txmia" at 8.43146pt
  -> txmia
 Requested font "txmia" at 6.02249pt
  -> txmia
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 28.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 29.
 
 (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1733,7 +1738,7 @@ Requested font "txbex" at 6.02249pt
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 28.
+(Font)              size <8> substituted on input line 29.
 
 Requested font "cmr8" at 8.0pt
  -> cmr8
@@ -1810,103 +1815,9 @@ Requested font "SimHei/I/ICU" at 14.05249pt
 
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <16.06> on input line 28.
-Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 11.24194pt
- -> C:/Windows/Fonts/times.ttf
-Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 8.03pt
- -> C:/Windows/Fonts/times.ttf
-Requested font "txmi" at 16.06pt
- -> txmi
-Requested font "txmi" at 11.24194pt
- -> txmi
-Requested font "txmi" at 8.03pt
- -> txmi
-Requested font "txsy" at 16.06pt
- -> txsy
-Requested font "txsy" at 11.24194pt
- -> txsy
-Requested font "txsy" at 8.03pt
- -> txsy
-Requested font "txex" at 16.06pt
- -> txex
-Requested font "txex" at 11.24194pt
- -> txex
-Requested font "txex" at 8.03pt
- -> txex
-Requested font "txsya" at 16.06pt
- -> txsya
-Requested font "txsya" at 11.24194pt
- -> txsya
-Requested font "txsya" at 8.03pt
- -> txsya
-Requested font "txsyb" at 16.06pt
- -> txsyb
-Requested font "txsyb" at 11.24194pt
- -> txsyb
-Requested font "txsyb" at 8.03pt
- -> txsyb
-Requested font "txi" at 16.06pt
- -> txi
-Requested font "txi" at 11.24194pt
- -> txi
-Requested font "txi" at 8.03pt
- -> txi
-Requested font "txmia" at 16.06pt
- -> txmia
-Requested font "txmia" at 11.24194pt
- -> txmia
-Requested font "txmia" at 8.03pt
- -> txmia
-Requested font "txsyc" at 16.06pt
- -> txsyc
-Requested font "txsyc" at 11.24194pt
- -> txsyc
-Requested font "txsyc" at 8.03pt
- -> txsyc
-Requested font "txexa" at 16.06pt
- -> txexa
-Requested font "txexa" at 11.24194pt
- -> txexa
-Requested font "txexa" at 8.03pt
- -> txexa
-Requested font "txb" at 16.06pt
- -> txb
-Requested font "txb" at 11.24194pt
- -> txb
-Requested font "txb" at 8.03pt
- -> txb
-Requested font "txbmi" at 16.06pt
- -> txbmi
-Requested font "txbmi" at 11.24194pt
- -> txbmi
-Requested font "txbmi" at 8.03pt
- -> txbmi
-Requested font "txbsy" at 16.06pt
- -> txbsy
-Requested font "txbsy" at 11.24194pt
- -> txbsy
-Requested font "txbsy" at 8.03pt
- -> txbsy
-Requested font "txbex" at 16.06pt
- -> txbex
-Requested font "txbex" at 11.24194pt
- -> txbex
-Requested font "txbex" at 8.03pt
- -> txbex
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 28.
-
-Requested font "cmr17" at 17.28pt
- -> cmr17
-Requested font "cmr10" at 10.95pt
- -> cmr10
-Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 11.24194pt
- -> C:/Windows/Fonts/timesbd.ttf
 Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 12.045pt
  -> C:/Windows/Fonts/timesbd.ttf
-[2
+ [2
 
 
 
@@ -1944,20 +1855,21 @@ Requested font "SimHei/ICU:script=latn;language=DFLT;" at 12.045pt
 
 ])
 \tf@toc=\write4
- [4] (E:\thesis_for_jiangtao\main.lof)
+ [4]
+(E:\thesis_for_jiangtao\main.lof)
 \tf@lof=\write5
-[5
+ [5
 
 
 
 ] (E:\thesis_for_jiangtao\main.lot)
 \tf@lot=\write6
- [6
+
+[6
 
 
 
-]
-(E:\thesis_for_jiangtao\data/chap01.tex
+] (E:\thesis_for_jiangtao\data/chap01.tex
 Requested font "Arial/ICU:script=latn;language=DFLT;" at 14.05249pt
  -> C:/Windows/Fonts/arial.ttf
 .................................................
@@ -2190,6 +2102,8 @@ Requested font "txbex" at 7.72884pt
  -> txbex
 Requested font "txbex" at 5.52061pt
  -> txbex
+Requested font "cmr10" at 10.95pt
+ -> cmr10
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.52061> not available
@@ -2447,20 +2361,251 @@ Requested font "cmbx6" at 6.0pt
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25]
 File: figures/tfsvit2.pdf Graphic file (type QTm)
 
 <use  "figures/tfsvit2.pdf" >
 
-LaTeX Warning: Float too large for page by 13.4968pt on input line 301.
+LaTeX Warning: Float too large for page by 13.4968pt on input line 228.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-Underfu
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+File: figures/shenwan.pdf Graphic file (type QTm)
+
+<use  "figures/shenwan.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimSun(1)' created for font 'SimSun' with options
+. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "SimSun/ICU:script=latn;language=DFLT;embolden=4;" at 12.045pt
+ -> C:/Windows/Fonts/simsun.ttc
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimSun(0)' created for font 'SimSun' with options
+. [BoldFont={SimHei},ItalicFont={KaiTi}].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+File: figures/hengqin.pdf Graphic file (type QTm)
+
+<use  "figures/hengqin.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+File: figures/sanmenxia.pdf Graphic file (type QTm)
+
+<use  "figures/sanmenxia.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
+(E:\thesis_for_jiangtao\data/chap04.tex
+File: figures/gan.pdf Graphic file (type QTm)
+ <use  "figures/gan.pdf" > [37
+
+
+
+
+]
+File: figures/cgan.pdf Graphic file (type QTm)
+
+<use  "figures/cgan.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+File: figures/gan-fcn.pdf Graphic file (type QTm)
+
+<use  "figures/gan-fcn.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+File: figures/vaihingen2.pdf Graphic file (type QTm)
+
+<use  "figures/vaihingen2.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+File: figures/sample_data.pdf Graphic file (type QTm)
+
+<use  "figures/sample_data.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+File: figures/seg_result.pdf Graphic file (type QTm)
+
+<use  "figures/seg_result.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+Underfull \vbox (badness 1509) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+File: figures/dsm_affect.pdf Graphic file (type QTm)
+
+<use  "figures/dsm_affect.pdf" >)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+(E:\thesis_for_jiangtao\data/chap05.tex [51
+
+
+
+
+])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+(E:\thesis_for_jiangtao\main.bbl [53
+
+
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+Underfull \hbox (badness 2042) in paragraph at lines 196--199
+[]\l_fontspec_font Yann LeCun, Yoshua Bengio, Geoffrey Hinton.  Deep learning[J
+].  nature, 2015,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+(E:\thesis_for_jiangtao\data/paper.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 14.4pt
+ -> C:/Windows/Fonts/times.ttf
+Requested font "SimHei" at 14.4pt
+ -> C:/Windows/Fonts/simhei.ttf
+Requested font "SimHei/ICU" at 14.4pt
+ -> C:/Windows/Fonts/simhei.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimHei(0)' created for font 'SimHei' with options
+. [BoldFont={SimHei},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "SimHei/ICU:script=latn;language=DFLT;" at 14.4pt
+ -> C:/Windows/Fonts/simhei.ttf
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+
+ []
+
+) [58
+
+
+
+
+] (E:\thesis_for_jiangtao\data/ack.tex [59
+
+
+
+
+
+])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
+\tf@thm=\write7
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+
+(E:\thesis_for_jiangtao\main.aux (E:\thesis_for_jiangtao\data/chap01.aux)
+(E:\thesis_for_jiangtao\data/chap02.aux)
+(E:\thesis_for_jiangtao\data/chap03.aux)
+(E:\thesis_for_jiangtao\data/chap04.aux)
+(E:\thesis_for_jiangtao\data/chap05.aux) (E:\thesis_for_jiangtao\data/paper.aux
+) (E:\thesis_for_jiangtao\data/ack.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 77.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 77.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.48314pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 25206 strings out of 430478
+ 464200 string characters out of 3191502
+ 527715 words of memory out of 3000000
+ 27819 multiletter control sequences out of 15000+200000
+ 51071 words of font info for 253 fonts, out of 3000000 for 9000
+ 15 hyphenation exceptions out of 8191
+ 51i,20n,86p,1842b,851s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on main.pdf (68 pages).

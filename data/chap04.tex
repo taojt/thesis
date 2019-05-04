@@ -227,16 +227,94 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
 
 模型生成器G 中的网络压缩部分由五个卷积模块堆叠而成，其作用是逐层提取影像特征。每个卷积模块均包含$2/3$ 个卷积层和$1$ 个尺寸$2\times 2$最大池化层，为了保证卷积前后特征图尺寸不变，所有卷积层均采用边界填充，最大池化层使得特征图尺寸缩小为池化前的一半。生成器G 中反卷积恢复为四个反卷积的上采样模块，其作用是逐层扩大特征图大小、恢复影像细节信息。每个上采样模块中包含一次反卷积操作，反卷积生成两倍维度的特征图，再接两层卷积层提取特征。最后通过一个$1\times 1$ 大小的$1$ 维卷积层将特征图维度降维$1$，通过Softmax 函数输出预测结果的像素类别。另外，在反卷积中使用跳层连接网络压缩部分与反卷积层特征图大小相同的卷积层，从而将影像低阶特征和高阶特征融合，保证更精细的分割结果。
 
-\begin{table*}[htbp]
-  \caption{基于CGAN 框架的全卷积分割模型参数表}\label{tab:model_param}
-  \centering
-  \makebox[\textwidth]{
-    \begin{adjustbox}{max width=1.1\textwidth}
-      \begin{tabular}{c|c|cccccc}
-        \toprule
-        网络模型                 & 结构                        & Levels                   & 网络层     & 该层输出尺寸                & 卷积核（尺寸/通道）  & 步长 & 激活函数 \\
-        \midrule
-        \multirow{30}*{生成器G}  & G-输入                      & {level 0 }               &            & $256\times 256\times 64   $ &                      &      &          \\
+% \begin{table*}[htbp]
+%   \caption{基于CGAN 框架的全卷积分割模型参数表}\label{tab:model_param}
+%   \centering
+%   \makebox[\textwidth]{
+%     \begin{adjustbox}{max width=1.1\textwidth}
+%       \begin{tabular}{c|c|cccccc}
+%         \toprule
+%         网络模型                 & 结构                        & Levels                   & 网络层     & 该层输出尺寸                & 卷积核（尺寸/通道）  & 步长 & 激活函数 \\
+%         \midrule
+%         \multirow{30}*{生成器G}  & G-输入                      & {level 0 }               &            & $256\times 256\times 64   $ &                      &      &          \\
+%         \cline{2-8}
+%                                  & \multirow{17}*{卷积压缩}    & \multirow{2}*{level 1}   & conv1\_1   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
+%                                  &                             &                          & conv1\_2   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
+%         \cline{3-8}
+%                                  &                             & \multirow{3}*{{level 2}} & pool2\_1   & $128\times 128\times 64  $  & $   2\times 2/-    $ & 2    & --       \\
+%                                  &                             &                          & conv2\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+%                                  &                             &                          & conv2\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+%         \cline{3-8}
+%                                  &                             & \multirow{4}*{level 3}   & pool3\_1   & $64\times 64\times 128   $  & $ 2\times 2/-      $ & 2    & --       \\
+%                                  &                             &                          & conv3\_1   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+%                                  &                             &                          & conv3\_2   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+%                                  &                             &                          & conv3\_3   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+%         \cline{3-8}
+%                                  &                             & \multirow{4}*{level 4}   & pool4\_1   & $32\times 32\times 256   $  & $ 2\times 2/-      $ & 2    & --       \\
+%                                  &                             &                          & conv4\_1   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+%                                  &                             &                          & conv4\_2   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+%                                  &                             &                          & conv4\_3   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+%         \cline{3-8}
+%                                  &                             & \multirow{4}*{level 5}   & pool5\_1   & $16\times 16\times 512   $  & $ 2\times 2/-      $ & 2    & --       \\
+%                                  &                             &                          & conv5\_1   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+%                                  &                             &                          & conv5\_2   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+%                                  &                             &                          & conv5\_3   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+%         \cline{2-8}
+%                                  & \multirow{12}*{反卷积恢复}  & \multirow{3}*{level 6}   & deconv6\_1 & $32\times 32\times 512   $  & $ 4\times 4/512    $ & 2    & ReLU     \\
+%                                  &                             &                          & conv6\_1   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+%                                  &                             &                          & conv6\_2   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+%         \cline{3-8}
+%                                  &                             & \multirow{3}*{level 7}   & deconv7\_1 & $64\times 64\times 256   $  & $ 4\times 4/256    $ & 2    & ReLU     \\
+%                                  &                             &                          & conv7\_1   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+%                                  &                             &                          & conv7\_2   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+%         \cline{3-8}
+%                                  &                             & \multirow{3}*{level 8}   & deconv8\_1 & $128\times 128\times 128 $  & $ 4\times 4/128    $ & 2    & ReLU     \\
+%                                  &                             &                          & conv8\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+%                                  &                             &                          & conv8\_2   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+%         \cline{3-8}
+%                                  &                             & \multirow{3}*{level 9}   & deconv9\_1 & $256\times 256\times 64  $  & $ 4\times 4/64     $ & 2    & ReLU     \\
+%                                  &                             &                          & conv9\_1   & $256\times 256\times 64  $  & $     3\times 3/64 $ & 1    & ReLU     \\
+%                                  &                             &                          & conv9\_2   & $256\times 256\times 64  $  & $    3\times 3/64  $ & 1    & ReLU     \\
+%         \cline{2-8}
+%                                  & G-输出                      &                          & conv10\_1  & $256\times 256 \times 1   $ & $    1\times 1/1  $  & 1    & Softmax  \\
+%         \cline{1-8}
+%         \multirow{10}*{判别器D } & D-输入                      &                          &            & $256\times 256\times 5   $  &                      &      &          \\
+%         \cline{2-8}
+%                                  & \multirow{8}*{卷积神经网络} & \multirow{2}*{level 11}  & conv11\_1  & $256\times 256\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
+%                                  &                             &                          & conv11\_2  & $256\times 256\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
+%         \cline{3-8}
+%                                  &                             & \multirow{3}*{level 12}  & pool12\_1  & $128\times 128\times 32$    & $2\times 2/-$        & 1    & --       \\
+%                                  &                             &                          & conv12\_1  & $128\times 128\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
+%                                  &                             &                          & conv12\_2  & $128\times 128\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
+%         \cline{3-8}
+%                                  &                             & \multirow{3}*{level 13}  & pool3\_1   & $64\times 64\times 32   $   & $ 2\times 2/-      $ & 2    & --       \\
+%                                  &                             &                          & FC13\_1    & $64\times 64\times 32   $   & $ 3\times 3/32    $  & 1    & --       \\
+%                                  &                             &                          & FC13\_2    & $64\times 64\times 32   $   & $ 3\times 3/32    $  & 1    & --       \\
+%         \cline{2-8}
+%                                  & G-输出                      &                          &            & $1\times 1   $              &                      &      & Sigmoid  \\
+%         \bottomrule
+%       \end{tabular}
+%     \end{adjustbox}}
+% \end{table*}
+
+\begin{longtable}{c|c|cccccc}
+  \caption{基于CGAN 框架的全卷积分割模型参数表}\label{tab:model_param} \\
+  \toprule
+  网络模型                 & 结构                        & Levels                   & 网络层     & 该层输出尺寸                & 卷积核  & 步长 & 激活函数 \\
+  \midrule
+  \endfirsthead
+  % \multicolumn{8}{r}{续\autoref{tab:model_param}}\\
+  \multicolumn{8}{c}{(接上页)}\\
+  \toprule
+  网络模型                 & 结构                        & Levels                   & 网络层     & 该层输出尺寸                & 卷积核  & 步长 & 激活函数 \\
+  \midrule
+  \endhead
+  \bottomrule
+  \multicolumn{8}{c}{(接下页)}
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  \multirow{30}*{生成器G}  & G-输入                      & {level 0 }               &            & $256\times 256\times 64   $ &                      &      &          \\
         \cline{2-8}
                                  & \multirow{17}*{卷积压缩}    & \multirow{2}*{level 1}   & conv1\_1   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
                                  &                             &                          & conv1\_2   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
@@ -280,7 +358,7 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
         \cline{1-8}
         \multirow{10}*{判别器D } & D-输入                      &                          &            & $256\times 256\times 5   $  &                      &      &          \\
         \cline{2-8}
-                                 & \multirow{8}*{卷积神经网络} & \multirow{2}*{level 11}  & conv11\_1  & $256\times 256\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
+                                 & \multirow{8}*{分类网络} & \multirow{2}*{level 11}  & conv11\_1  & $256\times 256\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
                                  &                             &                          & conv11\_2  & $256\times 256\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
         \cline{3-8}
                                  &                             & \multirow{3}*{level 12}  & pool12\_1  & $128\times 128\times 32$    & $2\times 2/-$        & 1    & --       \\
@@ -292,18 +370,12 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
                                  &                             &                          & FC13\_2    & $64\times 64\times 32   $   & $ 3\times 3/32    $  & 1    & --       \\
         \cline{2-8}
                                  & G-输出                      &                          &            & $1\times 1   $              &                      &      & Sigmoid  \\
-        \bottomrule
-      \end{tabular}
-    \end{adjustbox}}
-\end{table*}
+
+  \end{longtable}
 
 模型判别器D 中是一个经典的分类神经网络，网络输入为$5$ 维数据（4波段影像 + 1维真实类别图或4波段影像 + 生成器G 生成预测结果），模型由两个卷积结构后接两个全连接层组成，通过Sigmoid 函数判别当前输出结果为1 或0 。
 
 基于CGAN 框架的全卷积分割模型详细的网络结构与参数权值如表\ref{tab:model_param} 所示，通过交替训练生成器G 和判别器D 实现网络各权值参数的学习。
-
-
-
-
 
 
 \subsection{结果与分析}
@@ -358,4 +430,4 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
 
 \section{本章小结}
 \label{sec:forth}
-（国际摄影测量及遥感探测学会）提供的
+遥感影像固有的不确定性使得地物边界难以区分，同时，全卷积语义分割上采样过程会损失影像的特征细节，导致遥感影像地物边界更加难以划分。本章提出的方法将生成对抗网络的思想应用到全卷积分割模型中，借助CGAN 网络强大的图像生成能力，使得影像分割结果具有更明确的边界，同类别地物空间上具有一致性。将文中提出的基于CGAN 的分割方法应用到Vaihingen 影像数据分割实验上，可视化的分割结果和量化的评估精度均表明文中提出的方法相比传统FCN 语义分割方法有着更好的分割效果。另外，融合DSM 波段高程信息的输入数据，可以进一步识别特征相近的不同地物类别。
