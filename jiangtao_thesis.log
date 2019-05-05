@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  5 MAY 2019 20:45
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  5 MAY 2019 22:16
 entering extended mode
 **jiangtao_thesis.tex
 (E:\thesis_for_jiangtao\jiangtao_thesis.tex
@@ -2383,12 +2383,18 @@ Underfull \vbox (badness 1762) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
 File: figures/shenwan.pdf Graphic file (type QTm)
 
 <use  "figures/shenwan.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Underfull \vbox (badness 2042) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
@@ -2402,6 +2408,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 .................................................
 Requested font "SimSun/ICU:script=latn;language=DFLT;embolden=4;" at 12.045pt
  -> C:/Windows/Fonts/simsun.ttc
+
+Underfull \vbox (badness 1436) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2436,12 +2445,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
 (E:\thesis_for_jiangtao\data/chap04.tex
 File: figures/gan.pdf Graphic file (type QTm)
- <use  "figures/gan.pdf" > [38
+ <use  "figures/gan.pdf" > [37
 
 
 
@@ -2452,28 +2458,31 @@ File: figures/cgan.pdf Graphic file (type QTm)
 <use  "figures/cgan.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
+ [38]
 File: figures/gan-fcn.pdf Graphic file (type QTm)
 
 <use  "figures/gan-fcn.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
+ [39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
+ [40]
 File: figures/vaihingen2.pdf Graphic file (type QTm)
 
 <use  "figures/vaihingen2.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
+ [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
+ [42]
 File: figures/sample_data.pdf Graphic file (type QTm)
 
 <use  "figures/sample_data.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
@@ -2492,22 +2501,16 @@ File: figures/seg_result.pdf Graphic file (type QTm)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [48]
-Underfull \vbox (badness 1509) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49]
 File: figures/dsm_affect.pdf Graphic file (type QTm)
 
 <use  "figures/dsm_affect.pdf" >)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
+ [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
-(E:\thesis_for_jiangtao\data/chap05.tex [52
+ [50]
+(E:\thesis_for_jiangtao\data/chap05.tex [51
 
 
 
@@ -2515,8 +2518,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]
-(E:\thesis_for_jiangtao\jiangtao_thesis.bbl [54
+ [52]
+(E:\thesis_for_jiangtao\jiangtao_thesis.bbl [53
 
 
 
@@ -2524,7 +2527,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
+ [54]
 Underfull \hbox (badness 2042) in paragraph at lines 214--217
 []\l_fontspec_font Yann LeCun, Yoshua Bengio, Geoffrey Hinton.  Deep learning[J
 ].  nature, 2015,
@@ -2533,13 +2536,13 @@ Underfull \hbox (badness 2042) in paragraph at lines 214--217
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56]
+ [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57])
+ [56])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
+ [57]
 (E:\thesis_for_jiangtao\data/paper.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
@@ -2566,12 +2569,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-) [59
+) [58
 
 
 
 
-] (E:\thesis_for_jiangtao\data/ack.tex [60
+] (E:\thesis_for_jiangtao\data/ack.tex [59
 
 
 
@@ -2580,7 +2583,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [60]
 \tf@thm=\write7
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
@@ -2609,10 +2612,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  25206 strings out of 430478
  464377 string characters out of 3191502
- 525771 words of memory out of 3000000
+ 526792 words of memory out of 3000000
  27820 multiletter control sequences out of 15000+200000
  51063 words of font info for 252 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
  51i,20n,86p,1851b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on jiangtao_thesis.pdf (70 pages).
+Output written on jiangtao_thesis.pdf (69 pages).

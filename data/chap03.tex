@@ -343,6 +343,16 @@ $\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V
 
 经过像元分割与非监督模糊聚类，可以得到遥感影像的初始分类结果。使用CORINE 地物覆被处理系统\footnote{CORINE (Coordination of Information on the Environment) 是欧洲委员会于1985年提出的环境信息协调系统，其包含44个类别的地物覆被，常用于地物覆被的后处理。官方网址：https://land.copernicus.eu/pan-european/corine-land-cover.} 对初始聚类结果进行人工类别合并，实现基于高分影像识别的高级地物覆被分类\cite{zhang2011progress}。
 
+
+\section{实验结果与分析}
+\label{sec::chap03-4}
+
+
+本章提出的面向对象的TFSV-IT2FCM 遥感影像聚类分割方法是对文献\cite{he2016remote} 中引进的面向对象的区间值模糊C-均值(Interval valued fuzzy c-means, IV-FCM) 聚类方法的改进。%\cite{he2016remote} 文中表明，面向对象的IV-FCM 方法相比其他已有模糊聚类方法，包含基于像素的方法(如FCM，IT2FCM)在遥感影像中可以获得更好的分割效果。
+因此，文中选择三个具有复杂土地覆盖的研究区，设计土地覆被分类实验来验证新提出的TFSV-IT2FCM 算法相比已有方法的性能效果，重点与IV-FCM 算法比较。同时，分别通过可视化的聚类分割结果与量化数据来验证分类结果。
+三个实验研究区分别为中山市神湾地区、珠海市横琴岛和河南省三门峡地区。三个研究区详细地物覆被介绍如表格\ref{tab:1}所示。
+
+
 \begin{table}[htbp]
     \caption{ 实验区土地覆被类别表}\label{tab:1}
     \centering
@@ -371,12 +381,6 @@ $\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V
         \bottomrule
     \end{tabular}
 \end{table}
-
-\section{实验结果与分析}
-\label{sec::chap03-4}
-本章提出的面向对象的TFSV-IT2FCM 遥感影像聚类分割方法是对文献\cite{he2016remote} 中引进的面向对象的区间值模糊C-均值(Interval valued fuzzy c-means, IV-FCM) 聚类方法的改进。%\cite{he2016remote} 文中表明，面向对象的IV-FCM 方法相比其他已有模糊聚类方法，包含基于像素的方法(如FCM，IT2FCM)在遥感影像中可以获得更好的分割效果。
-因此，文中选择三个具有复杂土地覆盖的研究区，设计土地覆被分类实验来验证新提出的TFSV-IT2FCM 算法相比已有方法的性能效果，重点与IV-FCM 算法比较。同时，分别通过可视化的聚类分割结果与量化数据来验证分类结果。
-三个实验研究区分别为中山市神湾地区、珠海市横琴岛和河南省三门峡地区。三个研究区详细地物覆被介绍如表格\ref{tab:1}所示。
 
 \begin{figure}[htb]
     \centering

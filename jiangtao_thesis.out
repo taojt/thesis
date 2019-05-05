@@ -37,7 +37,7 @@
 \BOOKMARK [1][-]{section.4.1}{4.1 引言}{chapter.4}% 37
 \BOOKMARK [1][-]{section.4.2}{4.2 基于生成对抗网络框架的影像分割方法}{chapter.4}% 38
 \BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 生成对抗网络框架}{section.4.2}% 39
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 基于CGAN 的影像分割方法}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 基于CGAN 的全卷积影像分割方法}{section.4.2}% 40
 \BOOKMARK [1][-]{section.4.3}{4.3 实验数据介绍与预处理}{chapter.4}% 41
 \BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Vaihingen 数据介绍}{section.4.3}% 42
 \BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 数据预处理}{section.4.3}% 43
