@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  4 MAY 2019 19:21
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  5 MAY 2019 17:57
 entering extended mode
 **main.tex
 (E:\thesis_for_jiangtao\main.tex
@@ -1814,14 +1814,14 @@ Requested font "SimHei/I/ICU" at 14.05249pt
 
 
 
+] [2
+
+
+
 ]
 Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 12.045pt
  -> C:/Windows/Fonts/timesbd.ttf
- [2
-
-
-
-]
+ [3]
 Requested font "SimHei" at 16.06pt
  -> C:/Windows/Fonts/simhei.ttf
 Requested font "SimHei/ICU" at 16.06pt
@@ -1849,23 +1849,23 @@ Requested font "SimHei/ICU" at 12.045pt
 .................................................
 Requested font "SimHei/ICU:script=latn;language=DFLT;" at 12.045pt
  -> C:/Windows/Fonts/simhei.ttf
- [3
+ [4
 
 
 
 ])
 \tf@toc=\write4
- [4]
+ [5]
 (E:\thesis_for_jiangtao\main.lof)
 \tf@lof=\write5
- [5
+ [6
 
 
 
 ] (E:\thesis_for_jiangtao\main.lot)
 \tf@lot=\write6
 
-[6
+[7
 
 
 
@@ -1922,7 +1922,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
 LaTeX Font Info:    Try loading font information for OMS+TimesNewRoman(0) on in
 put line 44.
 LaTeX Font Info:    No file OMSTimesNewRoman(0).fd. on input line 44.
@@ -1954,12 +1960,6 @@ Requested font "SimSun/ICU:script=latn;language=DFLT;" at 9.03374pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [5])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1974,7 +1974,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \vbox (badness 1226) has occurred while \output is active []
+Underfull \vbox (badness 3009) has occurred while \output is active []
 
  [7
 
@@ -2010,7 +2010,7 @@ Requested font "SimSun/ICU:script=latn;language=DFLT;" at 11.04124pt
 . This font family consists of the following shapes:
 .................................................
 Package hyperref Info: bookmark level for unknown equation defaults to 0 on inp
-ut line 46.
+ut line 45.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2018,7 +2018,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: figures/slic.pdf Graphic file (type QTm)
 
 <use  "figures/slic.pdf" >
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 66
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 65
 .
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 7.72884pt
  -> C:/Windows/Fonts/times.ttf
@@ -2107,7 +2107,7 @@ Requested font "cmr10" at 10.95pt
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 66.
+(Font)              size <6> substituted on input line 65.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2519,7 +2519,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [54]
-Underfull \hbox (badness 2042) in paragraph at lines 196--199
+Underfull \hbox (badness 2042) in paragraph at lines 214--217
 []\l_fontspec_font Yann LeCun, Yoshua Bengio, Geoffrey Hinton.  Deep learning[J
 ].  nature, 2015,
  []
@@ -2535,7 +2535,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57]
 (E:\thesis_for_jiangtao\data/paper.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
@@ -2556,7 +2556,7 @@ Requested font "SimHei/ICU" at 14.4pt
 Requested font "SimHei/ICU:script=latn;language=DFLT;" at 14.4pt
  -> C:/Windows/Fonts/simhei.ttf
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
@@ -2600,12 +2600,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25206 strings out of 430478
- 464200 string characters out of 3191502
- 527715 words of memory out of 3000000
- 27819 multiletter control sequences out of 15000+200000
+ 25207 strings out of 430478
+ 464206 string characters out of 3191502
+ 527712 words of memory out of 3000000
+ 27820 multiletter control sequences out of 15000+200000
  51071 words of font info for 253 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
- 51i,20n,86p,1842b,851s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,20n,86p,1840b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.pdf (68 pages).
+Output written on main.pdf (69 pages).

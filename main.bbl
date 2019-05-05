@@ -28,10 +28,34 @@ Hui He, Xianchuan Yu.
   International Society for Optics and Photonics, 2005.
 \newblock  604408.
 
+\bibitem{bezdek1984fcm}
+James~C Bezdek, Robert Ehrlich, William Full.
+\newblock FCM: The fuzzy c-means clustering algorithm[J].
+\newblock Computers \& Geosciences, 1984, 10(2-3):191--203.
+
+\bibitem{yu2012method}
+XC~Yu, WJ~An, Hui He.
+\newblock A method of auto classification based on object oriented unsupervised
+  classification[J].
+\newblock Progress in Geophysics, 2012, 27(2):744--749.
+
+\bibitem{he2016remote}
+Hui He, Tianheng Liang, Dan Hu, et~al.
+\newblock Remote sensing clustering analysis based on object-based interval
+  modeling[J].
+\newblock Computers \& Geosciences, 2016, 94:131--139.
+
 \bibitem{hinton2006fast}
 Geoffrey~E Hinton, Simon Osindero, Yee-Whye Teh.
 \newblock A fast learning algorithm for deep belief nets[J].
 \newblock Neural computation, 2006, 18(7):1527--1554.
+
+\bibitem{long2015fully}
+Jonathan Long, Evan Shelhamer, Trevor Darrell.
+\newblock Fully convolutional networks for semantic segmentation[C].
+\newblock Proceedings of Proceedings of the IEEE conference on computer vision
+  and pattern recognition, 2015.
+\newblock  3431--3440.
 
 \bibitem{bengio2009learning}
 Yoshua Bengio, et~al.
@@ -158,12 +182,6 @@ Marie Lienou, Henri Maitre, Mihai Datcu.
 \newblock Semantic annotation of satellite images using latent Dirichlet
   allocation[J].
 \newblock IEEE Geoscience and Remote Sensing Letters, 2010, 7(1):28--32.
-
-\bibitem{he2016remote}
-Hui He, Tianheng Liang, Dan Hu, et~al.
-\newblock Remote sensing clustering analysis based on object-based interval
-  modeling[J].
-\newblock Computers \& Geosciences, 2016, 94:131--139.
 
 \bibitem{pal2005random}
 Mahesh Pal.
@@ -329,29 +347,11 @@ Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
   2012.
 \newblock  1097--1105.
 
-\bibitem{long2015fully}
-Jonathan Long, Evan Shelhamer, Trevor Darrell.
-\newblock Fully convolutional networks for semantic segmentation[C].
-\newblock Proceedings of Proceedings of the IEEE conference on computer vision
-  and pattern recognition, 2015.
-\newblock  3431--3440.
-
-\bibitem{bezdek1984fcm}
-James~C Bezdek, Robert Ehrlich, William Full.
-\newblock FCM: The fuzzy c-means clustering algorithm[J].
-\newblock Computers \& Geosciences, 1984, 10(2-3):191--203.
-
 \bibitem{jiang2018enhanced}
 Tao Jiang, Dan Hu, Xianchuan Yu.
 \newblock Enhanced IT2FCM algorithm using object-based triangular fuzzy set
   modeling for remote-sensing clustering[J].
 \newblock Computers \& geosciences, 2018, 118:14--26.
-
-\bibitem{yu2012method}
-XC~Yu, WJ~An, Hui He.
-\newblock A method of auto classification based on object oriented unsupervised
-  classification[J].
-\newblock Progress in Geophysics, 2012, 27(2):744--749.
 
 \bibitem{zadeh1965fuzzy}
 Lotfi~A Zadeh.

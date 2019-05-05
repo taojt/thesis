@@ -13,7 +13,7 @@
 
 \cauthor{江涛}
 \csupervisor{余先川教授} %\\ \hspace*{6em}}
-\cdepartment{信息科学与技术学院}
+\cdepartment[]{信息科学与技术学院16级}
 \cmajor{计算机软件与理论}
 \cnum{201621210026}
 \cdate{\the\year 年 \the\month 月}
@@ -22,29 +22,28 @@
 
 % 定义中英文摘要和关键字
 \begin{cabstract}
-  遥感影像分类是遥感领域重要的研究内容，快速、准确地对遥感影像数据分类与识别是遥感领域当前地研究重点。然而，由于遥感数据固有的不确定性使得影像准确解译识别面临挑战。
+  遥感影像分类是遥感领域重要的研究内容，快速、准确地对遥感影像数据分类与识别是当前遥感领域的研究重点。然而，由于遥感数据固有的不确定性使得影像准确解译识别面临挑战。高分辨率影像提供高质量细节信息时其同类地物类内差异大，使得地物分类更容易错分，且难以预测出明确、清晰的地物边界。
+
+  面向对象的模糊聚类分割方法因其优秀的不确定信息表征能力，被广泛用于处理高分影像中数据不确定性。现有的面向对象分割方法中对影像分割单元多采取均值数据建模或区间值数据建模，然而，这两种信息表达模型无法区分具有相同均值和区间值但内部分布不一致的分割单元。因此，设计一种新的数据模型表征影像分割单元内部特征有利于提高模糊聚类方法的分类能力。面向对象的聚类分割方法属于无监督分类，需要人工后处理。随着深度学习的发展和全卷积分割网络的出现，有监督的图像分割方法也被广泛应用于遥感影像分类中。现有全卷积分类网络中上采样操作造成影像特征的损失，导致地物分类边界模糊，设计一种新的网络模型提高影像分类同类地物的空间一致性，也具有研究意义。基于上述两点思路，本文将从影像分割单元特征建模和地物一致性处理两个角度，对遥感影像地物分类问题加以分析和讨论。具体的研究内容如下：
+  \begin{enumerate}[(1)]
+    \item 从影像分割单元特征建模角度改进现有面向对象模糊聚类分割方法。文中设计了三角形模糊集值信息表达模型来表征影像分割单元，其次提出一种新的区间值距离来度量两个三角形模糊集值数据的相异性，最后结合新提出的三角形模糊集值数据模型和区间值距离提出基于三角形模糊集值的区间二型模糊聚类方法。该方法在SPOT 5和高分二号高分影像数据上的聚类分割结果验证了其能更好的刻画影像数据的不确定性特征。
+    \item 从地物一致性的角度改进现有全卷积有监督分类方法。文中借鉴生成对抗网络优秀的图像生成能力，将条件生成对抗网络框架应用到现有全卷积网络分割模型中，提出基于条件生成对抗网络的全卷积影像分割方法。新方法在Vaihingen 影像数据集上的分割结果有更准确的地物边界，同类别地物空间具有一致性。
+  \end{enumerate}
 \end{cabstract}
 
 \ckeywords{遥感影像, 地物分类, 模糊聚类, 神经网络, 全卷积网络, 生成对抗网络 }
 
 \begin{eabstract}
-   An abstract of a dissertation is a summary and extraction of research work
-   and contributions. Included in an abstract should be description of research
-   topic and research objective, brief introduction to methodology and research
-   process, and summarization of conclusion and contributions of the
-   research. An abstract should be characterized by independence and clarity and
-   carry identical information with the dissertation. It should be such that the
-   general idea and major contributions of the dissertation are conveyed without
-   reading the dissertation.
+  Remote sensing image classification is a research hotspot in the field of remote sensing. How to quickly and accurately classify and identify  of remote sensing images is the focus of current remote sensing research. However, it is challenging to accurately classify remote sensing images, due to the inherent uncertainty of remote sensing images. High-resolution images provide high-quality detail information with large differences in their similar species, which leads to the misclassification, and it is difficult to get the correct classification boundary.
 
-   An abstract should be concise and to the point. It is a misunderstanding to
-   make an abstract an outline of the dissertation and words ``the first
-   chapter'', ``the second chapter'' and the like should be avoided in the
-   abstract.
+    Object-oriented fuzzy clustering segmentation methods are widely used to handle uncertainty in high-resolution images because of its excellent ability to characterize uncertain information. In the current object-oriented segmentation methods, the image segmentation unit adopts mean data modeling or interval value data modeling. However, accurately distinguishing
+  two objects with the same mean or interval values and different internal distributions is difficult. Therefore, we designed a triangular fuzzy set modeling to describe objects and designed an interval distance metric to measure the dissimilarities between triangular fuzzy sets. The object-oriented clustering methods belong to unsupervised classification methods, which required manual post-processing. With the development of deep learning and the emergence of a full convolutional network, supervised image segmentation methods are also widely used in remote sensing image classification. In full convolutional network, the upsampling operation causes the loss of image features, which leads to the blurring of the boundary of the feature classification. Designing a new network model to improve the spatial consistency of image classification of similar features also has research significance. Based on the above two ideas, this paper will analyze and discuss the remote sensing image feature classification from the perspective of image segmentation unit data modeling and ground object consistency processing. The specific research contents are as follows:
+\begin{enumerate}[(1)]
+  \item Improves the existing object-oriented fuzzy clustering segmentation method from the perspective of image segmentation unit feature modeling. In this paper, a triangular fuzzy set modeling was designed to describe objects, and an interval distance metric was proposed to measure the dissimilarities between triangular fuzzy sets. Finally, the triangular fuzzy set-valued data interval type 2  fuzzy c means clustering method was proposed. The clustering results of SPOT-5 and Gaofen-2 high-resolution image data verified that the proposed method results in improved classification quality and accuracy.
+  \item Improves the existing full convolutional supervised classification method from the perspective of feature consistency. This paper draws on the excellent image generation ability of the generative adversarial network, applies the conditional generative adversarial network to the existing full convolutional network segmentation model, and proposes a full convolutional image segmentation method based on conditional generative adversarial network. The segmentation results of the proposed method on the Vaihingen image dataset have more accurate feature boundaries and consistency with the same type of feature space.
+  
+\end{enumerate}
 
-   Key words are terms used in a dissertation for indexing, reflecting core
-   information of the dissertation. An abstract may contain a maximum of 5 key
-   words, with semi-colons used in between to separate one another.
 \end{eabstract}
 
-\ekeywords{Remote Sensing Images, Land Cover Classification, Fuzzy Clustring, Convolutional Neural Network, Fully Convolutional Network, Generative Adversarial Network}
+\ekeywords{Remote Sensing Imagery, Land Cover Classification, Fuzzy Clustring, Convolutional Neural Network, Fully Convolutional Network, Generative Adversarial Network}
