@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  5 MAY 2019 19:58
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  5 MAY 2019 20:45
 entering extended mode
 **jiangtao_thesis.tex
 (E:\thesis_for_jiangtao\jiangtao_thesis.tex
@@ -2163,10 +2163,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
 (E:\thesis_for_jiangtao\data/chap03.tex
-Requested font "Times New Roman/I/ICU:script=latn;language=DFLT;" at 9.03374pt
- -> C:/Windows/Fonts/timesi.ttf
-LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 13.
+File: figures/compare_distribution.pdf Graphic file (type QTm)
 
+<use  "figures/compare_distribution.pdf" >
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
+nput line 30.
+ [18
+
+
+
+
+]
+File: figures/tfs.pdf Graphic file (type QTm)
+ <use  "figures/tfs.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+File: figures/set_location.pdf Graphic file (type QTm)
+
+<use  "figures/set_location.pdf" >
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 8.43146pt
+ -> C:/Windows/Fonts/timesbd.ttf
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 6.02249pt
+ -> C:/Windows/Fonts/timesbd.ttf
+File: figures/distance_compare.pdf Graphic file (type QTm)
+ <use  "figures/distance_compare.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+LaTeX Font Info:    Calculating math sizes for size <9.03374> on input line 122
+.
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 6.32358pt
  -> C:/Windows/Fonts/times.ttf
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 4.51686pt
@@ -2252,37 +2281,8 @@ Requested font "cmr9" at 9.0pt
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.51686> not available
-(Font)              size <5> substituted on input line 13.
+(Font)              size <5> substituted on input line 122.
 
-File: figures/compare_distribution.pdf Graphic file (type QTm)
-<use  "figures/compare_distribution.pdf" > [18
-
-
-
-
-]
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 30.
-File: figures/tfs.pdf Graphic file (type QTm)
- <use  "figures/tfs.pdf" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-File: figures/set_location.pdf Graphic file (type QTm)
-
-<use  "figures/set_location.pdf" >
-Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 8.43146pt
- -> C:/Windows/Fonts/timesbd.ttf
-Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 6.02249pt
- -> C:/Windows/Fonts/timesbd.ttf
-File: figures/distance_compare.pdf Graphic file (type QTm)
- <use  "figures/distance_compare.pdf" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
 
 LaTeX Font Warning: Font shape `EU1/TimesNewRoman(0)/m/sl' undefined
 (Font)              using `EU1/TimesNewRoman(0)/m/n' instead on input line 132.
@@ -2303,16 +2303,10 @@ LaTeX Font Warning: Font shape `EU1/SimSun(1)/m/sl' undefined
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [22]
 File: figures/framework.pdf Graphic file (type QTm)
 
 <use  "figures/framework.pdf" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
 Requested font "txbsya" at 12.045pt
  -> txbsya
 Requested font "txbsya" at 8.43146pt
@@ -2363,6 +2357,9 @@ Requested font "cmbx6" at 6.0pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [24]
 File: figures/tfsvit2.pdf Graphic file (type QTm)
 
@@ -2380,15 +2377,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
+Underfull \vbox (badness 1762) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-File: figures/shenwan.pdf Graphic file (type QTm)
-
-<use  "figures/shenwan.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
+File: figures/shenwan.pdf Graphic file (type QTm)
+
+<use  "figures/shenwan.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
@@ -2406,6 +2406,9 @@ Requested font "SimSun/ICU:script=latn;language=DFLT;embolden=4;" at 12.045pt
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
+File: figures/hengqin.pdf Graphic file (type QTm)
+
+<use  "figures/hengqin.pdf" >
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2418,9 +2421,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
-File: figures/hengqin.pdf Graphic file (type QTm)
-
-<use  "figures/hengqin.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
@@ -2436,9 +2436,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
 (E:\thesis_for_jiangtao\data/chap04.tex
 File: figures/gan.pdf Graphic file (type QTm)
- <use  "figures/gan.pdf" > [37
+ <use  "figures/gan.pdf" > [38
 
 
 
@@ -2449,31 +2452,28 @@ File: figures/cgan.pdf Graphic file (type QTm)
 <use  "figures/cgan.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
+ [39]
 File: figures/gan-fcn.pdf Graphic file (type QTm)
 
 <use  "figures/gan-fcn.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
+ [40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
+ [41]
 File: figures/vaihingen2.pdf Graphic file (type QTm)
 
 <use  "figures/vaihingen2.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [42]
-File: figures/sample_data.pdf Graphic file (type QTm)
-
-<use  "figures/sample_data.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
+File: figures/sample_data.pdf Graphic file (type QTm)
+
+<use  "figures/sample_data.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
@@ -2483,28 +2483,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
 File: figures/seg_result.pdf Graphic file (type QTm)
 
 <use  "figures/seg_result.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47]
+ [48]
 Underfull \vbox (badness 1509) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
+ [49]
 File: figures/dsm_affect.pdf Graphic file (type QTm)
 
 <use  "figures/dsm_affect.pdf" >)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
+ [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
-(E:\thesis_for_jiangtao\data/chap05.tex [51
+ [51]
+(E:\thesis_for_jiangtao\data/chap05.tex [52
 
 
 
@@ -2512,8 +2515,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
-(E:\thesis_for_jiangtao\jiangtao_thesis.bbl [53
+ [53]
+(E:\thesis_for_jiangtao\jiangtao_thesis.bbl [54
 
 
 
@@ -2521,7 +2524,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+ [55]
 Underfull \hbox (badness 2042) in paragraph at lines 214--217
 []\l_fontspec_font Yann LeCun, Yoshua Bengio, Geoffrey Hinton.  Deep learning[J
 ].  nature, 2015,
@@ -2530,13 +2533,13 @@ Underfull \hbox (badness 2042) in paragraph at lines 214--217
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
+ [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56])
+ [57])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]
+ [58]
 (E:\thesis_for_jiangtao\data/paper.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
@@ -2563,12 +2566,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-) [58
+) [59
 
 
 
 
-] (E:\thesis_for_jiangtao\data/ack.tex [59
+] (E:\thesis_for_jiangtao\data/ack.tex [60
 
 
 
@@ -2577,7 +2580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
+ [61]
 \tf@thm=\write7
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
@@ -2604,12 +2607,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25207 strings out of 430478
- 464448 string characters out of 3191502
- 527767 words of memory out of 3000000
+ 25206 strings out of 430478
+ 464377 string characters out of 3191502
+ 525771 words of memory out of 3000000
  27820 multiletter control sequences out of 15000+200000
- 51071 words of font info for 253 fonts, out of 3000000 for 9000
+ 51063 words of font info for 252 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
  51i,20n,86p,1851b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on jiangtao_thesis.pdf (69 pages).
+Output written on jiangtao_thesis.pdf (70 pages).

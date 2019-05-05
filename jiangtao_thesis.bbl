@@ -347,12 +347,6 @@ Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
   2012.
 \newblock  1097--1105.
 
-\bibitem{jiang2018enhanced}
-Tao Jiang, Dan Hu, Xianchuan Yu.
-\newblock Enhanced IT2FCM algorithm using object-based triangular fuzzy set
-  modeling for remote-sensing clustering[J].
-\newblock Computers \& geosciences, 2018, 118:14--26.
-
 \bibitem{zadeh1965fuzzy}
 Lotfi~A Zadeh.
 \newblock Fuzzy sets[J].
@@ -368,6 +362,12 @@ Feilong Liu.
 \newblock An efficient centroid type-reduction strategy for general type-2
   fuzzy logic system[J].
 \newblock Information Sciences, 2008, 178(9):2224--2236.
+
+\bibitem{jiang2018enhanced}
+Tao Jiang, Dan Hu, Xianchuan Yu.
+\newblock Enhanced IT2FCM algorithm using object-based triangular fuzzy set
+  modeling for remote-sensing clustering[J].
+\newblock Computers \& geosciences, 2018, 118:14--26.
 
 \bibitem{roerdink2000watershed}
 Jos~BTM Roerdink, Arnold Meijster.

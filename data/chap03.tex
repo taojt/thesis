@@ -10,7 +10,7 @@
 
 \section{引言}
 \label{sec:chap03-1}
-由于遥感影像数据具有同物异谱、同谱异物等固有的不确定性，结合模糊数学理论对不确定信息刻画的优点，模糊C-均值聚类（Fuzzy c-means clustering, FCM）分割方法被广泛应用到遥感影像分析中 \cite{bezdek1984fcm}。同时，随着遥感影像空间分辨率的提高，高分影像数据具有更多的信息多样性和复杂性，遥感影像聚类方法由传统的基于像元发展为面向对象的聚类分割。本章内容从遥感影像特征信息表达和目标地物类别关系两个角度来表征遥感影像分类中的不确定性信息。首先设计了三角形模糊集值信息表达模型来表征影像分割单元信息，其次提出一种新的区间值度量方法计算两个三角形模糊集值数据的相异性，最后，改进了已有的二型模糊集合聚类分割方法来对影像数据建模，以刻画遥感影像数据的不确定性  \footnote{本章部分内容来自作者2018年发表于 SCI 期刊 \textit{Computers \& Geosciences} 上的文章 \cite{jiang2018enhanced}。 }。
+由于遥感影像数据具有同物异谱、同谱异物等固有的不确定性，模糊C均值聚类（Fuzzy c-means clustering, FCM）分割方法是利用模糊集理论数据建模，因此被广泛应用到遥感影像解译中\cite{bezdek1984fcm}。随着遥感影像空间分辨率的提高，高分影像数据呈现信息多样性和复杂性，遥感影像聚类方法由基于像元发展为面向对象的聚类分割方法。本章内容从遥感影像特征信息表达和目标地物类别关系两个角度来表征遥感影像分类中的不确定性信息。首先设计了三角形模糊集值信息表达模型来表征影像分割单元信息，其次提出一种新的区间值度量方法计算两个三角形模糊集值数据的相异性，最后，改进了已有的二型模糊集合聚类分割方法来对影像数据建模，以刻画遥感影像数据的不确定性。  %\footnote{本章部分内容来自作者2018年发表于 SCI 期刊 \textit{Computers \& Geosciences} 上的文章 \cite{jiang2018enhanced}。 }。
 %\footnote{注：本章部分内容来自本文作者2018年发表于《Computers \& Geosciences》 SCI期刊的文章} hh
 
 \begin{figure}[htbp]
@@ -119,21 +119,21 @@
         d _{I} (\tilde{A},\tilde{B}) = [\min \lbrace d_0 (\tilde{A},\tilde{B}),d_1(\tilde{A},\tilde{B}) \rbrace, \max \lbrace d_0(\tilde{A},\tilde{B}), d_1 (\tilde{A},\tilde{B}) \rbrace ]
     \end{split}
 \end{equation}
-图~\ref{fig:distance_compare} 中的结果($0-cut$ 和$1-cut$)也表明$d _{I} (\tilde{A},\tilde{B})$ 能够度量两个模糊集不相交时的相似性；另外，还可以看出文中新定义的距离$ d _{I} (\tilde{A},\tilde{B})$ 是$ d _{H} (\tilde{A},\tilde{B})$的弹性膨胀，即有：
+图~\ref{fig:distance_compare} 中的结果($0-cut$ 和$1-cut$)也表明$d _{I} (\tilde{A},\tilde{B})$ 能够度量两个模糊集不相交时的相似性；另外，还可以看出文中新定义的距离$ d _{I} (\tilde{A},\tilde{B})$ 是$ d _{H} (\tilde{A},\tilde{B})$的弹性膨胀，即有下式\ref{eq:expand_in} \footnote{公式~\ref{eq:expand_in}的证明步骤由于篇幅过大，可参考本文作者已发表文章\cite{jiang2018enhanced} 的附录一。}：
 \begin{equation}\label{eq:expand_in}
     \begin{split}
         d _{H} (\tilde{A},\tilde{B}) \in d _{I} (\tilde{A},\tilde{B})
     \end{split}
 \end{equation}
-公式~\ref{eq:expand_in}的证明步骤由于篇幅过大，可参考本文作者已发表文章\cite{jiang2018enhanced} 的附录一。
 
-一个相似性度量能够定位为距离，当且仅当其能满足距离度量三个条件，即非负性、对称性和三角不等式。假定$\tilde{A}$、$\tilde{B}$ 和$\tilde{C}$是任意三个三角形模糊集，则需要满足以下特性：
+
+一个相似性度量能够定位为距离，当且仅当其能满足距离度量三个条件，即非负性、对称性和三角不等式。假定$\tilde{A}$、$\tilde{B}$ 和$\tilde{C}$是任意三个三角形模糊集，则需要满足以下特性\footnote{证明过程较复杂且非文章研究重点，可参考本文作者已发表文章\cite{jiang2018enhanced} 的附录二}：
 \begin{enumerate}[(1)]
     \item \textsl{非负性}： $d_I(\tilde{A}, \tilde{A}) = 0$
     \item\textsl{对称性}： $d_I(\tilde{A}, \tilde{B}) = d_I(\tilde{B}, \tilde{A})$
     \item  \textsl{三角不等式}： $d_I(\tilde{A}, \tilde{C}) \leq d_I(\tilde{A}, \tilde{B}) + d_I(\tilde{B}, \tilde{C})$
 \end{enumerate}
-证明过程较复杂且非文章研究重点，可参考本文作者已发表文章\cite{jiang2018enhanced} 的附录二。
+
 
 综上所述，本节针对面向对象分割单元定义了TFSV 数据模型，同时，结合模糊集与可能性分布定理特性，针对新提出的TFSV 数据类型，本文新提出了一种区间值的距离度量方法，来度量两个TFSV 数据间的相似性。
 
@@ -144,15 +144,15 @@
 
 \subsection{算法整体框架}
 \label{subsec::chap03-3}
-本章提出基于三角形模糊集值的区间二型模糊聚类方法(Triangular Fuzzy Set Valued Interval Type 2 Fuzzy Clustering Method, TFSV-IT2FCM)主要用于提高高分辨率遥感影像无监督聚类分割精度。图~\ref{fig:framework} 展示了该面向对象分类方法的总体处理流程，具体可分为以下几点：
+本章提出基于三角形模糊集值的区间二型模糊聚类方法(Triangular Fuzzy Set Valued Interval Type 2 Fuzzy Clustering Method, TFSV-IT2FCM)主要用于提高高分影像聚类分割精度。图~\ref{fig:framework} 展示了该面向对象分类方法的总体处理流程，具体可分为以下几步：
 
 \begin{enumerate}[Step 1:]
-    \item 影像分割与对分割单元的TFSV 数据建模
+    \item 影像分割与分割单元的TFSV 数据建模
 
-          高分影像被分割为具有同质性的像素单元集合.对分割单元提取特征，并构建 TFSV 模型；
+          高分影像被分割为具有同质性的像素单元集合。对分割单元提取特征，并构建 TFSV 数据模型；
     \item 模糊聚类分析
 
-          使用TFSV-IT2FCM 算法对高分影像分割单元的TFSV 模型数据聚类，IT2FCM 算法的距离度量使用文中新提出的区间距离$d_I$；
+          使用TFSV-IT2FCM 算法对高分影像分割单元的TFSV 模型数据聚类，其中IT2FCM 算法的距离度量使用式\ref{eq:interval}中新提出的区间距离$d_I$；
     \item 聚类结果的后处理
 
           使用类别组合方法对聚类分割的结果处理，得到高分影像最终得分割结果。
@@ -172,7 +172,7 @@
 \subsubsection*{1.影像分割}
 \label{subsec::chap03-3-1-1}
 
-目前，遥感影像常用的像元分割算法包含基于分水岭的算法，基于直方图的方法和聚类方法等\cite{roerdink2000watershed}。简单线性迭代聚类（SLIC）算法具有高计算效率和可选数量的分段单元\cite{achanta2012slic}，因此本章使用SLIC 超像素分割算法提取遥感影像的分割单元。 SLIC 算法的关键步骤如下：
+目前，遥感影像常用的像元分割算法包含基于分水岭的算法，基于直方图的方法和聚类方法等\cite{roerdink2000watershed}。简单线性迭代聚类（SLIC）算法因具有高计算效率和可选数量的分段单元\cite{achanta2012slic}，文中使用SLIC 超像素分割算法提取遥感影像的分割单元。 SLIC 算法的关键步骤如下：
 \begin{enumerate}[(I)]
     \item 计算遥感影像梯度获取影像梯度图；
     \item 初始化梯度图中的聚类中心；
@@ -397,17 +397,6 @@ $\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V
 \end{enumerate}
 综上所述，神湾研究区可视化的分类结果图表明文中提出的TFSV-IT2FCM 聚类分割算法相比其他已有算法能获得更好的遥感影像分割结果。
 
-\begin{table}[htb]
-    \caption{神湾地区影像地物类别抽样Ground truth表(pixels)}\label{tab:shenwan_data}
-    \centering
-    \begin{tabular}{ccccc}
-        \toprule
-        林地  & 水域  & 草地  & 建筑  & 养殖水域 \\
-        \midrule
-        10124 & 46250 & 15687 & 23697 & 6942     \\
-        \bottomrule
-    \end{tabular}
-\end{table}
 
 为了得到实验中精确量化的聚类结果图，实验中使用CORINE 土地覆被分类系统生成地物类别ground truth 图，如图\ref{fig:shenwan}(b) 所示。表~\ref{tab:shenwan_data} 为神湾研究区各类别地物抽样点数据表。为了对分类结果进行评价，确定分类的精度和可靠性。本实验中使用以下评价指标度量分类效果：
 \begin{enumerate}
@@ -430,6 +419,32 @@ $\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V
           \end{equation}
 \end{enumerate}
 式中，$n$ 表示类别，$N$ 表示总类别数，$X_{ii}$ 表示混淆矩阵对角线元素，$X_{+i}$ 表示类别的行总和，$X_{i+}$ 表示类别的列总和。
+
+
+\begin{table}[htb]
+    \caption{神湾地区影像地物类别抽样Ground truth表(pixels)}\label{tab:shenwan_data}
+    \centering
+    \begin{tabular}{ccccc}
+        \toprule
+        林地  & 水域  & 草地  & 建筑  & 养殖水域 \\
+        \midrule
+        10124 & 46250 & 15687 & 23697 & 6942     \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+表~\ref{tab:shenwan_result} 为各方法在神湾地区影像上的地物类别识别精度。文中提出的TFSV-IT2FCM 算法获得最好的OA 精度，为$90.33\%$，相比无后处理的TFSV-IT2FCM 算法、基于Watershed 分割的TFSV-IT2FCM 算法、 IV-FCM 算法、面向对象的IT2FCM 算法、基于像素的IT2FCM 算法和FCM 算法分别提升了$0.55\%$、$0.52\%$、$2.22\%$、$4.81\%$、$5.43\%$的分类精度。
+分类精度也表明对于文中提出的聚类分割算法，聚类是最重要的一步，在方法的三个部分（分割、聚类、后处理）中最大化的决定最终分类结果精度。Kappa系数结果也表明，文中提出的TFSV-IT2FCM 算法有效题目了影像地物的特征，获得了最佳的聚类分割结果。表中数值量化的结果基本与前文可视化的结果一致。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/hengqin}
+    \caption{神湾研究区TFSV-IT2FCM 与IV-FCM 算法聚类分割图 }\label{fig:hengqin}
+\end{figure}
+
+\subsection{横琴地区实验}
+\label{subsec::chap03-4-1}
 
 \begin{table*}[htbp]
     \centering
@@ -469,17 +484,6 @@ $\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V
     }
 \end{table*}
 
-表~\ref{tab:shenwan_result} 为各方法在神湾地区影像上的地物类别识别精度。文中提出的TFSV-IT2FCM 算法获得最好的OA 精度，为$90.33\%$，相比无后处理的TFSV-IT2FCM 算法、基于Watershed 分割的TFSV-IT2FCM 算法、 IV-FCM 算法、面向对象的IT2FCM 算法、基于像素的IT2FCM 算法和FCM 算法分别提升了$0.55\%$、$0.52\%$、$2.22\%$、$4.81\%$、$5.43\%$的分类精度。
-分类精度也表明对于文中提出的聚类分割算法，聚类是最重要的一步，在方法的三个部分（分割、聚类、后处理）中最大化的决定最终分类结果精度。Kappa系数结果也表明，文中提出的TFSV-IT2FCM 算法有效题目了影像地物的特征，获得了最佳的聚类分割结果。表中数值量化的结果基本与前文可视化的结果一致。
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=1.0\textwidth]{figures/hengqin}
-    \caption{神湾研究区TFSV-IT2FCM 与IV-FCM 算法聚类分割图 }\label{fig:hengqin}
-\end{figure}
-
-\subsection{横琴地区实验}
-\label{subsec::chap03-4-1}
 第二个研究区横琴岛位于广东省珠海市，岛内具有复杂的农业与养殖区，该区域高分影像
 由SPOT 5 遥感卫星于2010 年拍摄。横琴地区地物类别可分为水域、农业区、林地、农田和建筑这五大类。实验区选择影像图像如图~\ref{fig:hengqin}(a) 所示，大小为$1203 \times 1055$ 个像素。
 
@@ -585,4 +589,4 @@ IV-FCM 算法和TFSV-IT2FCM 算法的可视化结果分别如图~\ref{fig:hengqi
 
 \section{本章小结}
 \label{sec::chap03-5}
-本章考虑遥感影像“同物异谱”和“同谱异物”的固有的不确定性，创新性的定义TFSV 的数据模型来提取影像分割单元的内在特征，同时针对该数据模型提出一种新的模糊集间的区间距离来刻画两个三角形模糊集之间的相似性。并提出TFSV-IT2FCM 算法改进现有面向对象的遥感影像模糊聚类分割方法。分别在SPOT 5影像和高分二号影像上进行地物聚类分割实验，实验可视化结果和数值量化结果均证明了文中提出的TFSV-IT2FCM 算法的有效性，其确实能更好刻画遥感影像数据的不确定性，实现更好的分割识别结果。
+本章从遥感影像不确定性特征表达角度展开研究，新定义TFSV 数据模型来提取影像分割单元内在特征信息，同时提出一种新区间值距离来度量两个三角形模糊集间的相似性。结合新的数据模型和距离度量提出TFSV-IT2FCM 模糊聚类分割算法。在SPOT 5和高分二号影像数据上的实验结果均证明了文中提出的TFSV-IT2FCM 算法的有效性，其确实能更好刻画遥感影像数据的不确定性，实现更好的分割识别结果。%改进现有面向对象的遥感影像模糊聚类分割方法。
