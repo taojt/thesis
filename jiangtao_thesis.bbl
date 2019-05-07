@@ -1,7 +1,7 @@
 \begin{thebibliography}{10}
 
 \bibitem{lishihua2005}
-李石华, 王金亮, 毕艳, et~al.
+{李石华,王金亮,毕艳等}.
 \newblock 遥感图像分类方法研究综述[J].
 \newblock 国土资源遥感, 2005, 2(5):1--6.
 
@@ -11,12 +11,12 @@
 \newblock 遥感技术与应用, 2010, 25(1):112--117.
 
 \bibitem{lideren2012}
-李德仁, 童庆禧, 李荣兴, et~al.
+{李德仁,童庆禧,李荣兴等}.
 \newblock 高分辨率对地观测的若干前沿科学问题[J].
 \newblock 中国科学: 地球科学, 2012, 42(6):805--813.
 
 \bibitem{wulun2006}
-邬伦, 承继成, 史文中, et~al.
+邬伦, 承继成, 史文中.
 \newblock 地理信息系统数据的不确定性问题[D].
 \newblock 2006.
 
@@ -26,24 +26,7 @@ Hui He, Xianchuan Yu.
   imagery classification[C].
 \newblock Proceedings of MIPPR 2005: Image Analysis Techniques, volume 6044.
   International Society for Optics and Photonics, 2005.
-\newblock  604408.
-
-\bibitem{bezdek1984fcm}
-James~C Bezdek, Robert Ehrlich, William Full.
-\newblock FCM: The fuzzy c-means clustering algorithm[J].
-\newblock Computers \& Geosciences, 1984, 10(2-3):191--203.
-
-\bibitem{yu2012method}
-XC~Yu, WJ~An, Hui He.
-\newblock A method of auto classification based on object oriented unsupervised
-  classification[J].
-\newblock Progress in Geophysics, 2012, 27(2):744--749.
-
-\bibitem{he2016remote}
-Hui He, Tianheng Liang, Dan Hu, et~al.
-\newblock Remote sensing clustering analysis based on object-based interval
-  modeling[J].
-\newblock Computers \& Geosciences, 2016, 94:131--139.
+\newblock  60--65.
 
 \bibitem{hinton2006fast}
 Geoffrey~E Hinton, Simon Osindero, Yee-Whye Teh.
@@ -106,8 +89,13 @@ Frank Paul, Andreas K{\"a}{\"a}b, Max Maisch, et~al.
   Methods[J].
 \newblock Annals of Glaciology, 2002, 34:355--361.
 
+\bibitem{bezdek1984fcm}
+James~C Bezdek, Robert Ehrlich, William Full.
+\newblock FCM: The fuzzy c-means clustering algorithm[J].
+\newblock Computers \& Geosciences, 1984, 10(2-3):191--203.
+
 \bibitem{zhangyongsheng2004}
-张永生, 巩丹超, 刘军, et~al.
+{张永生,巩丹超,刘军等}.
 \newblock 高分辨率遥感卫星应用[J].
 \newblock 科学出版社, 北京, 2004.
 
@@ -182,6 +170,12 @@ Marie Lienou, Henri Maitre, Mihai Datcu.
 \newblock Semantic annotation of satellite images using latent Dirichlet
   allocation[J].
 \newblock IEEE Geoscience and Remote Sensing Letters, 2010, 7(1):28--32.
+
+\bibitem{he2016remote}
+Hui He, Tianheng Liang, Dan Hu, et~al.
+\newblock Remote sensing clustering analysis based on object-based interval
+  modeling[J].
+\newblock Computers \& Geosciences, 2016, 94:131--139.
 
 \bibitem{pal2005random}
 Mahesh Pal.
@@ -347,6 +341,22 @@ Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
   2012.
 \newblock  1097--1105.
 
+\bibitem{de2005tutorial}
+Pieter-Tjerk De~Boer, Dirk~P Kroese, Shie Mannor, et~al.
+\newblock A tutorial on the cross-entropy method[J].
+\newblock Annals of operations research, 2005, 134(1):19--67.
+
+\bibitem{kingma2014adam}
+Diederik~P Kingma, Jimmy Ba.
+\newblock Adam: A method for stochastic optimization[J].
+\newblock arXiv preprint arXiv:1412.6980, 2014.
+
+\bibitem{yu2012method}
+XC~Yu, WJ~An, Hui He.
+\newblock A method of auto classification based on object oriented unsupervised
+  classification[J].
+\newblock Progress in Geophysics, 2012, 27(2):744--749.
+
 \bibitem{zadeh1965fuzzy}
 Lotfi~A Zadeh.
 \newblock Fuzzy sets[J].
@@ -395,20 +405,5 @@ Dongrui Wu, Jerry~M Mendel.
 Jing-hua Zhang, Zhiming Feng, Lu-guang Jiang.
 \newblock Progress on studies of land use/land cover classification systems[J].
 \newblock Resources Science, 2011, 33(6):1195--1203.
-
-\bibitem{luc2016semantic}
-Pauline Luc, Camille Couprie, Soumith Chintala, et~al.
-\newblock Semantic segmentation using adversarial networks[J].
-\newblock arXiv preprint arXiv:1611.08408, 2016.
-
-\bibitem{de2005tutorial}
-Pieter-Tjerk De~Boer, Dirk~P Kroese, Shie Mannor, et~al.
-\newblock A tutorial on the cross-entropy method[J].
-\newblock Annals of operations research, 2005, 134(1):19--67.
-
-\bibitem{kingma2014adam}
-Diederik~P Kingma, Jimmy Ba.
-\newblock Adam: A method for stochastic optimization[J].
-\newblock arXiv preprint arXiv:1412.6980, 2014.
 
 \end{thebibliography}

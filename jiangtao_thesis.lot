@@ -1,11 +1,8 @@
-\contentsline {table}{\numberline {1}{\ignorespaces 实验区土地覆被类别表\relax }}{29}{table.caption.48}
-\contentsline {table}{\numberline {2}{\ignorespaces 神湾地区影像地物类别抽样Ground truth表(pixels)\relax }}{32}{table.caption.50}
-\contentsline {table}{\numberline {3}{\ignorespaces 神湾研究区不同方法分类精度表\relax }}{33}{table.caption.52}
-\contentsline {table}{\numberline {4}{\ignorespaces 横琴地区分类结果表\relax }}{34}{table.caption.54}
-\contentsline {table}{\numberline {5}{\ignorespaces 横琴地区分类精度表\relax }}{35}{table.caption.56}
-\contentsline {table}{\numberline {6}{\ignorespaces 三门峡地区分类结果表\relax }}{35}{table.caption.57}
-\contentsline {table}{\numberline {7}{\ignorespaces 三门峡地区分类精度表\relax }}{36}{table.caption.58}
-\contentsline {table}{\numberline {8}{\ignorespaces Vaihingen 数据类别标签颜色对照表\relax }}{42}{table.caption.65}
-\contentsline {table}{\numberline {9}{\ignorespaces 基于CGAN 框架的全卷积分割模型参数表}}{46}{table.4.9}
-\contentsline {table}{\numberline {10}{\ignorespaces Vaihingen 数据分割精度评估表\relax }}{48}{table.caption.71}
-\contentsline {table}{\numberline {11}{\ignorespaces DSM 波段对分割精度的影响\relax }}{50}{table.caption.74}
+\contentsline {table}{\numberline {1}{\ignorespaces Vaihingen 数据类别标签颜色对照表\relax }}{21}{table.caption.37}
+\contentsline {table}{\numberline {2}{\ignorespaces 基于CGAN 框架的全卷积分割模型参数表}}{25}{table.3.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Vaihingen 数据分类精度评估表\relax }}{27}{table.caption.43}
+\contentsline {table}{\numberline {4}{\ignorespaces DSM 波段对分类精度的影响\relax }}{29}{table.caption.46}
+\contentsline {table}{\numberline {5}{\ignorespaces 实验区土地覆被类别表\relax }}{41}{table.caption.57}
+\contentsline {table}{\numberline {6}{\ignorespaces 神湾地区影像地物类别抽样Ground truth表(pixels)\relax }}{43}{table.caption.58}
+\contentsline {table}{\numberline {7}{\ignorespaces 神湾研究区不同方法分类精度表\relax }}{44}{table.caption.60}
+\contentsline {table}{\numberline {8}{\ignorespaces 横琴地区分类精度表\relax }}{45}{table.caption.62}

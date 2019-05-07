@@ -5,14 +5,14 @@
 %%% End:
 %\secretlevel{绝密} \secretyear{10}
 
-\ctitle{基于模糊聚类及生成对抗网络的遥感影像分类方法研究}
+\ctitle{基于生成对抗网络的遥感影像分类研究}
 %\makeatletter
 %\cdegree{硕士}
 
 \makeatother
 
 \cauthor{江涛}
-\csupervisor{余先川教授} %\\ \hspace*{6em}}
+\csupervisor{余先川教授、胡丹副教授} %\\ \hspace*{6em}}
 \cdepartment[]{信息科学与技术学院16级}
 \cmajor{计算机软件与理论}
 \cnum{201621210026}
@@ -22,16 +22,16 @@
 
 % 定义中英文摘要和关键字
 \begin{cabstract}
-  遥感影像分类是遥感领域重要的研究内容，快速、准确地对遥感影像数据分类与识别是当前遥感领域的研究重点。然而，由于遥感数据固有的不确定性使得影像准确解译识别面临挑战。高分辨率影像提供高质量细节信息时其同类地物类内差异大，使得地物分类更容易错分，且难以预测出明确、清晰的地物边界。
+  遥感影像分类是遥感领域重要的研究内容，快速、准确地对遥感影像数据分类与识别是当前遥感领域的研究重点。然而，由于遥感数据固有的不确定性使得影像准确解译识别面临挑战。此外，高分辨率影像在提供高质量细节信息时其同类地物类内特征差异大，使得分类容易错分类内差异大的地物，且难以预测出明确、清晰的地物分类边界。
 
-  面向对象的模糊聚类分割方法因其优秀的不确定信息表征能力，被广泛用于处理高分影像中数据不确定性。现有的面向对象分割方法中对影像分割单元多采取均值数据建模或区间值数据建模，然而，这两种信息表达模型无法区分具有相同均值和区间值但内部分布不一致的分割单元。因此，设计一种新的数据模型表征影像分割单元内部特征有利于提高模糊聚类方法的分类能力。面向对象的聚类分割方法属于无监督分类，需要人工后处理。随着深度学习的发展和全卷积分割网络的出现，有监督的图像分割方法也被广泛应用于遥感影像分类中。现有全卷积分类网络中上采样操作造成影像特征的损失，导致地物分类边界模糊，设计一种新的网络模型提高影像分类同类地物的空间一致性，也具有研究意义。基于上述两点思路，本文将从影像分割单元特征建模和地物一致性处理两个角度，对遥感影像地物分类问题加以分析和讨论。具体的研究内容如下：
+  近年来，随着深度学习技术的发展和全卷积分类网络的出现，基于深度学习理论的影像分类方法被广泛应用到遥感影像分类任务中。但目前基于全卷积网络的影像分类方法在上采样操作中易使影像丢失特征信息，导致地物分类边界模糊，另一方面，全卷积影像分类方法是像素级的分类，影像分割结果中邻近区域同类地物预测标签难以保证一致性。因此，改进现有的全卷积影像分类方法，提升影像分类质量，也具有重要的研究意义。生成对抗网络其判别器能够不断检测并纠正真实样布与生成数据间的差异，保持整体的一致性，且对抗博弈过程中生成器能不断强化分割模型的预测能力。因此，将对抗训练的思想引入全卷积影像分类方法有助于提升分类精度。此外，利用模糊聚类方法对遥感影像不确定信息建模，将影像聚类结果作为先验辅助知识添加到全卷积影像分类模型中，能够增强分类模型对遥感影像不确定性信息的表征能力，提升分类精度。基于上述思路，本课题论文对遥感影像地物分类问题加以研究和讨论。具体的研究内容如下：
   \begin{enumerate}[(1)]
-    \item 从影像分割单元特征建模角度改进现有面向对象模糊聚类分割方法。文中设计了三角形模糊集值信息表达模型来表征影像分割单元，其次提出一种新的区间值距离来度量两个三角形模糊集值数据的相异性，最后结合新提出的三角形模糊集值数据模型和区间值距离提出基于三角形模糊集值的区间二型模糊聚类方法。该方法在SPOT 5和高分二号高分影像数据上的聚类分割结果验证了其能更好的刻画影像数据的不确定性特征。
-    \item 从地物一致性的角度改进现有全卷积有监督分类方法。文中借鉴生成对抗网络优秀的图像生成能力，将条件生成对抗网络框架应用到现有全卷积网络分割模型中，提出基于条件生成对抗网络的全卷积影像分割方法。新方法在Vaihingen 影像数据集上的分割结果有更准确的地物边界，同类别地物空间具有一致性。
+    \item 将对抗训练思想引入全卷积影像分类模型，提出基于条件对抗生成网络的全卷积影像分类方法，新方法在高分影像数据上相比原方法分类能力更强，同类别地物空间更加具有一致性。
+    \item 利用作者先前提出的面向对象的遥感影像模糊聚类方法处理影像数据，模糊聚类输出结果作为影像区域领域关系和同质性的特征图，将特征图引入提出的基于条件对抗生成网络的影像分类方法中，联合训练，提升影像分类结果同类别地物一致性，并得到更准确的地物分类边界。
   \end{enumerate}
 \end{cabstract}
 
-\ckeywords{遥感影像, 地物分类, 模糊聚类, 神经网络, 全卷积网络, 生成对抗网络 }
+\ckeywords{遥感影像, 地物分类, 全卷积网络, 生成对抗网络，深度学习 }
 
 \begin{eabstract}
   Remote sensing image classification is a research hotspot in the field of remote sensing. How to quickly and accurately classify and identify  of remote sensing images is the focus of current remote sensing research. However, it is challenging to accurately classify remote sensing images, due to the inherent uncertainty of remote sensing images. High-resolution images provide high-quality detail information with large differences in their similar species, which leads to the misclassification, and it is difficult to get the correct classification boundary.
@@ -46,4 +46,4 @@
 
 \end{eabstract}
 
-\ekeywords{Remote Sensing Imagery, Land Cover Classification, Fuzzy Clustring, Convolutional Neural Network, Fully Convolutional Network, Generative Adversarial Network}
+\ekeywords{Remote Sensing Imagery, Land Cover Classification, Fully Convolutional Network, Generative Adversarial Network, Deep Learning}
