@@ -4,7 +4,7 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces 影像分类网络结构示意图\relax }}{11}{figure.caption.26}
 \contentsline {figure}{\numberline {5}{\ignorespaces 反卷积上采样过程\relax }}{11}{figure.caption.28}
 \contentsline {figure}{\numberline {6}{\ignorespaces 基于FCN网络的遥感影像分类示意图\relax }}{12}{figure.caption.30}
-\contentsline {figure}{\numberline {7}{\ignorespaces GAN结构示意图\relax }}{14}{figure.caption.31}
+\contentsline {figure}{\numberline {7}{\ignorespaces GAN结构示意图\relax }}{13}{figure.caption.31}
 \contentsline {figure}{\numberline {8}{\ignorespaces CGAN结构示意图\relax }}{15}{figure.caption.32}
 \contentsline {figure}{\numberline {9}{\ignorespaces 基于CGAN 的影像分类方法模型示意图\relax }}{17}{figure.caption.35}
 \contentsline {figure}{\numberline {10}{\ignorespaces Vaihingen 影像数据\relax }}{21}{figure.caption.36}
@@ -12,9 +12,9 @@
 \contentsline {figure}{\numberline {12}{\ignorespaces 影像分类的可视化结果\relax }}{27}{figure.caption.44}
 \contentsline {figure}{\numberline {13}{\ignorespaces DSM 波段对影像分类结果的影响\relax }}{28}{figure.caption.45}
 \contentsline {figure}{\numberline {14}{\ignorespaces 区间值相同但分布不同的数据比较\relax }}{30}{figure.caption.49}
-\contentsline {figure}{\numberline {15}{\ignorespaces 三角形模糊集 $\mathaccentV {tilde}E7E{A}$ 示意图\relax }}{31}{figure.caption.50}
-\contentsline {figure}{\numberline {16}{\ignorespaces $\mathaccentV {tilde}E7E{A}$ 和 $\mathaccentV {tilde}E7E{B}$ 位置关系示意图。 (a)相交; (b)$\mathaccentV {tilde}E7E{A}$ 包含集合$\mathaccentV {tilde}E7E{B}$; (c)不相交.\relax }}{32}{figure.caption.51}
-\contentsline {figure}{\numberline {17}{\ignorespaces 不同位置下，$\mathaccentV {tilde}E7E{A}$ 和 $\mathaccentV {tilde}E7E{B}$ 两者间各种距离比较图。\relax }}{33}{figure.caption.52}
+\contentsline {figure}{\numberline {15}{\ignorespaces 三角形模糊集 $\mathaccentV {tilde}07E{A}$ 示意图\relax }}{31}{figure.caption.50}
+\contentsline {figure}{\numberline {16}{\ignorespaces $\mathaccentV {tilde}07E{A}$ 和 $\mathaccentV {tilde}07E{B}$ 位置关系示意图。 (a)相交; (b)$\mathaccentV {tilde}07E{A}$ 包含集合$\mathaccentV {tilde}07E{B}$; (c)不相交.\relax }}{32}{figure.caption.51}
+\contentsline {figure}{\numberline {17}{\ignorespaces 不同位置下，$\mathaccentV {tilde}07E{A}$ 和 $\mathaccentV {tilde}07E{B}$ 两者间各种距离比较图。\relax }}{33}{figure.caption.52}
 \contentsline {figure}{\numberline {18}{\ignorespaces 面向对象的改进型区间二型模糊遥感影像聚类算法框架图\relax }}{35}{figure.caption.53}
 \contentsline {figure}{\numberline {19}{\ignorespaces TFSV-IT2FCM 算法流程图\relax }}{37}{figure.caption.55}
 \contentsline {figure}{\numberline {20}{\ignorespaces 神湾研究区TFSV-IT2FCM 与IV-FCM 算法聚类分割图 \relax }}{43}{figure.caption.59}

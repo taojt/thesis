@@ -378,19 +378,19 @@ $\tilde{X_i}$ 和$\tilde{V_{i}}$ 的区间值距离$d_{I} (\tilde{X_i}, \tilde{V
 
 \subsection{神湾地区实验}
 \label{subsec::chap04-4-1}
-神湾研究是一个复杂的种植区域，该区域的高分影像由SPOT 5 遥感卫星于2008 年拍摄。SPOT 5遥感卫星影像包含四个波段，空间分辨率大约$10$ 米，光谱范围$0.4-0.9$ 微米。 神湾地区地物覆被可划分为5大类，分别是：水域、草地、建筑和养殖水域。实验中选择影像$B1$、$B2$、$B3$ 波段合成RGB 图像，如图\ref{fig:shenwan}(a) 所示，其包含$400 \times 400$ 个像素。
+神湾研究是一个复杂的种植区域，该区域的高分影像由SPOT 5 遥感卫星于2008 年拍摄。SPOT 5遥感卫星影像包含四个波段，空间分辨率大约$10$ 米，光谱范围$0.4-0.9$ 微米。 神湾地区地物覆被可划分为5大类，分别是：水域、草地、建筑和养殖水域。实验中选择影像$B1$、$B2$、$B3$ 波段合成RGB 图像，如图\ref{fig:hengqin}(a) 所示，其包含$400 \times 400$ 个像素。
 
-在该研究区，文中提出的面向对象的TFSV-IT2FCM 算法分别与其他聚类分割算法进行比较，包含基于像素的聚类方法 (FCM 算法，IT2FCM 算法)和面向对象的聚类方法 (面向对象的IT2FCM， 面向对象的IV-FCM 算法)，聚类结果分别由图\ref{fig:shenwan}(f)-(i) 展示。另外，文中提出的TFSV-IT2FCM 算法包含三个主要处理步骤：影像分割，聚类和后处理。图\ref{fig:shenwan}(c) 和\ref{fig:shenwan}(d) 分别展示是否使用后处理的分割结果；图\ref{fig:shenwan}(e) 是获取影像分割单元时使用分水岭分割算法替换SLIC 超像素分割算法得到。通过目视各方法对研究区的聚类分割结果，可以得到以下结论：
+在该研究区，文中提出的面向对象的TFSV-IT2FCM 算法分别与其他聚类分割算法进行比较，包含基于像素的聚类方法 (FCM 算法，IT2FCM 算法)和面向对象的聚类方法 (面向对象的IT2FCM， 面向对象的IV-FCM 算法)，聚类结果分别由图\ref{fig:hengqin}(f)-(i) 展示。另外，文中提出的TFSV-IT2FCM 算法包含三个主要处理步骤：影像分割，聚类和后处理。图\ref{fig:hengqin}(c) 和\ref{fig:hengqin}(d) 分别展示是否使用后处理的分割结果；图\ref{fig:hengqin}(e) 是获取影像分割单元时使用分水岭分割算法替换SLIC 超像素分割算法得到。通过目视各方法对研究区的聚类分割结果，可以得到以下结论：
 
 \begin{enumerate}[(1)]
-    \item 图\ref{fig:shenwan}(c) 和\ref{fig:shenwan}(d) 无论是否使用后处理操作，两者均有大致相似的分割类别区域，图\ref{fig:shenwan}(d) 使用后处理操作具有较少的奇异点。
-    \item 图\ref{fig:shenwan}(e) 中使用分水岭算法获取分割单元，与图\ref{fig:shenwan}(d) 相比，一些建筑类别的分割单元被错误划分为草地。因此，获取影像分割单元的分割算法在一定程度上会影像最后聚类分割的精度。
-    \item 比较图\ref{fig:shenwan}(f)-(i) 和图\ref{fig:shenwan}(d) 中的聚类计结果可知，这些聚类方法在水域的识别上都有不错的效果。然而，对于IV-FCM 算法(图\ref{fig:shenwan}(f))，一些草地类别被错分为林地类别；对于面向对象的IT2FCM 算法(图\ref{fig:shenwan}(g))，由于建筑、草地和林地这三类有相近的光谱波段，图中左下角区域无法明确区分三者；另外，与面向对象的方法相比，基于像素的IT2FCM 算法和FCM 算法(分别为图\ref{fig:shenwan}(g) 和(h)) 在同类别大区域中产生许多异类别的异常小块。
+    \item 图\ref{fig:hengqin}(c) 和\ref{fig:hengqin}(d) 无论是否使用后处理操作，两者均有大致相似的分割类别区域，图\ref{fig:hengqin}(d) 使用后处理操作具有较少的奇异点。
+    \item 图\ref{fig:hengqin}(e) 中使用分水岭算法获取分割单元，与图\ref{fig:hengqin}(d) 相比，一些建筑类别的分割单元被错误划分为草地。因此，获取影像分割单元的分割算法在一定程度上会影像最后聚类分割的精度。
+    \item 比较图\ref{fig:hengqin}(f)-(i) 和图\ref{fig:hengqin}(d) 中的聚类计结果可知，这些聚类方法在水域的识别上都有不错的效果。然而，对于IV-FCM 算法(图\ref{fig:hengqin}(f))，一些草地类别被错分为林地类别；对于面向对象的IT2FCM 算法(图\ref{fig:hengqin}(g))，由于建筑、草地和林地这三类有相近的光谱波段，图中左下角区域无法明确区分三者；另外，与面向对象的方法相比，基于像素的IT2FCM 算法和FCM 算法(分别为图\ref{fig:hengqin}(g) 和(h)) 在同类别大区域中产生许多异类别的异常小块。
 \end{enumerate}
 综上所述，神湾研究区可视化的分类结果图表明文中提出的TFSV-IT2FCM 聚类分割算法相比其他已有算法能获得更好的遥感影像分割结果。
 
 
-为了得到实验中精确量化的聚类结果图，实验中使用CORINE 土地覆被分类系统生成地物类别ground truth 图，如图\ref{fig:shenwan}(b) 所示。表~\ref{tab:shenwan_data} 为神湾研究区各类别地物抽样点数据表。为了对分类结果进行评价，确定分类的精度和可靠性。本实验中使用以下评价指标度量分类效果：
+为了得到实验中精确量化的聚类结果图，实验中使用CORINE 土地覆被分类系统生成地物类别ground truth 图，如图\ref{fig:hengqin}(b) 所示。表~\ref{tab:shenwan_data} 为神湾研究区各类别地物抽样点数据表。为了对分类结果进行评价，确定分类的精度和可靠性。本实验中使用以下评价指标度量分类效果：
 \begin{enumerate}
     \item \textbf{总体分类精度(Overall accuracy, OA)}
 
@@ -479,7 +479,7 @@ IV-FCM 算法和TFSV-IT2FCM 算法的可视化结果分别如图~\ref{fig:hengqi
 
 
 
-同样，为了获取横琴地区精确的分类结果，文中使用CORINE 土地分类系统随机采样$499,669$ 个像素点作为ground truth 图，如表~\ref{tab:hengqin_result} 所示，TFSV-IT2FCM 方法中$10,022$ 个像素由“农业区” 被错分为“水域”，而在IV-FCM 方法中被错分的像素点为$54,380$ 个。TFSV-IT2FCM 方法相比IV-FCM 方法，“水域”类别的用户精度从$78.12\%$ 提升到$95.99\%$。 表~\ref{tab:hengqin_result} 中的用户精度和生产者精度也表明TFSV-IT2FCM 聚类方法的性能要比IV-FCM 方法更好。
+同样，为了获取横琴地区精确的分类结果，文中使用CORINE 土地分类系统随机采样$499,669$ 个像素点作为ground truth 图，如表~\ref{tab:shenwan_result} 所示，TFSV-IT2FCM 方法中$10,022$ 个像素由“农业区” 被错分为“水域”，而在IV-FCM 方法中被错分的像素点为$54,380$ 个。TFSV-IT2FCM 方法相比IV-FCM 方法，“水域”类别的用户精度从$78.12\%$ 提升到$95.99\%$。 表~\ref{tab:shenwan_result} 中的用户精度和生产者精度也表明TFSV-IT2FCM 聚类方法的性能要比IV-FCM 方法更好。
 
 \begin{table}[htbp]
     \caption{横琴地区分类精度表}\label{tab:hengqin_oa}

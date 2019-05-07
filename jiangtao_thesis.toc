@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.2.1}传统的高分辨率遥感影像分类与识别方法}{2}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}基于深度学习理论的影像分类研究现状}{3}{subsection.1.2.2}
 \contentsline {section}{\numberline {1.3}本文的组织结构}{5}{section.1.3}
-\contentsline {section}{\numberline {1.4}本文主要创新点}{5}{section.1.4}
+\contentsline {section}{\numberline {1.4}本文主要创新点}{6}{section.1.4}
 \contentsline {chapter}{第\nobreakspace {}2\nobreakspace {}章\hspace {1em} 深度学习相关理论}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}卷积神经网络基础}{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}全卷积神经网络}{10}{section.2.2}
