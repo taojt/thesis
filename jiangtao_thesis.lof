@@ -4,7 +4,7 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces 影像分类网络结构示意图\relax }}{11}{figure.caption.26}
 \contentsline {figure}{\numberline {5}{\ignorespaces 反卷积上采样过程\relax }}{11}{figure.caption.28}
 \contentsline {figure}{\numberline {6}{\ignorespaces 基于FCN网络的遥感影像分类示意图\relax }}{12}{figure.caption.30}
-\contentsline {figure}{\numberline {7}{\ignorespaces GAN结构示意图\relax }}{13}{figure.caption.31}
+\contentsline {figure}{\numberline {7}{\ignorespaces GAN结构示意图\relax }}{14}{figure.caption.31}
 \contentsline {figure}{\numberline {8}{\ignorespaces CGAN结构示意图\relax }}{15}{figure.caption.32}
 \contentsline {figure}{\numberline {9}{\ignorespaces 基于CGAN 的影像分类方法模型示意图\relax }}{17}{figure.caption.35}
 \contentsline {figure}{\numberline {10}{\ignorespaces Vaihingen 影像数据\relax }}{21}{figure.caption.36}
@@ -12,4 +12,5 @@
 \contentsline {figure}{\numberline {12}{\ignorespaces 影像分类的可视化结果\relax }}{27}{figure.caption.44}
 \contentsline {figure}{\numberline {13}{\ignorespaces DSM 波段对影像分类结果的影响\relax }}{28}{figure.caption.45}
 \contentsline {figure}{\numberline {14}{\ignorespaces TFSV-IT2FCM 算法框架\relax }}{31}{figure.caption.49}
-\contentsline {figure}{\numberline {15}{\ignorespaces 基于CGAN 影像分类后处理方法分割图 \relax }}{36}{figure.caption.51}
+\contentsline {figure}{\numberline {15}{\ignorespaces TFSV-IT2FCM 提取Vaihingen影像辅助特征信息\relax }}{33}{figure.caption.50}
+\contentsline {figure}{\numberline {16}{\ignorespaces 基于CGAN 影像分类后处理方法分割图 \relax }}{36}{figure.caption.54}

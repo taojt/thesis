@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  8 MAY 2019 10:37
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  9 MAY 2019 11:00
 entering extended mode
 **e:/thesis_for_jiangtao/jiangtao_thesis
 (e:/thesis_for_jiangtao/jiangtao_thesis.tex
@@ -1184,25 +1184,7 @@ LaTeX Warning: Label `sec:forth' multiply defined.
 
 ) (e:\thesis_for_jiangtao\data/chap04.aux
 
-LaTeX Warning: Label `eq:4-5' multiply defined.
-
-
-LaTeX Warning: Label `eq:4-6' multiply defined.
-
-
-LaTeX Warning: Label `eq:4-7' multiply defined.
-
-
-LaTeX Warning: Label `eq:4-8' multiply defined.
-
-
 LaTeX Warning: Label `sec::chap04-4' multiply defined.
-
-
-LaTeX Warning: Label `eq:4-3' multiply defined.
-
-
-LaTeX Warning: Label `eq:4-5' multiply defined.
 
 ) (e:\thesis_for_jiangtao\data/chap05.aux) (e:\thesis_for_jiangtao\data/paper.aux) (e:\thesis_for_jiangtao\data/ack.aux))
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 30.
@@ -1743,6 +1725,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 . This font family consists of the following shapes:
 .................................................
 Package hyperref Info: bookmark level for unknown equation defaults to 0 on input line 26.
+ [7
+
+
+
+
+]
 File: figures/conv_op.pdf Graphic file (type QTm)
  <use  "figures/conv_op.pdf" >
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 11.04124pt
@@ -1769,20 +1757,12 @@ Requested font "SimSun/ICU:script=latn;language=DFLT;" at 11.04124pt
 . 
 . This font family consists of the following shapes:
 .................................................
- [7
 
-
-
-
-]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
 File: figures/pooling.pdf Graphic file (type QTm)
  <use  "figures/pooling.pdf" >
-Underfull \vbox (badness 1371) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
@@ -1790,6 +1770,9 @@ File: figures/cnn_structure.pdf Graphic file (type QTm)
  <use  "figures/cnn_structure.pdf" >
 File: figures/FCN.pdf Graphic file (type QTm)
  <use  "figures/FCN.pdf" >
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
@@ -1801,9 +1784,6 @@ Requested font "Times New Roman/I/ICU:script=latn;language=DFLT;" at 8.43146pt
  -> C:/Windows/Fonts/timesi.ttf
 Requested font "Times New Roman/I/ICU:script=latn;language=DFLT;" at 6.02249pt
  -> C:/Windows/Fonts/timesi.ttf
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2159,12 +2139,24 @@ Requested font "cmbx6" at 6.0pt
 
 
 ]
+Underfull \vbox (badness 2644) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
+File: figures/tfsv_seg.pdf Graphic file (type QTm)
+ <use  "figures/tfsv_seg.pdf" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
+Underfull \vbox (badness 7925) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
@@ -2239,7 +2231,7 @@ Requested font "SimHei/ICU" at 14.4pt
 Requested font "SimHei/ICU:script=latn;language=DFLT;" at 14.4pt
  -> C:/Windows/Fonts/simhei.ttf
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
@@ -2278,11 +2270,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  25506 strings out of 430478
- 467757 string characters out of 3191502
- 531165 words of memory out of 3000000
- 28137 multiletter control sequences out of 15000+200000
+ 467784 string characters out of 3191502
+ 532195 words of memory out of 3000000
+ 28136 multiletter control sequences out of 15000+200000
  50959 words of font info for 239 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
- 51i,20n,86p,1805b,855s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,20n,86p,1867b,855s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on jiangtao_thesis.pdf (55 pages).

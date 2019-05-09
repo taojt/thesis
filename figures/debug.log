@@ -1,0 +1,5 @@
+[0508/195806:INFO:exception_record.cc(518)] [QB]Process ID: 23828 Type: 4
+[0508/221602:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0508/225010:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0508/225017:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0509/103233:ERROR:browser_gpu_channel_host_factory.cc(119)] Failed to launch GPU process.

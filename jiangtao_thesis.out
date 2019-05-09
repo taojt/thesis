@@ -35,14 +35,14 @@
 \BOOKMARK [1][-]{section.4.1}{4.1 引言}{chapter.4}% 35
 \BOOKMARK [1][-]{section.4.2}{4.2 TFSV-IT2FCM 聚类分割}{chapter.4}% 36
 \BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 方法原理}{section.4.2}% 37
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 高分影像数据处理}{section.4.2}% 38
-\BOOKMARK [1][-]{section.4.3}{4.3 带有先验边界信息的CGAN 影像分类方法}{chapter.4}% 39
-\BOOKMARK [1][-]{section.4.4}{4.4 基于边界辅助信息影像后处理分类方法}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 影像数据处理}{section.4.2}% 38
+\BOOKMARK [1][-]{section.4.3}{4.3 带有先验边界辅助信息的CGAN 影像分类方法}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.4}{4.4 基于辅助信息后处理的影像分类方法}{chapter.4}% 40
 \BOOKMARK [1][-]{section.4.5}{4.5 实验结果与分析}{chapter.4}% 41
 \BOOKMARK [1][-]{section.4.6}{4.6 本章小结}{chapter.4}% 42
 \BOOKMARK [0][]{chapter.5}{第 5 章  总结与展望}{}% 43
 \BOOKMARK [1][-]{section.5.1}{5.1 本文的主要内容}{chapter.5}% 44
 \BOOKMARK [1][-]{section.5.2}{5.2 未来的期望}{chapter.5}% 45
-\BOOKMARK [0][]{section*.57}{参考文献}{}% 46
-\BOOKMARK [0][]{section*.60}{学术成果}{}% 47
-\BOOKMARK [0][]{section*.63}{致谢}{}% 48
+\BOOKMARK [0][]{section*.60}{参考文献}{}% 46
+\BOOKMARK [0][]{section*.63}{学术成果}{}% 47
+\BOOKMARK [0][]{section*.66}{致谢}{}% 48

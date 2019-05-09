@@ -34,14 +34,14 @@
 \contentsline {section}{\numberline {4.1}引言}{30}{section.4.1}
 \contentsline {section}{\numberline {4.2}TFSV-IT2FCM 聚类分割}{30}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}方法原理}{30}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}高分影像数据处理}{32}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}带有先验边界信息的CGAN 影像分类方法}{32}{section.4.3}
-\contentsline {section}{\numberline {4.4}基于边界辅助信息影像后处理分类方法}{34}{section.4.4}
+\contentsline {subsection}{\numberline {4.2.2}影像数据处理}{32}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}带有先验边界辅助信息的CGAN 影像分类方法}{33}{section.4.3}
+\contentsline {section}{\numberline {4.4}基于辅助信息后处理的影像分类方法}{34}{section.4.4}
 \contentsline {section}{\numberline {4.5}实验结果与分析}{34}{section.4.5}
 \contentsline {section}{\numberline {4.6}本章小结}{38}{section.4.6}
 \contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{39}{chapter.5}
 \contentsline {section}{\numberline {5.1}本文的主要内容}{39}{section.5.1}
 \contentsline {section}{\numberline {5.2}未来的期望}{39}{section.5.2}
-\contentsline {chapter}{参考文献}{41}{section*.57}
-\contentsline {chapter}{学术成果}{46}{section*.60}
-\contentsline {chapter}{致谢}{47}{section*.63}
+\contentsline {chapter}{参考文献}{41}{section*.60}
+\contentsline {chapter}{学术成果}{46}{section*.63}
+\contentsline {chapter}{致谢}{47}{section*.66}

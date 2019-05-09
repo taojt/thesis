@@ -6,14 +6,14 @@
 
 \chapter{深度学习相关理论}
 \label{cha:chap02}
-深度学习是以人工神经网络为架构，通过多隐层网络结构提取高层抽象特征，对数据进行表征学习的算法。常见的深度学习框架包含DNN、DBN、RNN、CNN等\cite{krizhevsky2012imagenet} 。 与其他网络结构相比，CNN 利用输入数据的二维结构信息，在图像分类与识别、图像语义分割等视觉任务中能够给出更好的结果。
-%%深度神经网络（Deep neural network, DNN）、深度置信网络（Deep belief network, DBN）、递归神经网络（Recurrent neural network， RNN）和卷积神经网络（Convolutional neural network, CNN）
+深度学习是以人工神经网络为架构，通过多隐层网络结构提取高层抽象特征，对数据进行表征学习的算法。常见的深度学习框架包含深度神经网络（Deep neural network, DNN）、深度置信网络（Deep belief network, DBN）、递归神经网络（Recurrent neural network， RNN）和卷积神经网络（Convolutional neural network, CNN）等\cite{krizhevsky2012imagenet} 。 与其他网络结构相比，CNN 利用输入数据的二维结构信息，在图像分类与识别、图像语义分割等视觉任务中能够给出更好的结果。
+%%
 
 \section{卷积神经网络基础}
 \label{sec:chap02-1}
 
 % 深度前馈神经网络
-CNN 是一种带有卷积结构的DFN，使用反向传播（Backpropagation，BP）算法进行权值更新，主要用于图像分类与识别。CNN 网络结构一般由CL、PL 和FCL 交叉堆叠而成。卷积层和池化层用于提取图像高阶特征，具有局部连接、权值共享和下采样等特性。全连接层可以看作CNN 分类网络的决策分类器。
+CNN 是一种带有卷积结构的深度前馈神经网络，使用反向传播（Backpropagation，BP）算法进行权值更新，主要用于图像分类与识别。CNN 网络结构一般由卷积层（Convolutional layer）、池化层（Pooling layer）和全连接层（Full connected layer）交叉堆叠而成。卷积层和池化层用于提取图像高阶特征，具有局部连接、权值共享和下采样等特性。全连接层可以看作CNN 分类网络的决策分类器，将学到的“分布式特征表示”映射到样本标记空间。。
 %全连接层起到图像“分类器”的作用，将学到的“分布式特征表示”映射到样本标记空间。
 %卷积层（Convolutional layer）、池化层（Pooling layer）和全连接层（Full connected layer）
 
@@ -93,7 +93,7 @@ CNN 最核心结构是卷积层，每个卷积层均包含一个或多个二维�
 \subsubsection*{3. 典型的卷积网络结构}
 \label{subsec:chap02-2-1-3}
 % 一个典型的卷积网络由卷积层、池化层和全连接层交叉堆叠而成。
-一个典型的卷积网络由CL、PL和FCL 层交叉堆叠而成。如图~\ref{fig:cnn_structure} 所示，通常一个卷积块由连续的$M$ 个卷积层和$b$ 个池化层拼接而成（$M$ 一般取$1\sim 4$，$b$ 可取$0$或$1$）， 一个完整的用于分类任务的卷积网络结构通常由$N$ 个堆叠的卷积块后接$K$ 个全连接层组成（$N$ 一般取$1\sim 100$，$K$ 取$1 \sim 2$）。CNN 中多层网络模型使得网络模型对不同形态的图像具有优秀的适应能力，它可以自动学习高分影像中复杂的特征，提升影像分类精度。
+一个典型的卷积网络由卷积层、池化层和全连接层交叉堆叠而成。如图~\ref{fig:cnn_structure} 所示，通常一个卷积块由连续的$M$ 个卷积层和$b$ 个池化层拼接而成（$M$ 一般取$1\sim 4$，$b$ 可取$0$或$1$）， 一个完整的用于分类任务的卷积网络结构通常由$N$ 个堆叠的卷积块后接$K$ 个全连接层组成（$N$ 一般取$1\sim 100$，$K$ 取$1 \sim 2$）。CNN 中多层网络模型使得网络模型对不同形态的图像具有优秀的适应能力，它可以自动学习高分影像中复杂的特征，提升影像分类精度。
 %它可以拟合高分影像中因地物尺度不一、拍摄角度不同等原因形成的复杂特征，从而有效提高分影像的分类识别精度。
 
 \begin{figure}[htb]
