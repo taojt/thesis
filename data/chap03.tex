@@ -28,7 +28,7 @@
 \begin{figure}[htb]
   \centering
   \begin{center}
-    \makebox[\textwidth]{\includegraphics[width=\paperwidth]{figures/gan-fcn}}
+    \makebox[\textwidth]{\includegraphics[width=1.05\textwidth]{figures/gan-fcn}}
     \caption{基于CGAN 的影像分类方法模型示意图}\label{fig:gan-fcn}
   \end{center}
 \end{figure}
@@ -69,7 +69,7 @@
 \subsection{算法实现}
 \label{subsec:firtst-2}
 
-基于CGAN 的遥感影像分类方法需要交替训练生成网络和判别网络两部分，算法采取小批次的随机梯度下降方法优化CGAN 权值参数，Adam \cite{kingma2014adam} 优化器可以自适应调整学习率的大小，因此本算法使用Adam 优化器更新模型权重。基于CGAN 的影像分类模型更新迭代伪代码如\textbf{算法~\ref{code:cgan}} 所示。
+基于CGAN 的遥感影像分类方法需要交替训练生成网络和判别网络两部分，算法采取小批次的随机梯度下降方法优化CGAN 权值参数，Adam \cite{kingma2014adam} 优化器可以自适应调整学习率的大小，因此本算法使用Adam 优化器更新模型权重。基于CGAN 的影像分类模型更新迭代伪代码如算法~\ref{code:cgan} 所示。
 
 \begin{algorithm}[!h]
   \caption{基于CGAN 的遥感影像分类方法伪代码}

@@ -640,7 +640,7 @@
       {\sanhao[1] \bf \bnu@thesistitle}
       \end{center}}
 
-      \parbox[t][9.0cm][t]{0.55\textwidth}{\sihao[2.0] \song
+      \parbox[t][9.0cm][t]{0.60\textwidth}{\sihao[2.0] \song
 	      \bnu@cauthortitle      \bnu@title@sep \hspace{1em} {\bf \bnu@cauthor}\\
 	      \bnu@csupervisortitle  \bnu@title@sep \hspace{1em} {\bf \bnu@csupervisor}\\
 	      \bnu@cdepartmenttitle  \bnu@title@sep \hspace{1em} {\bf \bnu@cdepartment}\\

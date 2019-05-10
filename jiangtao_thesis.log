@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  10 MAY 2019 17:49
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  10 MAY 2019 18:21
 entering extended mode
 **e:/thesis_for_jiangtao/jiangtao_thesis
 (e:/thesis_for_jiangtao/jiangtao_thesis.tex
@@ -1938,16 +1938,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'SimSun(1)' created for font 'SimSun' with options
-. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}}].
-. 
-. This font family consists of the following shapes:
-.................................................
-Requested font "SimSun/ICU:script=latn;language=DFLT;embolden=4;" at 12.045pt
- -> C:/Windows/Fonts/simsun.ttc
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 75.
 .................................................
 . fontspec info: "defining-font"
@@ -2393,11 +2383,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25588 strings out of 430478
- 469458 string characters out of 3191502
+ 25585 strings out of 430478
+ 469363 string characters out of 3191502
  525847 words of memory out of 3000000
- 28198 multiletter control sequences out of 15000+200000
- 51063 words of font info for 252 fonts, out of 3000000 for 9000
+ 28196 multiletter control sequences out of 15000+200000
+ 51055 words of font info for 251 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
  51i,20n,86p,1867b,855s stack positions out of 5000i,500n,10000p,200000b,50000s
 
