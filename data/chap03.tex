@@ -75,36 +75,36 @@
   \caption{基于CGAN 的遥感影像分类方法伪代码}
   \begin{algorithmic}[1]
     \Require
-      原始影像$X$; 影像标签$Y$;
+    原始影像$X$; 影像标签$Y$;
     \Ensure
-      生成样本;
+    生成样本;
 
-   \textbf{模型训练：}
+    \textbf{模型训练：}
     \State VGGNet16 前五层权值初始化生成模型，判别器步数 $k= 1$，权衡因子$\lambda$, 初始学习率$\alpha$, Adam 动量 $\beta_1,\beta_2$。
     \For{模型迭代epoch 数}
-        \State \textbf{判别器：}
-        \For{$k$ 步 }
-        \State 小批次抽样$m$ 张影像$\{x^1,x^2,\cdots, x^m\}$; 对应影像的真实标签$\{y^1,y^2,\cdots, y^m\}$；这$m$ 张影像在生成器中的输出$\{g(x^1),g(x^2),\cdots, g(x^m) \}$
-        \State 使用Adam 优化器更新判别器的权重：
-        $$
-        \nabla_{\theta_d} \frac{1}{m} \sum_{i=1} ^m [\log(d(x^i,y^i)) + \log(1-d(x^i,g(x^i)) ]
-        $$
-        \EndFor
-        \State \textbf{生成器：}
-        \State 小批次抽样$m$ 张影像$\{x^1,x^2,\cdots, x^m\}$;
-        \State 分割模型输出这$m$ 张影像分割结果$\{g(x^1),g(x^2),\cdots, g(x^m) \}$
-        \State 使用Adam 优化器更新生成器的权重：
-        $$
-        \nabla_{\theta_g} \frac{1}{m} \sum_{i=1} ^m [\log(1-d(x^i,g(x^i))]
-        $$
+    \State \textbf{判别器：}
+    \For{$k$ 步 }
+    \State 小批次抽样$m$ 张影像$\{x^1,x^2,\cdots, x^m\}$; 对应影像的真实标签$\{y^1,y^2,\cdots, y^m\}$；这$m$ 张影像在生成器中的输出$\{g(x^1),g(x^2),\cdots, g(x^m) \}$
+    \State 使用Adam 优化器更新判别器的权重：
+    $$
+      \nabla_{\theta_d} \frac{1}{m} \sum_{i=1} ^m [\log(d(x^i,y^i)) + \log(1-d(x^i,g(x^i)) ]
+    $$
+    \EndFor
+    \State \textbf{生成器：}
+    \State 小批次抽样$m$ 张影像$\{x^1,x^2,\cdots, x^m\}$;
+    \State 分割模型输出这$m$ 张影像分割结果$\{g(x^1),g(x^2),\cdots, g(x^m) \}$
+    \State 使用Adam 优化器更新生成器的权重：
+    $$
+      \nabla_{\theta_g} \frac{1}{m} \sum_{i=1} ^m [\log(1-d(x^i,g(x^i))]
+    $$
     \EndFor
 
-  \textbf{模型预测：}
+    \textbf{模型预测：}
     \State 模型迭代收敛后，用生成器分割模型对测试影像预测分割结果，采用概率最大化预测类别标签：
     $$
-    C_k = \mathop{\arg\max}_{k \in K} p_k(x^{(i)}), \ k=1,2,\cdots,K
+      C_k = \mathop{\arg\max}_{k \in K} p_k(x^{(i)}), \ k=1,2,\cdots,K
     $$
-      
+
   \end{algorithmic}
   \label{code:cgan}
 \end{algorithm}
@@ -233,15 +233,15 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
 模型生成器G 中的网络压缩部分由五个卷积模块堆叠而成，其作用是逐层提取影像特征。每个卷积模块均包含$2/3$ 个卷积层和$1$ 个尺寸$2\times 2$最大池化层，为了保证卷积前后特征图尺寸不变，所有卷积层均采用边界填充，最大池化层使得特征图尺寸缩小为池化前的一半。生成器G 中反卷积恢复为四个反卷积的上采样模块，其作用是逐层扩大特征图大小、恢复影像细节信息。每个上采样模块中包含一次反卷积操作，反卷积生成两倍维度的特征图，再接两层卷积层提取特征。最后通过一个$1\times 1$ 大小的$1$ 维卷积层将特征图维度降维$1$，通过Softmax 函数输出预测结果的像素类别。另外，在反卷积中使用跳层连接网络压缩部分与反卷积层特征图大小相同的卷积层，从而将影像低阶特征和高阶特征融合，保证更精细的分割结果。
 
 \begin{longtable}[!htbp]{c|c|cccccc}
-  \caption{基于CGAN 框架的全卷积分割模型参数表}\label{tab:model_param} \\
+  \caption{基于CGAN 框架的全卷积分割模型参数表}\label{tab:model_param}                                                                                                 \\
   \toprule
-  网络模型                 & 结构                        & Levels                   & 网络层     & 该层输出尺寸                & 卷积核  & 步长 & 激活函数 \\
+  网络模型                 & 结构                       & Levels                   & 网络层     & 该层输出尺寸                & 卷积核               & 步长 & 激活函数 \\
   \midrule
   \endfirsthead
   % \multicolumn{8}{r}{续\autoref{tab:model_param}}\\
-  \multicolumn{8}{c}{(接上页)}\\
+  \multicolumn{8}{c}{(接上页)}                                                                                                                                         \\
   \toprule
-  网络模型                 & 结构                        & Levels                   & 网络层     & 该层输出尺寸                & 卷积核  & 步长 & 激活函数 \\
+  网络模型                 & 结构                       & Levels                   & 网络层     & 该层输出尺寸                & 卷积核               & 步长 & 激活函数 \\
   \midrule
   \endhead
   \bottomrule
@@ -249,64 +249,63 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
   \endfoot
   \bottomrule
   \endlastfoot
-  \multirow{30}*{生成器G}  & G-输入                      & {level 0 }               &            & $256\times 256\times 64   $ &                      &      &          \\
-        \cline{2-8}
-                                 & \multirow{17}*{卷积压缩}    & \multirow{2}*{level 1}   & conv1\_1   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
-                                 &                             &                          & conv1\_2   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
-        \cline{3-8}
-                                 &                             & \multirow{3}*{{level 2}} & pool2\_1   & $128\times 128\times 64  $  & $   2\times 2/-    $ & 2    & --       \\
-                                 &                             &                          & conv2\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
-                                 &                             &                          & conv2\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
-        \cline{3-8}
-                                 &                             & \multirow{4}*{level 3}   & pool3\_1   & $64\times 64\times 128   $  & $ 2\times 2/-      $ & 2    & --       \\
-                                 &                             &                          & conv3\_1   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
-                                 &                             &                          & conv3\_2   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
-                                 &                             &                          & conv3\_3   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
-        \cline{3-8}
-                                 &                             & \multirow{4}*{level 4}   & pool4\_1   & $32\times 32\times 256   $  & $ 2\times 2/-      $ & 2    & --       \\
-                                 &                             &                          & conv4\_1   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
-                                 &                             &                          & conv4\_2   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
-                                 &                             &                          & conv4\_3   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
-        \cline{3-8}
-                                 &                             & \multirow{4}*{level 5}   & pool5\_1   & $16\times 16\times 512   $  & $ 2\times 2/-      $ & 2    & --       \\
-                                 &                             &                          & conv5\_1   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
-                                 &                             &                          & conv5\_2   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
-                                 &                             &                          & conv5\_3   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
-        \cline{2-8}
-                                 & \multirow{12}*{反卷积恢复}  & \multirow{3}*{level 6}   & deconv6\_1 & $32\times 32\times 512   $  & $ 4\times 4/512    $ & 2    & ReLU     \\
-                                 &                             &                          & conv6\_1   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
-                                 &                             &                          & conv6\_2   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
-        \cline{3-8}
-                                 &                             & \multirow{3}*{level 7}   & deconv7\_1 & $64\times 64\times 256   $  & $ 4\times 4/256    $ & 2    & ReLU     \\
-                                 &                             &                          & conv7\_1   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
-                                 &                             &                          & conv7\_2   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
-        \cline{3-8}
-                                 &                             & \multirow{3}*{level 8}   & deconv8\_1 & $128\times 128\times 128 $  & $ 4\times 4/128    $ & 2    & ReLU     \\
-                                 &                             &                          & conv8\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
-                                 &                             &                          & conv8\_2   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
-        \cline{3-8}
-                                 &                             & \multirow{3}*{level 9}   & deconv9\_1 & $256\times 256\times 64  $  & $ 4\times 4/64     $ & 2    & ReLU     \\
-                                 &                             &                          & conv9\_1   & $256\times 256\times 64  $  & $     3\times 3/64 $ & 1    & ReLU     \\
-                                 &                             &                          & conv9\_2   & $256\times 256\times 64  $  & $    3\times 3/64  $ & 1    & ReLU     \\
-        \cline{2-8}
-                                 & G-输出                      &                          & conv10\_1  & $256\times 256 \times 1   $ & $    1\times 1/1  $  & 1    & Softmax  \\
-        \cline{1-8}
-        \multirow{10}*{判别器D } & D-输入                      &                          &            & $256\times 256\times 5   $  &                      &      &          \\
-        \cline{2-8}
-                                 & \multirow{8}*{分类网络} & \multirow{2}*{level 11}  & conv11\_1  & $256\times 256\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
-                                 &                             &                          & conv11\_2  & $256\times 256\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
-        \cline{3-8}
-                                 &                             & \multirow{3}*{level 12}  & pool12\_1  & $128\times 128\times 32$    & $2\times 2/-$        & 1    & --       \\
-                                 &                             &                          & conv12\_1  & $128\times 128\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
-                                 &                             &                          & conv12\_2  & $128\times 128\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
-        \cline{3-8}
-                                 &                             & \multirow{3}*{level 13}  & pool3\_1   & $64\times 64\times 32   $   & $ 2\times 2/-      $ & 2    & --       \\
-                                 &                             &                          & FC13\_1    & $64\times 64\times 32   $   & $ 3\times 3/32    $  & 1    & --       \\
-                                 &                             &                          & FC13\_2    & $64\times 64\times 32   $   & $ 3\times 3/32    $  & 1    & --       \\
-        \cline{2-8}
-                                 & G-输出                      &                          &            & $1\times 1   $              &                      &      & Sigmoid  \\
-
-  \end{longtable}
+  \multirow{30}*{生成器G}  & G-输入                     & {level 0 }               &            & $256\times 256\times 4   $  &                      &      &          \\
+  \cline{2-8}
+                           & \multirow{17}*{卷积压缩}   & \multirow{2}*{level 1}   & conv1\_1   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
+                           &                            &                          & conv1\_2   & $256\times 256\times 64$    & $3\times 3/64$       & 1    & ReLU     \\
+  \cline{3-8}
+                           &                            & \multirow{3}*{{level 2}} & pool2\_1   & $128\times 128\times 64  $  & $   2\times 2/-    $ & 2    & --       \\
+                           &                            &                          & conv2\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+                           &                            &                          & conv2\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+  \cline{3-8}
+                           &                            & \multirow{4}*{level 3}   & pool3\_1   & $64\times 64\times 128   $  & $ 2\times 2/-      $ & 2    & --       \\
+                           &                            &                          & conv3\_1   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+                           &                            &                          & conv3\_2   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+                           &                            &                          & conv3\_3   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+  \cline{3-8}
+                           &                            & \multirow{4}*{level 4}   & pool4\_1   & $32\times 32\times 256   $  & $ 2\times 2/-      $ & 2    & --       \\
+                           &                            &                          & conv4\_1   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                           &                            &                          & conv4\_2   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                           &                            &                          & conv4\_3   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+  \cline{3-8}
+                           &                            & \multirow{4}*{level 5}   & pool5\_1   & $16\times 16\times 512   $  & $ 2\times 2/-      $ & 2    & --       \\
+                           &                            &                          & conv5\_1   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                           &                            &                          & conv5\_2   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                           &                            &                          & conv5\_3   & $16\times 16\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+  \cline{2-8}
+                           & \multirow{12}*{反卷积恢复} & \multirow{3}*{level 6}   & deconv6\_1 & $32\times 32\times 512   $  & $ 4\times 4/512    $ & 2    & ReLU     \\
+                           &                            &                          & conv6\_1   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+                           &                            &                          & conv6\_2   & $32\times 32\times 512   $  & $ 3\times 3/512    $ & 1    & ReLU     \\
+  \cline{3-8}
+                           &                            & \multirow{3}*{level 7}   & deconv7\_1 & $64\times 64\times 256   $  & $ 4\times 4/256    $ & 2    & ReLU     \\
+                           &                            &                          & conv7\_1   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+                           &                            &                          & conv7\_2   & $64\times 64\times 256   $  & $ 3\times 3/256    $ & 1    & ReLU     \\
+  \cline{3-8}
+                           &                            & \multirow{3}*{level 8}   & deconv8\_1 & $128\times 128\times 128 $  & $ 4\times 4/128    $ & 2    & ReLU     \\
+                           &                            &                          & conv8\_1   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+                           &                            &                          & conv8\_2   & $128\times 128\times 128 $  & $     3\times 3/128$ & 1    & ReLU     \\
+  \cline{3-8}
+                           &                            & \multirow{3}*{level 9}   & deconv9\_1 & $256\times 256\times 64  $  & $ 4\times 4/64     $ & 2    & ReLU     \\
+                           &                            &                          & conv9\_1   & $256\times 256\times 64  $  & $     3\times 3/64 $ & 1    & ReLU     \\
+                           &                            &                          & conv9\_2   & $256\times 256\times 64  $  & $    3\times 3/64  $ & 1    & ReLU     \\
+  \cline{2-8}
+                           & G-输出                     &                          & conv10\_1  & $256\times 256 \times 1   $ & $    1\times 1/1  $  & 1    & Softmax  \\
+  \cline{1-8}
+  \multirow{10}*{判别器D } & D-输入                     &                          &            & $256\times 256\times 5   $  &                      &      &          \\
+  \cline{2-8}
+                           & \multirow{8}*{分类网络}    & \multirow{2}*{level 11}  & conv11\_1  & $256\times 256\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
+                           &                            &                          & conv11\_2  & $256\times 256\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
+  \cline{3-8}
+                           &                            & \multirow{3}*{level 12}  & pool12\_1  & $128\times 128\times 32$    & $2\times 2/-$        & 1    & --       \\
+                           &                            &                          & conv12\_1  & $128\times 128\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
+                           &                            &                          & conv12\_2  & $128\times 128\times 32$    & $3\times 3/32$       & 1    & ReLU     \\
+  \cline{3-8}
+                           &                            & \multirow{3}*{level 13}  & pool3\_1   & $64\times 64\times 32   $   & $ 2\times 2/-      $ & 2    & --       \\
+                           &                            &                          & FC13\_1    & $64\times 64\times 32   $   & $ 3\times 3/32    $  & 1    & --       \\
+                           &                            &                          & FC13\_2    & $64\times 64\times 32   $   & $ 3\times 3/32    $  & 1    & --       \\
+  \cline{2-8}
+                           & G-输出                     &                          &            & $1\times 1   $              &                      &      & Sigmoid  \\
+\end{longtable}
 
 模型判别器D 中是一个经典的二分类神经网络，网络输入为$5$ 维数据（4波段影像 + 1维真实类别图或4波段影像 + 生成器G 生成分割结果图），模型由两个卷积结构后接两个全连接层组成，通过Sigmoid 函数判别当前输出结果为1 或0 。
 
@@ -325,9 +324,9 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
   \centering
   \begin{tabular}{ccccccccc}
     \toprule
-    方法              & 地面 & 低矮植被 & 树木 & 建筑物 & 车辆 & OA & mIoU \\
+    方法              & 地面      & 低矮植被  & 树木      & 建筑物    & 车辆      & OA        & mIoU               \\
     \midrule
-    FCN 分类方法      & $81.14\%$ & $63.39\%$ & $79.52\%$ & $83.96\%$ & $62.39\%$   & $78.48\%$ & $58.42\%$ \\
+    FCN 分类方法      & $81.14\%$ & $63.39\%$ & $79.52\%$ & $83.96\%$ & $62.39\%$ & $78.48\%$ & $58.42\%$          \\
     基于CGAN 分类方法 & $83.78\%$ & $74.47\%$ & $82.40\%$ & $87.64\%$ & $78.83\%$ & $80.15\%$ & \textbf{$61.83\%$} \\
     \bottomrule
   \end{tabular}
@@ -355,9 +354,9 @@ Vaihingen 影像数据集各通道的像素点取值在$[0,255]$ 范围内，像
   \centering
   \begin{tabular}{ccccccccc}
     \toprule
-   数据源             & 地面 & 低矮植被 & 树木 & 建筑物 & 车辆 & OA & mIoU \\
+    数据源       & 地面      & 低矮植被  & 树木      & 建筑物    & 车辆      & OA        & mIoU               \\
     \midrule
-    正射影像     & $83.27\%$ & $72.68\%$ & $82.61\%$ & $86.33\%$ & $78.20\%$   & $79.52\%$ & $60.96\%$ \\
+    正射影像     & $83.27\%$ & $72.68\%$ & $82.61\%$ & $86.33\%$ & $78.20\%$ & $79.52\%$ & $60.96\%$          \\
     正射影像+DSM & $83.78\%$ & $74.47\%$ & $82.40\%$ & $87.64\%$ & $78.83\%$ & $80.15\%$ & \textbf{$61.83\%$} \\
     \bottomrule
   \end{tabular}

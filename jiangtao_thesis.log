@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  9 MAY 2019 11:00
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.3.15)  10 MAY 2019 17:15
 entering extended mode
 **e:/thesis_for_jiangtao/jiangtao_thesis
 (e:/thesis_for_jiangtao/jiangtao_thesis.tex
@@ -1317,24 +1317,22 @@ LaTeX Info: Redefining \nameref on input line 30.
  (e:\thesis_for_jiangtao\data/cover.tex) (C:\CTEX\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
 )
-Requested font "Arial/ICU:script=latn;language=DFLT;" at 12.045pt
- -> C:/Windows/Fonts/arial.ttf
-Requested font "Arial/ICU:script=latn;language=DFLT;" at 16.06pt
- -> C:/Windows/Fonts/arial.ttf
-Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 16.06pt
+File: figures/BNU_name.pdf Graphic file (type QTm)
+ <use  "figures/BNU_name.pdf" >
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 42.15749pt
  -> C:/Windows/Fonts/times.ttf
-Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 16.06pt
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 42.15749pt
  -> C:/Windows/Fonts/timesbd.ttf
-Requested font "SimSun" at 16.06pt
+Requested font "SimSun" at 42.15749pt
  -> C:/Windows/Fonts/simsun.ttc
-Requested font "SimSun/ICU" at 16.06pt
+Requested font "SimSun/ICU" at 42.15749pt
  -> C:/Windows/Fonts/simsun.ttc
 \g_fontspec_family_SimSun_int=\count356
-Requested font "SimHei/ICU" at 16.06pt
+Requested font "SimHei/ICU" at 42.15749pt
  -> C:/Windows/Fonts/simhei.ttf
-Requested font "KaiTi/ICU" at 16.06pt
+Requested font "KaiTi/ICU" at 42.15749pt
  -> C:/Windows/Fonts/simkai_0.ttf
-Requested font "SimHei/I/ICU" at 16.06pt
+Requested font "SimHei/I/ICU" at 42.15749pt
  -> C:/Windows/Fonts/simhei.ttf
 .................................................
 . fontspec info: "no-font-shape"
@@ -1358,15 +1356,15 @@ Requested font "SimHei/I/ICU" at 16.06pt
 . * 'italic' with NFSS spec.:
 . <->"KaiTi/ICU:script=latn;language=DFLT;"
 .................................................
-Requested font "SimHei/ICU:script=latn;language=DFLT;" at 16.06pt
+Requested font "SimHei/ICU:script=latn;language=DFLT;" at 42.15749pt
  -> C:/Windows/Fonts/simhei.ttf
-Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 15.05624pt
- -> C:/Windows/Fonts/timesbd.ttf
-Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 15.05624pt
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 16.06pt
  -> C:/Windows/Fonts/times.ttf
-Requested font "SimSun" at 15.05624pt
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 16.06pt
+ -> C:/Windows/Fonts/timesbd.ttf
+Requested font "SimSun" at 16.06pt
  -> C:/Windows/Fonts/simsun.ttc
-Requested font "SimSun/ICU" at 15.05624pt
+Requested font "SimSun/ICU" at 16.06pt
  -> C:/Windows/Fonts/simsun.ttc
 .................................................
 . fontspec info: "defining-font"
@@ -1376,20 +1374,22 @@ Requested font "SimSun/ICU" at 15.05624pt
 . 
 . This font family consists of the following shapes:
 .................................................
-Requested font "SimHei/ICU:script=latn;language=DFLT;" at 15.05624pt
+Requested font "SimHei/ICU:script=latn;language=DFLT;" at 16.06pt
  -> C:/Windows/Fonts/simhei.ttf
-Requested font "SimSun" at 12.045pt
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 14.05249pt
+ -> C:/Windows/Fonts/times.ttf
+Requested font "SimSun" at 14.05249pt
  -> C:/Windows/Fonts/simsun.ttc
-Requested font "SimSun/ICU" at 12.045pt
+Requested font "SimSun/ICU" at 14.05249pt
  -> C:/Windows/Fonts/simsun.ttc
-Requested font "SimSun/I/ICU" at 12.045pt
+Requested font "SimSun/I/ICU" at 14.05249pt
  -> C:/Windows/Fonts/simsun.ttc
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font SimSun/I (it probably doesn't exist).
 .................................................
-Requested font "SimSun/I/ICU" at 12.045pt
+Requested font "SimSun/I/ICU" at 14.05249pt
  -> C:/Windows/Fonts/simsun.ttc
 .................................................
 . fontspec info: "no-font-shape"
@@ -1410,89 +1410,102 @@ Requested font "SimSun/I/ICU" at 12.045pt
 . * 'bold' with NFSS spec.:
 . <->"SimSun/ICU:script=latn;language=DFLT;embolden=4;"
 .................................................
-Requested font "SimSun/ICU:script=latn;language=DFLT;" at 12.045pt
+Requested font "SimSun/ICU:script=latn;language=DFLT;" at 14.05249pt
  -> C:/Windows/Fonts/simsun.ttc
-Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 14.05249pt
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 14.05249pt
+ -> C:/Windows/Fonts/timesbd.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimSun(0)' created for font 'SimSun' with options
+. [BoldFont={SimHei},ItalicFont={KaiTi}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "SimHei/ICU:script=latn;language=DFLT;" at 14.05249pt
+ -> C:/Windows/Fonts/simhei.ttf
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+
+ []
+
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 15.05624pt
  -> C:/Windows/Fonts/times.ttf
-Requested font "SimHei" at 14.05249pt
- -> C:/Windows/Fonts/simhei.ttf
-Requested font "SimHei/ICU" at 14.05249pt
- -> C:/Windows/Fonts/simhei.ttf
-\g_fontspec_family_SimHei_int=\count357
-Requested font "SimHei/I/ICU" at 14.05249pt
- -> C:/Windows/Fonts/simhei.ttf
+Requested font "FangSong" at 15.05624pt
+ -> C:/Windows/Fonts/simfang_0.ttf
+Requested font "FangSong/ICU" at 15.05624pt
+ -> C:/Windows/Fonts/simfang_0.ttf
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font FangSong does not contain any OpenType `Script' information.
+.................................................
+\g_fontspec_family_FangSong_int=\count357
+Requested font "FangSong/I/ICU" at 15.05624pt
+ -> C:/Windows/Fonts/simfang_0.ttf
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font SimHei/I (it probably doesn't exist).
+. Could not resolve font FangSong/I (it probably doesn't exist).
 .................................................
-Requested font "SimHei/I/ICU" at 14.05249pt
- -> C:/Windows/Fonts/simhei.ttf
+Requested font "FangSong/I/ICU" at 15.05624pt
+ -> C:/Windows/Fonts/simfang_0.ttf
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font SimHei/I (it probably doesn't exist).
+. Could not resolve font FangSong/I (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'SimHei(0)' created for font 'SimHei' with options
-. [BoldFont={SimHei},BoldFeatures={RawFeature={embolden=4}}].
+. Font family 'FangSong(0)' created for font 'FangSong' with options
+. [BoldFont={FangSong},BoldFeatures={RawFeature={embolden=4}}].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->"SimHei/ICU:script=latn;language=DFLT;"
+. <->"FangSong/ICU:"
 . 
 . * 'bold' with NFSS spec.:
-. <->"SimHei/ICU:script=latn;language=DFLT;embolden=4;"
+. <->"FangSong/ICU:embolden=4;"
 .................................................
-Requested font "SimHei/ICU:script=latn;language=DFLT;" at 14.05249pt
- -> C:/Windows/Fonts/simhei.ttf
-Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 10.53937pt
- -> C:/Windows/Fonts/times.ttf
- [1
+Requested font "FangSong/ICU:" at 15.05624pt
+ -> C:/Windows/Fonts/simfang_0.ttf
+Requested font "FangSong/ICU:" at 15.05624pt
+ -> C:/Windows/Fonts/simfang_0.ttf
+[1
 
-
-
-
-
-
-
-] [2
 
 
 
 ]
-Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 12.045pt
- -> C:/Windows/Fonts/timesbd.ttf
- [3]
-Requested font "SimHei" at 16.06pt
- -> C:/Windows/Fonts/simhei.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'SimHei(0)' created for font 'SimHei' with options
-. [BoldFont={SimHei},BoldFeatures={RawFeature={embolden=4}}].
+. Font family 'SimSun(1)' created for font 'SimSun' with options
+. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}}].
 . 
 . This font family consists of the following shapes:
 .................................................
- (e:\thesis_for_jiangtao\jiangtao_thesis.toc
-Requested font "SimHei" at 12.045pt
- -> C:/Windows/Fonts/simhei.ttf
-Requested font "SimHei/ICU" at 12.045pt
- -> C:/Windows/Fonts/simhei.ttf
+Requested font "SimSun/ICU:script=latn;language=DFLT;embolden=4;" at 16.06pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "SimSun" at 12.045pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "SimSun/ICU" at 12.045pt
+ -> C:/Windows/Fonts/simsun.ttc
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'SimHei(0)' created for font 'SimHei' with options
-. [BoldFont={SimHei},BoldFeatures={RawFeature={embolden=4}}].
+. Font family 'SimSun(0)' created for font 'SimSun' with options
+. [BoldFont={SimHei},ItalicFont={KaiTi}].
 . 
 . This font family consists of the following shapes:
 .................................................
-Requested font "SimHei/ICU:script=latn;language=DFLT;" at 12.045pt
- -> C:/Windows/Fonts/simhei.ttf
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 1.
+Requested font "SimSun/ICU:script=latn;language=DFLT;" at 12.045pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 10.53937pt
+ -> C:/Windows/Fonts/times.ttf
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 37.
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 8.43146pt
  -> C:/Windows/Fonts/times.ttf
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 6.02249pt
@@ -1515,7 +1528,7 @@ Requested font "txex" at 8.43146pt
  -> txex
 Requested font "txex" at 6.02249pt
  -> txex
-LaTeX Font Info:    Try loading font information for U+txsya on input line 1.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 37.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
@@ -1525,7 +1538,7 @@ Requested font "txsya" at 8.43146pt
  -> txsya
 Requested font "txsya" at 6.02249pt
  -> txsya
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 1.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 37.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
@@ -1535,7 +1548,7 @@ Requested font "txsyb" at 8.43146pt
  -> txsyb
 Requested font "txsyb" at 6.02249pt
  -> txsyb
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 1.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 37.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
@@ -1545,7 +1558,7 @@ Requested font "txi" at 8.43146pt
  -> txi
 Requested font "txi" at 6.02249pt
  -> txi
-LaTeX Font Info:    Try loading font information for U+txmia on input line 1.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 37.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
@@ -1555,7 +1568,7 @@ Requested font "txmia" at 8.43146pt
  -> txmia
 Requested font "txmia" at 6.02249pt
  -> txmia
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 1.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 37.
  (C:\CTEX\MiKTeX\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
@@ -1598,27 +1611,133 @@ Requested font "txbex" at 6.02249pt
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 1.
+(Font)              size <8> substituted on input line 37.
 
 Requested font "cmr8" at 8.0pt
  -> cmr8
 Requested font "cmr6" at 6.0pt
  -> cmr6
-[4
+[2
+
+]
+Requested font "Arial/ICU:script=latn;language=DFLT;" at 12.045pt
+ -> C:/Windows/Fonts/arial.ttf
+Requested font "Arial/ICU:script=latn;language=DFLT;" at 16.06pt
+ -> C:/Windows/Fonts/arial.ttf
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 15.05624pt
+ -> C:/Windows/Fonts/timesbd.ttf
+Requested font "SimSun" at 15.05624pt
+ -> C:/Windows/Fonts/simsun.ttc
+Requested font "SimSun/ICU" at 15.05624pt
+ -> C:/Windows/Fonts/simsun.ttc
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimSun(0)' created for font 'SimSun' with options
+. [BoldFont={SimHei},ItalicFont={KaiTi}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "SimHei/ICU:script=latn;language=DFLT;" at 15.05624pt
+ -> C:/Windows/Fonts/simhei.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimSun(1)' created for font 'SimSun' with options
+. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+ [1
+
+
+
+
+
+]
+Requested font "SimHei" at 14.05249pt
+ -> C:/Windows/Fonts/simhei.ttf
+Requested font "SimHei/ICU" at 14.05249pt
+ -> C:/Windows/Fonts/simhei.ttf
+\g_fontspec_family_SimHei_int=\count358
+Requested font "SimHei/I/ICU" at 14.05249pt
+ -> C:/Windows/Fonts/simhei.ttf
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font SimHei/I (it probably doesn't exist).
+.................................................
+Requested font "SimHei/I/ICU" at 14.05249pt
+ -> C:/Windows/Fonts/simhei.ttf
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font SimHei/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimHei(0)' created for font 'SimHei' with options
+. [BoldFont={SimHei},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"SimHei/ICU:script=latn;language=DFLT;"
+. 
+. * 'bold' with NFSS spec.:
+. <->"SimHei/ICU:script=latn;language=DFLT;embolden=4;"
+.................................................
+ [2] [3
+
+
+
+]
+Requested font "Times New Roman/B/ICU:script=latn;language=DFLT;" at 12.045pt
+ -> C:/Windows/Fonts/timesbd.ttf
+ [4]
+Requested font "SimHei" at 16.06pt
+ -> C:/Windows/Fonts/simhei.ttf
+Requested font "SimHei/ICU" at 16.06pt
+ -> C:/Windows/Fonts/simhei.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimHei(0)' created for font 'SimHei' with options
+. [BoldFont={SimHei},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+ (e:\thesis_for_jiangtao\jiangtao_thesis.toc
+Requested font "SimHei" at 12.045pt
+ -> C:/Windows/Fonts/simhei.ttf
+Requested font "SimHei/ICU" at 12.045pt
+ -> C:/Windows/Fonts/simhei.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SimHei(0)' created for font 'SimHei' with options
+. [BoldFont={SimHei},BoldFeatures={RawFeature={embolden=4}}].
+. 
+. This font family consists of the following shapes:
+.................................................
+Requested font "SimHei/ICU:script=latn;language=DFLT;" at 12.045pt
+ -> C:/Windows/Fonts/simhei.ttf
+ [5
 
 
 
 ])
 \tf@toc=\write4
- [5] (e:\thesis_for_jiangtao\jiangtao_thesis.lof)
+ [6] (e:\thesis_for_jiangtao\jiangtao_thesis.lof)
 \tf@lof=\write5
- [6
+ [7
 
 
 
 ] (e:\thesis_for_jiangtao\jiangtao_thesis.lot)
 \tf@lot=\write6
- [7
+ [8
 
 
 
@@ -1675,13 +1794,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [3]
-LaTeX Font Info:    Try loading font information for OMS+TimesNewRoman(0) on input line 46.
-LaTeX Font Info:    No file OMSTimesNewRoman(0).fd. on input line 46.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+LaTeX Font Info:    Try loading font information for OMS+TimesNewRoman(0) on input line 48.
+LaTeX Font Info:    No file OMSTimesNewRoman(0).fd. on input line 48.
 
 
 LaTeX Font Warning: Font shape `OMS/TimesNewRoman(0)/m/n' undefined
-(Font)              using `OMS/txsy/m/n' instead on input line 46.
+(Font)              using `OMS/txsy/m/n' instead on input line 48.
 
 Requested font "Times New Roman/ICU:script=latn;language=DFLT;" at 6.52437pt
  -> C:/Windows/Fonts/times.ttf
@@ -1704,12 +1829,6 @@ Requested font "SimSun/ICU" at 9.03374pt
 Requested font "SimSun/ICU:script=latn;language=DFLT;" at 9.03374pt
  -> C:/Windows/Fonts/simsun.ttc
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5])
@@ -1830,14 +1949,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Requested font "SimSun/ICU:script=latn;language=DFLT;embolden=4;" at 12.045pt
  -> C:/Windows/Fonts/simsun.ttc
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 75.
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'SimSun(0)' created for font 'SimSun' with options
-. [BoldFont={SimHei},ItalicFont={KaiTi}].
-. 
-. This font family consists of the following shapes:
-.................................................
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2061,7 +2172,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-Overfull \hbox (6.39897pt too wide) in paragraph at lines 326--334
+Overfull \hbox (6.39897pt too wide) in paragraph at lines 325--333
  [][] 
  []
 
@@ -2139,9 +2250,6 @@ Requested font "cmbx6" at 6.0pt
 
 
 ]
-Underfull \vbox (badness 2644) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
@@ -2154,9 +2262,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
-Underfull \vbox (badness 7925) has occurred while \output is active []
-
-
+File: figures/mask_gan.pdf Graphic file (type QTm)
+ <use  "figures/mask_gan.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
@@ -2166,20 +2273,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
-File: figures/hengqin.pdf Graphic file (type QTm)
- <use  "figures/hengqin.pdf" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-Underfull \vbox (badness 2635) has occurred while \output is active []
+File: figures/cgan_post.pdf Graphic file (type QTm)
+ <use  "figures/cgan_post.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Overfull \hbox (7.78806pt too wide) in paragraph at lines 196--204
+ [][] 
+ []
+
+File: figures/youhua_res.pdf Graphic file (type QTm)
+<use  "figures/youhua_res.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
+Overfull \hbox (7.78806pt too wide) in paragraph at lines 217--225
+ [][] 
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37])
+ [39])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38] (e:\thesis_for_jiangtao\data/chap05.tex [39
+ [40] (e:\thesis_for_jiangtao\data/chap05.tex
+Underfull \vbox (badness 6526) has occurred while \output is active []
+
+ [41
 
 
 
@@ -2187,7 +2311,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40] (e:\thesis_for_jiangtao\jiangtao_thesis.bbl [41
+ [42] (e:\thesis_for_jiangtao\jiangtao_thesis.bbl [43
 
 
 
@@ -2195,7 +2319,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
+ [44]
 Underfull \hbox (badness 2042) in paragraph at lines 208--211
 []\l_fontspec_font Yann LeCun, Yoshua Bengio, Geoffrey Hinton.  Deep learning[J].  nature, 2015,
  []
@@ -2203,13 +2327,13 @@ Underfull \hbox (badness 2042) in paragraph at lines 208--211
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
+ [45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44])
+ [46])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45] (e:\thesis_for_jiangtao\data/paper.tex
+ [47] (e:\thesis_for_jiangtao\data/paper.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -2235,12 +2359,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-) [46
+) [48
 
 
 
 
-] (e:\thesis_for_jiangtao\data/ack.tex [47
+] (e:\thesis_for_jiangtao\data/ack.tex [49
 
 
 
@@ -2249,7 +2373,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 ])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
+ [50]
 \tf@thm=\write7
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
@@ -2269,12 +2393,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25506 strings out of 430478
- 467784 string characters out of 3191502
- 532195 words of memory out of 3000000
- 28136 multiletter control sequences out of 15000+200000
- 50959 words of font info for 239 fonts, out of 3000000 for 9000
+ 25588 strings out of 430478
+ 469458 string characters out of 3191502
+ 525847 words of memory out of 3000000
+ 28198 multiletter control sequences out of 15000+200000
+ 51063 words of font info for 252 fonts, out of 3000000 for 9000
  15 hyphenation exceptions out of 8191
  51i,20n,86p,1867b,855s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on jiangtao_thesis.pdf (55 pages).
+Output written on jiangtao_thesis.pdf (60 pages).

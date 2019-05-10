@@ -1,16 +1,18 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces 图像卷积示意图\relax }}{8}{figure.caption.21}
-\contentsline {figure}{\numberline {2}{\ignorespaces 最大池化与平均池化\relax }}{9}{figure.caption.23}
-\contentsline {figure}{\numberline {3}{\ignorespaces 典型的卷积网络结构\relax }}{10}{figure.caption.25}
-\contentsline {figure}{\numberline {4}{\ignorespaces 影像分类网络结构示意图\relax }}{11}{figure.caption.26}
-\contentsline {figure}{\numberline {5}{\ignorespaces 反卷积上采样过程\relax }}{11}{figure.caption.28}
-\contentsline {figure}{\numberline {6}{\ignorespaces 基于FCN网络的遥感影像分类示意图\relax }}{12}{figure.caption.30}
-\contentsline {figure}{\numberline {7}{\ignorespaces GAN结构示意图\relax }}{14}{figure.caption.31}
-\contentsline {figure}{\numberline {8}{\ignorespaces CGAN结构示意图\relax }}{15}{figure.caption.32}
-\contentsline {figure}{\numberline {9}{\ignorespaces 基于CGAN 的影像分类方法模型示意图\relax }}{17}{figure.caption.35}
-\contentsline {figure}{\numberline {10}{\ignorespaces Vaihingen 影像数据\relax }}{21}{figure.caption.36}
-\contentsline {figure}{\numberline {11}{\ignorespaces 图像裁剪方式\relax }}{23}{figure.caption.42}
-\contentsline {figure}{\numberline {12}{\ignorespaces 影像分类的可视化结果\relax }}{27}{figure.caption.44}
-\contentsline {figure}{\numberline {13}{\ignorespaces DSM 波段对影像分类结果的影响\relax }}{28}{figure.caption.45}
-\contentsline {figure}{\numberline {14}{\ignorespaces TFSV-IT2FCM 算法框架\relax }}{31}{figure.caption.49}
-\contentsline {figure}{\numberline {15}{\ignorespaces TFSV-IT2FCM 提取Vaihingen影像辅助特征信息\relax }}{33}{figure.caption.50}
-\contentsline {figure}{\numberline {16}{\ignorespaces 基于CGAN 影像分类后处理方法分割图 \relax }}{36}{figure.caption.54}
+\contentsline {figure}{\numberline {1}{\ignorespaces 图像卷积示意图\relax }}{8}{figure.caption.22}
+\contentsline {figure}{\numberline {2}{\ignorespaces 最大池化与平均池化\relax }}{9}{figure.caption.24}
+\contentsline {figure}{\numberline {3}{\ignorespaces 典型的卷积网络结构\relax }}{10}{figure.caption.26}
+\contentsline {figure}{\numberline {4}{\ignorespaces 影像分类网络结构示意图\relax }}{11}{figure.caption.27}
+\contentsline {figure}{\numberline {5}{\ignorespaces 反卷积上采样过程\relax }}{11}{figure.caption.29}
+\contentsline {figure}{\numberline {6}{\ignorespaces 基于FCN网络的遥感影像分类示意图\relax }}{12}{figure.caption.31}
+\contentsline {figure}{\numberline {7}{\ignorespaces GAN结构示意图\relax }}{14}{figure.caption.32}
+\contentsline {figure}{\numberline {8}{\ignorespaces CGAN结构示意图\relax }}{15}{figure.caption.33}
+\contentsline {figure}{\numberline {9}{\ignorespaces 基于CGAN 的影像分类方法模型示意图\relax }}{17}{figure.caption.36}
+\contentsline {figure}{\numberline {10}{\ignorespaces Vaihingen 影像数据\relax }}{21}{figure.caption.37}
+\contentsline {figure}{\numberline {11}{\ignorespaces 图像裁剪方式\relax }}{23}{figure.caption.43}
+\contentsline {figure}{\numberline {12}{\ignorespaces 影像分类的可视化结果\relax }}{27}{figure.caption.45}
+\contentsline {figure}{\numberline {13}{\ignorespaces DSM 波段对影像分类结果的影响\relax }}{28}{figure.caption.46}
+\contentsline {figure}{\numberline {14}{\ignorespaces TFSV-IT2FCM 算法框架\relax }}{31}{figure.caption.50}
+\contentsline {figure}{\numberline {15}{\ignorespaces TFSV-IT2FCM 提取Vaihingen影像辅助特征信息\relax }}{33}{figure.caption.51}
+\contentsline {figure}{\numberline {16}{\ignorespaces 融合边界掩膜特征的分割模型\relax }}{34}{figure.caption.52}
+\contentsline {figure}{\numberline {17}{\ignorespaces 基于辅助信息后处理的CGAN 影像分类流程图 \relax }}{37}{figure.caption.53}
+\contentsline {figure}{\numberline {18}{\ignorespaces 改进方法分类结果可视化图 \relax }}{38}{figure.caption.55}

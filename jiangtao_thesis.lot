@@ -1,8 +1,7 @@
-\contentsline {table}{\numberline {1}{\ignorespaces Vaihingen 数据类别标签颜色对照表\relax }}{21}{table.caption.37}
+\contentsline {table}{\numberline {1}{\ignorespaces Vaihingen 数据类别标签颜色对照表\relax }}{21}{table.caption.38}
 \contentsline {table}{\numberline {2}{\ignorespaces 基于CGAN 框架的全卷积分割模型参数表}}{25}{table.3.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Vaihingen 数据分类精度评估表\relax }}{27}{table.caption.43}
-\contentsline {table}{\numberline {4}{\ignorespaces DSM 波段对分类精度的影响\relax }}{29}{table.caption.46}
-\contentsline {table}{\numberline {5}{\ignorespaces 各优化方法影像分类精度表\relax }}{34}{table.caption.51}
-\contentsline {table}{\numberline {6}{\ignorespaces 影像地物类别抽样Ground truth表(pixels)\relax }}{35}{table.caption.53}
-\contentsline {table}{\numberline {7}{\ignorespaces 基于CGAN 影像分类后处理方法的精度表\relax }}{37}{table.caption.55}
-\contentsline {table}{\numberline {8}{\ignorespaces 带有边界辅助信息分类精度表\relax }}{38}{table.caption.57}
+\contentsline {table}{\numberline {3}{\ignorespaces Vaihingen 数据分类精度评估表\relax }}{27}{table.caption.44}
+\contentsline {table}{\numberline {4}{\ignorespaces DSM 波段对分类精度的影响\relax }}{29}{table.caption.47}
+\contentsline {table}{\numberline {5}{\ignorespaces 融合边界特征对影像分类的影响\relax }}{38}{table.caption.54}
+\contentsline {table}{\numberline {6}{\ignorespaces 后处理对CGAN 影像分类的影响\relax }}{39}{table.caption.56}
+\contentsline {table}{\numberline {7}{\ignorespaces 两种优化方法共同作用对影像分类的影响\relax }}{39}{table.caption.57}

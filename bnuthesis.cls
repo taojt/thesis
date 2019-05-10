@@ -688,22 +688,22 @@
                      \bnu@frontdate\bnu@underline[9.5em]\relax\hspace*{3cm}
     \endgroup
   }
-  \newcommand{\makecover}{
+  % \newcommand{\makecover}{
+  % \normalsize
+  % \bnu@makeabstract
+  % }
+\newcommand{\makecover}{
+  \phantomsection
+  \pdfbookmark[-1]{\bnu@ctitle}{ctitle}
+  \normalsize%
+  \begin{titlepage}
+    \bnu@first@titlepage
+    \clpage\bnu@authorization@mk
+  \end{titlepage}
   \normalsize
   \bnu@makeabstract
+%  \let\@tabular\bnu@tabular
   }
-% \newcommand{\makecover}{
-%   \phantomsection
-%   \pdfbookmark[-1]{\bnu@ctitle}{ctitle}
-%   \normalsize%
-%   \begin{titlepage}
-%     \bnu@first@titlepage
-%     \clpage\bnu@authorization@mk
-%   \end{titlepage}
-%   \normalsize
-%   \bnu@makeabstract
-% %  \let\@tabular\bnu@tabular
-%   }
 \newcommand{\bnu@makeabstract}{%
   \cleardoublepage % always openright for Abstract
 

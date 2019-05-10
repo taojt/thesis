@@ -12,22 +12,27 @@
 \makeatother
 
 \cauthor{江涛}
-\csupervisor{余先川教授、胡丹副教授} %\\ \hspace*{6em}}
+\csupervisor{XXX 导师} %\\ \hspace*{6em}}余先川教授、胡丹副教授
 \cdepartment[]{信息科学与技术学院16级}
 \cmajor{计算机软件与理论}
 \cnum{201621210026}
 \cdate{\the\year 年 \the\month 月}
 
-\etitle{Remote Sensing Image Classification Based on Fuzzy Clustering and Generative Adversarial Network}
+\etitle{REMOTE SENSING IMAGE CLASSIFICATION BASED ON GENERATIVE ADVERSARIAL NETWORK}
+%Remote Sensing Image Classification Based on Fuzzy Clustering and Generative Adversarial Network
 
 % 定义中英文摘要和关键字
 \begin{cabstract}
-  遥感影像分类是遥感领域重要的研究内容，快速、准确地对遥感影像数据分类与识别是当前遥感领域的研究重点。然而，由于遥感数据固有的不确定性使得影像准确解译识别面临挑战。此外，高分辨率影像在提供高质量细节信息时其同类地物类内特征差异大，使得分类容易错分类内差异大的地物，且难以预测出明确、清晰的地物分类边界。
+  遥感影像分类是遥感领域重要的研究内容，如何快速、准确地对遥感影像数据分类与识别是当前遥感领域的研究重点。然而，由于遥感数据固有的不确定性使得影像准确解译识别面临挑战。此外，高分辨率影像在提供高质量细节信息时其同类地物类内特征差异大，使得输出结果中类内差异大的地物会存在许多细碎的错分区域，同时正确识别明确、清晰的地物分类边界存在挑战。
 
-  近年来，随着深度学习技术的发展和全卷积分类网络的出现，基于深度学习理论的影像分类方法被广泛应用到遥感影像分类任务中。但目前基于全卷积网络的影像分类方法在上采样操作中易使影像丢失特征信息，导致地物分类边界模糊，另一方面，全卷积影像分类方法是像素级的分类，影像分割结果中邻近区域同类地物预测标签难以保证一致性。因此，改进现有的全卷积影像分类方法，提升影像分类质量，也具有重要的研究意义。生成对抗网络其判别器能够不断检测并纠正真实样布与生成数据间的差异，保持整体的一致性，且对抗博弈过程中生成器能不断强化分割模型的预测能力。因此，将对抗训练的思想引入全卷积影像分类方法有助于提升分类精度。此外，利用模糊聚类方法对遥感影像不确定信息建模，将影像聚类结果作为先验辅助知识添加到全卷积影像分类模型中，能够增强分类模型对遥感影像不确定性信息的表征能力，提升分类精度。基于上述思路，本课题论文对遥感影像地物分类问题加以研究和讨论。具体的研究内容如下：
+  近年来，随着深度学习技术的发展和全卷积分类网络的出现，基于深度学习理论的影像分类方法被广泛应用到遥感影像分类任务中。然而，当前基于全卷积网络的影像分类方法在池化处理和上采样操作中容易丢失影像低阶边界、位置等特征信息，导致地物分类边界存在混淆、歧义。此外，全卷积影像分类方法是像素级的分类，影像分类结果中同类地物区域内容易出现细碎的错分区域。于是改进现有的全卷积影像分类方法，提升影像分类质量，也具有重要的研究意义。生成对抗网络其判别器能够不断检测并纠正真实样布与生成数据间的差异，且模型的对抗损失一定程度上能够增强影像像素点间的连续性，保持整体的一致性。另一方面，对抗博弈过程中生成器能不断强化分割模型的预测能力，提升分类精度。
+  
+  因此，本文将对抗训练的思想引入全卷积影像分类模型，提升影像分类精度，并对提出的基于条件生成对抗网络的影像分类方法进行改进。文中首先通过模糊聚类分割方法预处理高分影像数据，得到影像的同质性分割单元信息图。为了得到更清晰的地物分类边界，将分割单元的边界掩膜特征融合到模型上采样的特征图上，加强高阶特征的边界、位置信息。为了得到更完整的地物分类结果，文中对像素点类别预测时，考虑同质性分割单元内其他像素点间的相互关系，优化类别预测结果。基于上述思路，本课题论文对遥感影像地物分类问题加以研究和讨论。具体的研究内容如下：
   \begin{enumerate}[(1)]
-    \item 将对抗训练思想引入全卷积影像分类模型，提出基于条件对抗生成网络的全卷积影像分类方法，新方法在高分影像数据上相比原方法分类能力更强，同类别地物空间更加具有一致性。
-    \item 利用作者先前提出的面向对象的遥感影像模糊聚类方法处理影像数据，模糊聚类输出结果作为影像区域领域关系和同质性的特征图，将特征图引入提出的基于条件对抗生成网络的影像分类方法中，联合训练，提升影像分类结果同类别地物一致性，并得到更准确的地物分类边界。
+    \item 将对抗训练思想引入全卷积影像分类模型，提出基于条件对抗生成网络的全卷积影像分类方法，新方法在高分影像数据上相比原方法分类能力更强，能够提升影像分类精度。
+    \item 先利用本文作者先前提出的面向对象的遥感影像模糊聚类分割方法预处理影像数据，得到影像同质性分割单元信息图。然后通过求解图像梯度和二值化处理获取分割单元的边界掩膜信息。接着将经过下采样得到的不同尺度的边界掩膜特征融合到分割模型对应尺度上采样模块特征图上，加强高阶特征的边界、位置信息，提出融合边界特征的影像分类方法。新的影像分类方法能够得到更准确、清晰的地物分类边界。
+    \item 本文对模型预测像素点的类别概率值更新校正，考虑像素点所属同质性分割单元内其他像素点的类别预测关系，按照一定策略更新像素点类别预测概率值，提出基于辅助信息后处理的影像分类方法。添加辅助信息后处理方法能够保持同类地物区域内像素点的空间一致性。减少类别内细碎的错分区域，分类结果更加完整。
+    \item 将融合边界特征和辅助信息后处理这两种改进思路同时引入基于条件生成对抗网络的影像分类方法中。实验结果表明新的影像分类方法分类精度提升明显，地物边界更准确，且同类地物内错分区域大幅减少。
   \end{enumerate}
 \end{cabstract}
 
@@ -36,11 +41,14 @@
 \begin{eabstract}
   Remote sensing image classification is a research hotspot in the field of remote sensing. How to quickly and accurately classify and identify  of remote sensing images is the focus of current remote sensing research. However, it is challenging to accurately classify remote sensing images, due to the inherent uncertainty of remote sensing images. High-resolution images provide high-quality detail information with large differences in their similar species, which leads to the misclassification, and it is difficult to get the correct classification boundary.
 
-    Object-oriented fuzzy clustering segmentation methods are widely used to handle uncertainty in high-resolution images because of its excellent ability to characterize uncertain information. In the current object-oriented segmentation methods, the image segmentation unit adopts mean data modeling or interval value data modeling. However, accurately distinguishing
-  two objects with the same mean or interval values and different internal distributions is difficult. Therefore, we designed a triangular fuzzy set modeling to describe objects and designed an interval distance metric to measure the dissimilarities between triangular fuzzy sets. The object-oriented clustering methods belong to unsupervised classification methods, which required manual post-processing. With the development of deep learning and the emergence of a full convolutional network, supervised image segmentation methods are also widely used in remote sensing image classification. In full convolutional network, the upsampling operation causes the loss of image features, which leads to the blurring of the boundary of the feature classification. Designing a new network model to improve the spatial consistency of image classification of similar features also has research significance. Based on the above two ideas, this paper will analyze and discuss the remote sensing image feature classification from the perspective of image segmentation unit data modeling and ground object consistency processing. The specific research contents are as follows:
+  In recent years, with the development of Deep Learning theory and the proposal of Fully Convolutional Networks, image classification methods based on deep learning theory have been widely applied to remote sensing image classification tasks. However, the current image classification methods based on Fully Convolutional Networks are easy to lose the low-order boundary, location and other feature information in the pooling process and upsampling operation, resulting in confusion and ambiguity of classification boundary. In addition, the fully convolutional image classification method is a pixel-level classification, and in the image classification result, a finely divided area is likely to occur in the same type of feature region. Therefore, improving the existing fully convolutional image classification method and improving the image classification quality also have important research significance. The Generative Adversarial Network can continuously detect and correct the difference between the real sample and the generated data. The confrontation loss of the model enhances the continuity between the pixels of the image to a certain extent and maintains the overall consistency. Moreover, in the process of confrontation game, the generator can continuously strengthen the prediction ability of the segmentation model and improve the classification accuracy.  
+  
+  Therefore, this paper introduces the idea of ​​confrontation training into the full convolution image classification model to improve the accuracy of image classification. The image classification method based on conditional generation confrontation network is improved. Firstly, the homogeneity segmentation unit information map of image is preprocessed by fuzzy clustering segmentation method. In order to obtain a clearer classification boundary, the boundary mask features of the segmentation unit are merged into the feature map of the model to enhance the boundary and position information of the high-order features. In order to obtain a more complete classification result of the feature, in the prediction of the pixel class, the relationship between other pixels in the homomorphic segmentation unit is considered, and the class prediction result is optimized. Based on the above ideas, this paper studies and discusses the classification of remote sensing image features. The specific research contents are as follows:
 \begin{enumerate}[(1)]
-  \item Improves the existing object-oriented fuzzy clustering segmentation method from the perspective of image segmentation unit feature modeling. In this paper, a triangular fuzzy set modeling was designed to describe objects, and an interval distance metric was proposed to measure the dissimilarities between triangular fuzzy sets. Finally, the triangular fuzzy set-valued data interval type 2  fuzzy c means clustering method was proposed. The clustering results of SPOT-5 and Gaofen-2 high-resolution image data verified that the proposed method results in improved classification quality and accuracy.
-  \item Improves the existing full convolutional supervised classification method from the perspective of feature consistency. This paper draws on the excellent image generation ability of the generative adversarial network, applies the conditional generative adversarial network to the existing full convolutional network segmentation model, and proposes a full convolutional image segmentation method based on conditional generative adversarial network. The segmentation results of the proposed method on the Vaihingen image dataset have more accurate feature boundaries and consistency with the same type of feature space.
+  \item Introducing the confrontation training idea into the full convolution image classification model, and propose a full convolution image classification method based on conditional confrontation generation network. The new method has stronger classification ability than the original method on high score image data, which can improve the image classification accuracy.
+  \item First of all, fuzzy clustering segmentation method is used to preprocess the image data to obtain the image segmentation unit information map. Then, the boundary mask features of the segmentation unit are obtained, and the boundary mask features of different scales obtained by downsampling are fused to the feature maps of the corresponding scales of the model, and the boundary and position information of the high-order features are strengthened. New method can accurate and clear feature classification boundaries.
+  \item In this paper, the class probability value of the model prediction pixel is updated and corrected. Considering the class prediction relationship of other pixels in the homogenous segmentation unit of the pixel, the prediction probability value of the pixel class is updated according to a certain strategy, and the post-processing based on auxiliary information is proposed. Image classification method. Adding auxiliary information post-processing methods can improve the spatial consistency of pixels in the same feature area. Reduce the subdivided areas within the category and the classification results are more complete.
+  \item The two improved ideas of fusion boundary feature and auxiliary information post-processing are introduced into the image classification method based on conditional generation confrontation network. The experimental results show that the classification accuracy of the new image classification method is obviously improved, the boundary of the object is more accurate, and the mis-division area within the same type of object is greatly reduced.
   
 \end{enumerate}
 
