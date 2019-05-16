@@ -54,7 +54,7 @@
 假定有$N$ 张训练图片的数据集$X = \{x_1,x_2,\cdots, x_n \}$，对应的Ground truth 图标签集为$Y = \{y_1,y_2,\cdots, y_n \}$。输入图像大小为$H\times W\times C$（一般$C$ 取$3$），有$K$ 个类别的图像标签编码为$K$  维向量，即对第$i$ 张图像$x_i$，对应Ground truth 图有$y_j = [y_j^{(1)},y_j^{(2)}, \cdots, y_j^{(K)}]$。我们定义$g(x)$ 为输入图片$x$ 在生成网络分割模型下的预测输出，定义$d(x,y)\in [0,1]$ 为对抗网络判别图像标签$y$ 是输入图像$x$ 对应的Ground truth 图还是分割模型产生的分割结果的概率输出值。基于条件对抗网络框架的全卷积语义分割模型方法需要最小化分割模型的多分类交叉熵损失，同时最大化分割模型生成样本的判别概率。优化的目标代价函数为式\ref{eq:4-7}：
 \begin{equation}
   \label{eq:4-7}
-  L(\theta_g,\theta_d) = \sum_{n=1}^N \lbrace l_{mce} (g(x_n),y(n)) - \lambda [l_{bce} (d(x_n,y_n),1) + l_{bce}(d(x_n,g(x_n)),0)] \rbrace
+  L(\theta_g,\theta_d) = \sum_{n=1}^N \lbrace l_{mce} (g(x_n),y_n) - \lambda [l_{bce} (d(x_n,y_n),1) + l_{bce}(d(x_n,g(x_n)),0)] \rbrace
 \end{equation}
 式中$\theta_g$ 和$\theta_d$ 分别代表分割模型和判别模型网络参数，右式中第一项为分割模型的交叉熵损失，第二项为对抗网络中样本判别损失代价函数，$\lambda$ 为生成阶段与对抗阶段代价权衡常数且有$\lambda > 0$。模型训练时我们需要最小化式\ref{eq:4-7} 中的代价函数，从而迭代求解得到网络参数$\theta_g$ 和$\theta_d$。
 
