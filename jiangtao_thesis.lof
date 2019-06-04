@@ -10,9 +10,10 @@
 \contentsline {figure}{\numberline {10}{\ignorespaces Vaihingen 影像数据\relax }}{21}{figure.caption.37}
 \contentsline {figure}{\numberline {11}{\ignorespaces 图像裁剪方式\relax }}{23}{figure.caption.43}
 \contentsline {figure}{\numberline {12}{\ignorespaces 影像分类的可视化结果\relax }}{27}{figure.caption.45}
-\contentsline {figure}{\numberline {13}{\ignorespaces DSM 波段对影像分类结果的影响\relax }}{28}{figure.caption.46}
-\contentsline {figure}{\numberline {14}{\ignorespaces TFSV-IT2FCM 算法框架\relax }}{31}{figure.caption.50}
-\contentsline {figure}{\numberline {15}{\ignorespaces TFSV-IT2FCM 提取Vaihingen影像辅助特征信息\relax }}{33}{figure.caption.51}
-\contentsline {figure}{\numberline {16}{\ignorespaces 融合边界掩膜特征的分割模型\relax }}{34}{figure.caption.52}
-\contentsline {figure}{\numberline {17}{\ignorespaces 基于辅助信息后处理的CGAN 影像分类流程图 \relax }}{37}{figure.caption.53}
-\contentsline {figure}{\numberline {18}{\ignorespaces 改进方法分类结果可视化图 \relax }}{38}{figure.caption.55}
+\contentsline {figure}{\numberline {13}{\ignorespaces 两种模型训练集和验证集准确率随模型迭代次数变化示意图\relax }}{28}{figure.caption.46}
+\contentsline {figure}{\numberline {14}{\ignorespaces DSM 波段对影像分类结果的影响\relax }}{29}{figure.caption.47}
+\contentsline {figure}{\numberline {15}{\ignorespaces TFSV-IT2FCM 算法框架\relax }}{32}{figure.caption.51}
+\contentsline {figure}{\numberline {16}{\ignorespaces TFSV-IT2FCM 提取Vaihingen影像辅助特征信息\relax }}{34}{figure.caption.52}
+\contentsline {figure}{\numberline {17}{\ignorespaces 融合边界掩膜特征的分割模型\relax }}{35}{figure.caption.53}
+\contentsline {figure}{\numberline {18}{\ignorespaces 基于辅助信息后处理的CGAN 影像分类流程图 \relax }}{38}{figure.caption.54}
+\contentsline {figure}{\numberline {19}{\ignorespaces 改进方法分类结果可视化图 \relax }}{39}{figure.caption.56}

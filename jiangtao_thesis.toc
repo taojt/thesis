@@ -30,18 +30,18 @@
 \contentsline {subsection}{\numberline {3.4.3}网络参数}{24}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}结果与分析}{26}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}本章小结}{29}{section.3.5}
-\contentsline {chapter}{第\nobreakspace {}4\nobreakspace {}章\hspace {1em} 基于CGAN 影像分类的改进方法}{30}{chapter.4}
-\contentsline {section}{\numberline {4.1}引言}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}TFSV-IT2FCM 聚类分割}{30}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}方法原理}{30}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}影像数据处理}{32}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}融合边界特征的CGAN 影像分类方法}{33}{section.4.3}
-\contentsline {section}{\numberline {4.4}基于辅助信息后处理的影像分类方法}{35}{section.4.4}
-\contentsline {section}{\numberline {4.5}实验结果与分析}{37}{section.4.5}
-\contentsline {section}{\numberline {4.6}本章小结}{40}{section.4.6}
-\contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{41}{chapter.5}
-\contentsline {section}{\numberline {5.1}本文的主要内容}{41}{section.5.1}
-\contentsline {section}{\numberline {5.2}未来的期望}{42}{section.5.2}
-\contentsline {chapter}{参考文献}{43}{section*.61}
-\contentsline {chapter}{学术成果}{48}{section*.64}
-\contentsline {chapter}{致谢}{49}{section*.67}
+\contentsline {chapter}{第\nobreakspace {}4\nobreakspace {}章\hspace {1em} 基于CGAN 影像分类的改进方法}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}引言}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}TFSV-IT2FCM 聚类分割}{31}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}方法原理}{31}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}影像数据处理}{33}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}融合边界特征的CGAN 影像分类方法}{34}{section.4.3}
+\contentsline {section}{\numberline {4.4}基于辅助信息后处理的影像分类方法}{36}{section.4.4}
+\contentsline {section}{\numberline {4.5}实验结果与分析}{38}{section.4.5}
+\contentsline {section}{\numberline {4.6}本章小结}{42}{section.4.6}
+\contentsline {chapter}{第\nobreakspace {}5\nobreakspace {}章\hspace {1em} 总结与展望}{44}{chapter.5}
+\contentsline {section}{\numberline {5.1}本文的主要内容}{44}{section.5.1}
+\contentsline {section}{\numberline {5.2}未来的期望}{45}{section.5.2}
+\contentsline {chapter}{参考文献}{46}{section*.66}
+\contentsline {chapter}{学术成果}{51}{section*.69}
+\contentsline {chapter}{致谢}{52}{section*.72}

@@ -334,6 +334,18 @@ Zhengxin Zhang, Qingjie Liu, Yunhong Wang.
 \newblock Road extraction by deep residual u-net[J].
 \newblock IEEE Geoscience and Remote Sensing Letters, 2018, 15(5):749--753.
 
+\bibitem{8252784}
+G.~{Cheng}, C.~{Yang}, X.~{Yao}, et~al.
+\newblock When Deep Learning Meets Metric Learning: Remote Sensing Image Scene
+  Classification via Learning Discriminative CNNs[J].
+\newblock IEEE Transactions on Geoscience and Remote Sensing, 2018,
+  56(5):2811--2821.
+
+\bibitem{zhang2019joint}
+Ce~Zhang, Isabel Sargent, Xin Pan, et~al.
+\newblock Joint Deep Learning for land cover and land use classification[J].
+\newblock Remote sensing of environment, 2019, 221:173--187.
+
 \bibitem{krizhevsky2012imagenet}
 Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
 \newblock Imagenet classification with deep convolutional neural networks[C].
@@ -367,5 +379,23 @@ Roger~A Horn.
 \newblock The hadamard product[C].
 \newblock Proceedings of Proc. Symp. Appl. Math, volume~40, 1990.
 \newblock  87--169.
+
+\bibitem{maulik2017remote}
+Ujjwal Maulik, Debasis Chakraborty.
+\newblock Remote Sensing Image Classification: A survey of
+  support-vector-machine-based advanced techniques[J].
+\newblock IEEE Geoscience and Remote Sensing Magazine, 2017, 5(1):33--52.
+
+\bibitem{belgiu2016random}
+Mariana Belgiu, Lucian Dr{\u{a}}gu{\c{t}}.
+\newblock Random forest in remote sensing: A review of applications and future
+  directions[J].
+\newblock ISPRS Journal of Photogrammetry and Remote Sensing, 2016, 114:24--31.
+
+\bibitem{han2012parameter}
+Shunjie Han, Cao Qubo, Han Meng.
+\newblock Parameter selection in SVM with RBF kernel function[C].
+\newblock Proceedings of World Automation Congress 2012. IEEE, 2012.
+\newblock  1--4.
 
 \end{thebibliography}
