@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.10)  5 JUN 2019 15:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.5.10)  5 JUN 2019 16:04
 entering extended mode
 **e:/thesis_for_jiangtao/jiangtao_thesis
 (e:/thesis_for_jiangtao/jiangtao_thesis.tex
@@ -1592,6 +1592,9 @@ Overfull \hbox (6.92235pt too wide) in paragraph at lines 325--333
  [][] 
  []
 
+
+
+pdfTeX warning: pdflatex (file e:/thesis_for_jiangtao/figures/seg_result.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 <figures/seg_result.pdf, id=1041, 2914.89pt x 2210.2575pt>
 File: figures/seg_result.pdf Graphic file (type pdf)
  <use figures/seg_result.pdf>
@@ -1600,12 +1603,15 @@ Package pdftex.def Info: figures/seg_result.pdf used on input line 337.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27 <e:/thesis_for_jiangtao/figures/seg_result.pdf>] <figures/epoch_acc.pdf, id=1058, 1662.21pt x 570.13pt>
+ [27 <e:/thesis_for_jiangtao/figures/seg_result.pdf>] <figures/epoch_acc.pdf, id=1054, 1662.21pt x 570.13pt>
 File: figures/epoch_acc.pdf Graphic file (type pdf)
  <use figures/epoch_acc.pdf>
 Package pdftex.def Info: figures/epoch_acc.pdf used on input line 347.
 (pdftex.def)             Requested size: 469.47047pt x 161.02722pt.
- <figures/dsm_affect.pdf, id=1060, 2666.96375pt x 647.41875pt>
+
+
+pdfTeX warning: pdflatex (file e:/thesis_for_jiangtao/figures/dsm_affect.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figures/dsm_affect.pdf, id=1056, 2666.96375pt x 647.41875pt>
 File: figures/dsm_affect.pdf Graphic file (type pdf)
  <use figures/dsm_affect.pdf>
 Package pdftex.def Info: figures/dsm_affect.pdf used on input line 355.
@@ -1622,7 +1628,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [29 <e:/thesis_for_jiangtao/figures/dsm_affect.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30] (e:\thesis_for_jiangtao\data/chap04.tex <figures/tfsvit2fcm.pdf, id=1092, 490.47241pt x 147.67169pt>
+ [30] (e:\thesis_for_jiangtao\data/chap04.tex <figures/tfsvit2fcm.pdf, id=1084, 490.47241pt x 147.67169pt>
 File: figures/tfsvit2fcm.pdf Graphic file (type pdf)
  <use figures/tfsvit2fcm.pdf>
 Package pdftex.def Info: figures/tfsvit2fcm.pdf used on input line 25.
@@ -1657,7 +1663,7 @@ l.58 \end{equation}
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.58 \end{equation}
-                    <e:/thesis_for_jiangtao/figures/tfsvit2fcm.pdf>] <figures/tfsv_seg.pdf, id=1132, 1565.85pt x 550.055pt>
+                    <e:/thesis_for_jiangtao/figures/tfsvit2fcm.pdf>] <figures/tfsv_seg.pdf, id=1124, 1565.85pt x 550.055pt>
 File: figures/tfsv_seg.pdf Graphic file (type pdf)
  <use figures/tfsv_seg.pdf>
 Package pdftex.def Info: figures/tfsv_seg.pdf used on input line 75.
@@ -1674,7 +1680,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.81 
-     ] <figures/mask_gan.pdf, id=1141, 833.51402pt x 787.2612pt>
+     ] <figures/mask_gan.pdf, id=1133, 833.51402pt x 787.2612pt>
 File: figures/mask_gan.pdf Graphic file (type pdf)
  <use figures/mask_gan.pdf>
 Package pdftex.def Info: figures/mask_gan.pdf used on input line 93.
@@ -1703,7 +1709,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37] <figures/cgan_post.pdf, id=1206, 1567.8575pt x 732.7375pt>
+ [37] <figures/cgan_post.pdf, id=1191, 1567.8575pt x 732.7375pt>
 File: figures/cgan_post.pdf Graphic file (type pdf)
  <use figures/cgan_post.pdf>
 Package pdftex.def Info: figures/cgan_post.pdf used on input line 172.
@@ -1716,7 +1722,7 @@ Overfull \hbox (11.32867pt too wide) in paragraph at lines 196--204
  [][] 
  []
 
-<figures/youhua_res.pdf, id=1226, 2019.545pt x 1090.0725pt>
+<figures/youhua_res.pdf, id=1211, 2019.545pt x 1090.0725pt>
 File: figures/youhua_res.pdf Graphic file (type pdf)
  <use figures/youhua_res.pdf>
 Package pdftex.def Info: figures/youhua_res.pdf used on input line 208.
@@ -1835,9 +1841,9 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): name{algorithm.1} has been referenced but does not exist, replaced by a fixed one
 
 <C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf>{C:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/WINDOWS/Fonts/simfang.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxbmi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txbsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/CTEX/MiKTeX/fonts/type1/public/txfonts/txsyb.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on jiangtao_thesis.pdf (63 pages, 26138623 bytes).
+Output written on jiangtao_thesis.pdf (63 pages, 17646276 bytes).
 PDF statistics:
- 1892 PDF objects out of 2073 (max. 8388607)
+ 1877 PDF objects out of 2073 (max. 8388607)
  308 named destinations out of 1000 (max. 500000)
  837 words of extra memory for PDF output out of 10000 (max. 10000000)
 
