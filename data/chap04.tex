@@ -160,7 +160,7 @@ TFSV-IT2FCM 聚类分割方法可以看作是对邻域内同质性像素点关�
     P_s(l_i) = \frac{C^S_{l_i}}{S},i=1,2,\cdots,L
 \end{equation}
 
-利用式\ref{eq:n4-7} 中分割单元的占比关系，对式\ref{eq:n4-4} 中像素点类别预测的概率值进行更新，更新方法如式\ref{eq:n4-8}所示：
+利用式\ref{eq:n4-7} 中分割单元的占比关系，对式\ref{eq:n4-4-1} 中像素点类别预测的概率值进行更新，更新方法如式\ref{eq:n4-8}所示：
 \begin{equation}\label{eq:n4-8}
     P^{\star}(X_i=l_c) =  P(X_i=l_c) + \lambda \times \exp{(P_s(l_c)-1)}
 \end{equation}
